@@ -137,7 +137,52 @@ button{font-family:inherit}
 @media (prefers-reduced-motion:reduce){.spark,.log .dot{animation:none}.blk{transition:none}.cursor{display:none}}
 .eyebrow{font:500 13px var(--mono);text-transform:uppercase;letter-spacing:.12em;color:var(--muted);text-align:center;margin:52px 0 16px}
 .progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:60;pointer-events:none}.progress i{display:block;height:100%;background:var(--accent);transform-origin:0 50%;transform:scaleX(0)}
-.ranks{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:8px}.rank{background:var(--bg-2);border:1px solid var(--line);border-radius:20px;padding:18px 18px 10px}.rank h3{font:600 15px var(--display);margin:0 0 10px}.rank ol{list-style:none;margin:0;padding:0}.rank li{display:grid;grid-template-columns:22px 1fr auto;gap:10px;align-items:center;padding:8px 0;border-top:1px solid var(--line)}.rank li:first-child{border-top:0}.rank .i{font:500 12px var(--mono);color:var(--muted)}.rank .nm{min-width:0}.rank .nm a,.rank .nm span{color:var(--ink);text-decoration:none;font-weight:500;overflow-wrap:anywhere}.rank .bar{display:block;height:4px;border-radius:4px;background:var(--accent);margin-top:5px}.rank .c{font:500 12px var(--mono);background:var(--pill);color:var(--pill-ink);border-radius:999px;padding:2px 8px}
+.tp-bar{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:14px;margin:6px 0 30px}
+.tp-bar .rx-tabs{margin:0;justify-content:center}.tp-per{flex:0 0 auto;min-width:min(100%,360px)}.tp-per button{white-space:nowrap}
+.tp-feat{display:grid;grid-template-columns:minmax(0,1fr);gap:22px;text-decoration:none;color:var(--ink);margin-bottom:36px}
+.tp-feat .pc{position:relative;aspect-ratio:21/8;border-radius:22px;overflow:hidden;display:grid;place-items:center;padding:22px;background:var(--pc-bg)}
+.tp-feat .pc::before{content:"";position:absolute;inset:-25%;background:var(--pc-blobs);filter:blur(34px);opacity:var(--pc-op,1);transition:transform .5s}
+.tp-feat:hover .pc::before{transform:scale(1.08) rotate(4deg)}
+.tp-feat .pc b{position:relative;font:600 clamp(26px,4.2vw,44px)/1.08 var(--display);letter-spacing:-.025em;text-align:center;color:var(--pc-ink);text-wrap:balance;max-width:92%}
+.tp-feat .pc .pill{position:absolute;top:16px;left:16px;z-index:1;background:var(--bg);color:var(--ink);font:600 10.5px var(--mono);letter-spacing:.08em;text-transform:uppercase;border-radius:999px;padding:4px 9px}
+.tp-n{display:block;font:500 13px var(--mono);color:var(--muted);letter-spacing:.06em;margin-bottom:10px}
+.tp-feat h2{margin:0 0 10px;font:500 clamp(24px,3vw,34px)/1.15 var(--display);letter-spacing:-.02em}
+.tp-feat:hover h2{text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:1px}
+.tp-fb{display:flex;justify-content:space-between;align-items:flex-start;gap:16px 40px}
+.tp-feat p{margin:6px 0 0;max-width:46ch;color:var(--muted);font-size:15.5px;line-height:1.5}
+@media (max-width:640px){.tp-fb{flex-direction:column}.tp-feat p{margin:0}}
+.tp-meta{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px}
+.tp-c{font:500 12px var(--mono);background:var(--pill);color:var(--pill-ink);border-radius:999px;padding:3px 9px;white-space:nowrap}
+.tp-mv{font:600 11px var(--mono);letter-spacing:.04em;white-space:nowrap;color:var(--muted)}.tp-mv.up{color:#1f8a4c}.tp-mv.dn{color:#c2410c}
+.tp-mv.new{background:var(--accent);color:#111;border-radius:4px;padding:2px 6px;text-transform:uppercase}
+.tp-sp{display:block;width:72px;height:22px;color:var(--ink)}.tp-feat .tp-sp{width:120px;height:30px}
+.tp-sp polyline{fill:none;stroke:currentColor;stroke-width:1.6;stroke-linejoin:round;stroke-linecap:round}.tp-sp circle{fill:var(--accent);stroke:var(--ink);stroke-width:1}
+.tp-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(20px,4vw,48px)}
+.tp-list li{border-top:1px solid var(--line)}
+.tp-row{display:grid;grid-template-columns:28px 40px minmax(0,1fr) auto;gap:12px;align-items:center;padding:14px 0;color:var(--ink);text-decoration:none;min-height:44px}
+.tp-row:hover .tp-nm b{text-decoration:underline;text-underline-offset:3px}
+.tp-row .i{font:500 13px var(--mono);color:var(--muted)}
+.tp-av{position:relative;width:40px;height:40px;border-radius:10px;overflow:hidden;display:grid;place-items:center;background:var(--pc-bg)}
+.tp-av::before{content:"";position:absolute;inset:-30%;background:var(--pc-blobs);filter:blur(10px)}
+.tp-av span{position:relative;font:600 16px var(--display);color:var(--pc-ink)}
+.tp-feat .pc.dk,.tp-av.dk{background:radial-gradient(120% 140% at 28% 18%,#3b3b40 0,#161618 52%,#050506 100%)}
+.tp-feat .pc.dk::before,.tp-av.dk::before{display:none}
+.tp-feat .pc.dk b,.tp-av.dk span{color:#f4f4f1}
+.tp-lg{position:relative;display:block;object-fit:contain}
+.tp-lg.mono{filter:invert(1)}
+.tp-feat .tp-ph{width:clamp(96px,12vw,140px);height:clamp(96px,12vw,140px);border-radius:28px;object-fit:cover;box-shadow:0 0 0 5px var(--bg),0 10px 30px rgba(0,0,0,.18)}
+.tp-av .tp-ph{position:absolute;inset:0;width:100%;height:100%;border-radius:inherit;object-fit:cover}
+.tp-feat .tp-lg:not(.tp-ph){width:clamp(64px,9vw,104px);height:clamp(64px,9vw,104px)}.tp-feat .tp-lg:not(.mono):not(.tp-ph){border-radius:22px}
+.tp-av .tp-lg:not(.tp-ph){width:20px;height:20px}.tp-av .tp-lg:not(.mono):not(.tp-ph){width:24px;height:24px;border-radius:6px}
+.tp-lg[hidden]+b,.tp-lg[hidden]+span{display:block}.tp-lg:not([hidden])+b,.tp-lg:not([hidden])+span{display:none}
+.tp-nm{min-width:0}.tp-nm b{display:block;font-weight:600;font-size:15.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tp-nm small{display:block;color:var(--muted);font-size:13px;line-height:1.35;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tp-r{display:flex;align-items:center;gap:10px}.tp-r .tp-rc{display:grid;justify-items:end;gap:4px}
+.tp-feat:focus-visible,.tp-row:focus-visible,.tp-bar button:focus-visible{outline:3px solid var(--link);outline-offset:4px}
+.tp-foot{margin:22px 0 0;color:var(--muted);font-size:13px}
+@media (max-width:820px){.tp-per{flex:1 1 100%}.tp-feat .pc{aspect-ratio:16/10}.tp-list{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:480px){.tp-sp{display:none}.tp-feat .tp-sp{display:block}.tp-row{grid-template-columns:24px 36px minmax(0,1fr) auto;gap:10px}.tp-av{width:36px;height:36px}}
+@media (prefers-reduced-motion:reduce){.tp-feat .pc::before{transition:none}.tp-feat:hover .pc::before{transform:none}}
 .pager{display:flex;justify-content:center;align-items:center;gap:8px;flex-wrap:wrap;margin:28px 0 8px}.pager a,.pager span{min-width:36px;height:36px;display:inline-grid;place-items:center;padding:0 10px;border-radius:999px;border:1px solid var(--line);color:var(--ink);text-decoration:none;font:500 13px var(--mono)}.pager [aria-current]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
 .topics{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:26px auto 0;max-width:820px}
 .topic{background:transparent;color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:7px 14px 7px 11px;font:500 14px var(--display);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:7px}
@@ -453,7 +498,7 @@ fr:{menu:"Menu",search:"Outil, auteur, sujet…",home:"Accueil",archives:"Archiv
  forYou:"Pour toi",comments:"Dans les commentaires :",viewPost:"Voir le post ↗",open:"Ouvrir ↗",profile:"Profil ↗",profileOn:"Voir le profil",info:"Infos ↗",keep:"☆ Garder",kept:"★ Gardé",
  back:"← Accueil",prev:"← Soir précédent",next:"Soir suivant →",related:"Sur les mêmes sujets",readEd:"Voir le récap",copyLink:"Copier le lien",shareLi:"Partager sur LinkedIn",copied:"Lien copié",notes:"Notes de collecte :",preview:"aperçu",sigK:"Écrit par",sigTxt:"Product Designer à Abidjan. Je trie chaque soir ce qui compte en design agentique, IA et design systems.",sigCta:"Me suivre sur LinkedIn ↗",
  resource:"Ressource",event:"Événement",evSoon:"À venir",evPastH:"Passé",evDetails:"Détails",evCtx:"Contexte :",evCal:"Ajouter à mon agenda",evOpen:"Voir l'événement",evPast:"terminé",evToday:"aujourd'hui",evTomorrow:"demain",evIn:n=>"dans "+n+" jours",cited:"Cité",times:"×",spotted:"Repéré",
- archTitleA:"Archives",archTitleB:"de la veille",topA:"Les plus",topB:"cités",topP:"Ce qui revient le plus souvent d'un soir à l'autre, calculé automatiquement.",topTools:"Outils",topPeople:"Personnes",topTags:"Sujets",topNav:"Les plus cités",cites:n=>n>1?n+" citations":n+" citation",pageL:"Page",prevP:"← Plus récentes",nextP:"Plus anciennes →",archP:"Tous les récaps du soir, du plus récent au plus ancien.",editions:"récaps",edition:"récap",
+ archTitleA:"Archives",archTitleB:"de la veille",topA:"Les plus",topB:"cités",topP:"Ce qui revient le plus souvent d'un soir à l'autre, calculé automatiquement.",topTools:"Outils",topPeople:"Personnes",topTags:"Sujets",per7:"7 jours",per30:"30 jours",perAll:"Depuis le début",perL:"Période",kindL:"Classement",topNew:"Nouveau",topEq:"=",topNone:"Rien sur cette période. Essaie une période plus longue.",topSeeTag:"Voir les posts",topSeeTool:"Ouvrir l'outil",topSeeP:"Voir le profil",topPostsN:n=>n>1?n+" posts":n+" post",topFoot:(n,d)=>`Calculé sur ${n} récap${n>1?"s":""} jusqu'au ${d} · les flèches comparent avec la période d'avant`,topFootAll:(n,d)=>`Calculé sur ${n} récap${n>1?"s":""} jusqu'au ${d}`,topTagNote:(n,d)=>`Dans ${n} récap${n>1?"s":""} au total · dernière fois le ${d}`,topUp:n=>`monte de ${n}`,topDn:n=>`descend de ${n}`,topNav:"Les plus cités",cites:n=>n>1?n+" citations":n+" citation",pageL:"Page",prevP:"← Plus récentes",nextP:"Plus anciennes →",archP:"Tous les récaps du soir, du plus récent au plus ancien.",editions:"récaps",edition:"récap",
  toolsA:"Outils",toolsB:"& ressources",toolsP:"Tout ce qui a été repéré, classé par nombre de citations.",peopleA:"Personnes",peopleB:"à suivre",peopleP:"Les auteurs qui publient du contenu de qualité sur ces sujets.",eventsA:"Événements",eventsB:"à venir",eventsP:"Meetups, webinars et conférences repérés.",savedA:"Mes",savedB:"favoris",savedP:"Les posts que tu as gardés, enregistrés dans ce navigateur.",
  searchA:"Recherche",found:n=>`${n} post${n>1?"s":""}`,inAll:"dans tous les récaps",clear:"Effacer la recherche",nothing:"Rien trouvé.",tryOther:"Essaie un outil (Figma, Claude), un auteur ou un sujet.",
  emptyT:"Rien pour l'instant.",emptyTools:"Aucun outil repéré pour l'instant.",emptyPeople:"Les auteurs qui reviennent souvent apparaîtront ici.",emptyEvents:"Aucun événement repéré pour l'instant.",emptySaved:"Clique sur « ☆ Garder » sous un post pour le retrouver ici.",
@@ -471,7 +516,7 @@ en:{menu:"Menu",search:"Tool, author, topic…",home:"Home",archives:"Archive",a
  forYou:"For you",comments:"In the comments:",viewPost:"View post ↗",open:"Open ↗",profile:"Profile ↗",profileOn:"View profile on",info:"Details ↗",keep:"☆ Save",kept:"★ Saved",
  back:"← Home",prev:"← Previous evening",next:"Next evening →",related:"On the same topics",readEd:"See the digest",copyLink:"Copy link",shareLi:"Share on LinkedIn",copied:"Link copied",notes:"Collection notes:",preview:"preview",sigK:"Written by",sigTxt:"Product Designer in Abidjan. Every evening I sort out what matters in agentic design, AI and design systems.",sigCta:"Follow me on LinkedIn ↗",
  resource:"Resource",event:"Event",evSoon:"Coming up",evPastH:"Past",evDetails:"Details",evCtx:"Context:",evCal:"Add to my calendar",evOpen:"See the event",evPast:"ended",evToday:"today",evTomorrow:"tomorrow",evIn:n=>"in "+n+" days",cited:"Cited",times:"×",spotted:"Spotted",
- archTitleA:"Archive",archTitleB:"of the digest",topA:"Most",topB:"cited",topP:"What keeps coming back from one evening to the next, computed automatically.",topTools:"Tools",topPeople:"People",topTags:"Topics",topNav:"Most cited",cites:n=>n>1?n+" mentions":n+" mention",pageL:"Page",prevP:"← Newer",nextP:"Older →",archP:"Every evening digest, newest first.",editions:"digests",edition:"digest",
+ archTitleA:"Archive",archTitleB:"of the digest",topA:"Most",topB:"cited",topP:"What keeps coming back from one evening to the next, computed automatically.",topTools:"Tools",topPeople:"People",topTags:"Topics",per7:"7 days",per30:"30 days",perAll:"All time",perL:"Period",kindL:"Ranking",topNew:"New",topEq:"=",topNone:"Nothing in this period. Try a longer one.",topSeeTag:"See the posts",topSeeTool:"Open the tool",topSeeP:"See the profile",topPostsN:n=>n>1?n+" posts":n+" post",topFoot:(n,d)=>`Based on ${n} digest${n>1?"s":""} up to ${d} · arrows compare with the period before`,topFootAll:(n,d)=>`Based on ${n} digest${n>1?"s":""} up to ${d}`,topTagNote:(n,d)=>`In ${n} digest${n>1?"s":""} overall · last seen ${d}`,topUp:n=>`up ${n}`,topDn:n=>`down ${n}`,topNav:"Most cited",cites:n=>n>1?n+" mentions":n+" mention",pageL:"Page",prevP:"← Newer",nextP:"Older →",archP:"Every evening digest, newest first.",editions:"digests",edition:"digest",
  toolsA:"Tools",toolsB:"& resources",toolsP:"Everything spotted so far, ranked by number of mentions.",peopleA:"People",peopleB:"to follow",peopleP:"Authors who regularly publish quality content on these topics.",eventsA:"Upcoming",eventsB:"events",eventsP:"Meetups, webinars and conferences spotted.",savedA:"Your",savedB:"saved posts",savedP:"Posts you saved, stored in this browser.",
  searchA:"Search",found:n=>`${n} post${n>1?"s":""}`,inAll:"across all digests",clear:"Clear search",nothing:"Nothing found.",tryOther:"Try a tool (Figma, Claude), an author or a topic.",
  emptyT:"Nothing yet.",emptyTools:"No tools spotted yet.",emptyPeople:"Authors who come up often will appear here.",emptyEvents:"No events spotted yet.",emptySaved:"Click “☆ Save” under a post to find it here.",
@@ -712,12 +757,50 @@ function viewAbout(){const tx=t("aboutText");
   <div class="method">${[1,2,3].map(n=>`<div><b>${esc(t("m"+n+"t"))}</b><p>${esc(t("m"+n+"p"))}</p></div>`).join("")}</div></div>`}
 
 
+let topKind="outils",topPer="all";
+function topItems(eds,kind){
+  if(kind==="sujets"){const m=new Map();postsOf(eds).forEach(p=>arr(p.tags).forEach(x=>{const k=String(x);if(!m.has(k))m.set(k,[]);m.get(k).push(p._date)}));
+    return [...m].map(([n,dates])=>({n,dates,tag:n,href:"#tag-"+encodeURIComponent(n),go:t("topSeeTag")}))}
+  if(kind==="personnes")return collect(eds,"personnes").map(x=>({n:x.nom,dates:x._dates,note:x.pourquoi||x.role,sub:x.role,href:profileOf(x.nom,x.url,x.plateforme).href,photo:photoOf(x),ext:1,go:t("topSeeP")}));
+  return collect(eds,"outils").map(x=>({n:x.nom,dates:x._dates,note:x.note,href:/^https:\/\//.test(x.url||"")?x.url:"",ext:1,go:t("topSeeTool")}))}
+function topSpark(vals,big){const w=big?120:72,h=big?30:22,n=vals.length;if(n<2)return"";const mx=Math.max(1,...vals);
+  const pts=vals.map((v,i)=>[(i*(w-6)/(n-1)+3).toFixed(1),(h-3-(v/mx)*(h-8)).toFixed(1)]);const l=pts[n-1];
+  return `<svg class="tp-sp" viewBox="0 0 ${w} ${h}" aria-hidden="true"><polyline points="${pts.map(p=>p.join(",")).join(" ")}"/><circle cx="${l[0]}" cy="${l[1]}" r="2.6"/></svg>`}
+const SI="https://cdn.jsdelivr.net/npm/simple-icons@16.33.0/icons/";
+function logoSrcs(name,url){const n=String(name).toLowerCase(),w=n.split(/[\s(]/)[0],sl=x=>x.replace(/\+/g,"plus").replace(/\./g,"dot").replace(/&/g,"and").replace(/[^a-z0-9]/g,"");
+  const k=[...new Set([sl(n),sl(w)])].filter(Boolean),c=[...k.map(x=>"assets/logos/"+x+".svg"),...k.map(x=>SI+x+".svg")];let d="";try{d=new URL(url).hostname}catch(e){}
+  if(d)c.push("https://www.google.com/s2/favicons?sz=128&domain="+d);return c}
+function logoImg(x){const c=logoSrcs(x.n,x.href);return `<img class="tp-lg mono" alt="" src="${esc(c[0])}" data-srcs="${esc(c.slice(1).join("|"))}">`}
+document.addEventListener("error",e=>{const i=e.target;if(i&&i.classList&&i.classList.contains("tp-lg"))logoErr(i)},true);
+function logoErr(i){const r=(i.dataset.srcs||"").split("|").filter(Boolean);if(!r.length){i.hidden=true;return}i.src=r.shift();i.dataset.srcs=r.join("|");if(!/\/logos\/|simple-icons/.test(i.src))i.classList.remove("mono")}
+function photoOf(x){if(/^https:\/\//.test(x.photo||""))return x.photo;const m=String(x.url||"").match(/^https:\/\/(?:www\.)?(?:x|twitter)\.com\/([A-Za-z0-9_]{1,15})\/?$/);return m?"https://unavatar.io/x/"+m[1]+"?fallback=false":""}
+function photoImg(x){return x.photo?`<img class="tp-lg tp-ph" alt="" loading="lazy" referrerpolicy="no-referrer" src="${esc(x.photo)}">`:""}
+function blobOf(seed){let h=0;for(const c of String(seed))h=(h*31+c.charCodeAt(0))>>>0;return BLOBS[h%BLOBS.length]}
 async function viewTop(){const eds=await allEds();if(!eds.length)return pageHead(t("topA"),t("topB"),t("topP"))+empty(t("noEdP"),t("noEd"));
-  const tags=new Map();postsOf(eds).forEach(p=>arr(p.tags).forEach(x=>tags.set(x,(tags.get(x)||0)+1)));
-  const lists=[[t("topTools"),collect(eds,"outils").map(x=>({n:x.nom,c:x._dates.length,u:x.url}))],[t("topPeople"),collect(eds,"personnes").map(x=>({n:x.nom,c:x._dates.length,u:x.url}))],[t("topTags"),[...tags].map(([n,c])=>({n,c,h:"#tag-"+encodeURIComponent(n)}))]];
-  const col=([title,xs])=>{xs=xs.sort((a,b)=>b.c-a.c||String(a.n).localeCompare(String(b.n))).slice(0,10);if(!xs.length)return"";const mx=xs[0].c;
-    return `<div class="rank"><h3>${esc(title)}</h3><ol>${xs.map((x,i)=>`<li><span class="i">${String(i+1).padStart(2,"0")}</span><span class="nm">${x.h?`<a href="${x.h}">${esc(x.n)}</a>`:x.u?`<a href="${esc(x.u)}" target="_blank" rel="noopener">${esc(x.n)} ↗</a>`:`<span>${esc(x.n)}</span>`}<i class="bar" style="width:${Math.max(8,Math.round(x.c/mx*100))}%"></i></span><span class="c" title="${esc(t("cites")(x.c))}">${x.c}</span></li>`).join("")}</ol></div>`};
-  return pageHead(t("topA"),t("topB"),t("topP"))+`<div class="ranks">${lists.map(col).join("")}</div>`}
+  const dayN=d=>Date.UTC(+d.slice(0,4),+d.slice(5,7)-1,+d.slice(8,10))/864e5;
+  const ds=eds.map(e=>e.date).sort(),last=ds[ds.length-1],L=dayN(last),span=topPer==="all"?Infinity:+topPer;
+  const inP=d=>L-dayN(d)<span,inPrev=d=>{const k=L-dayN(d);return k>=span&&k<2*span};
+  const items=topItems(eds,topKind);
+  const rank=f=>items.map(x=>({...x,c:x.dates.filter(f).length})).filter(x=>x.c).sort((a,b)=>b.c-a.c||String(a.n).localeCompare(String(b.n)));
+  const cur=rank(inP).slice(0,11),hasPrev=span!==Infinity&&L-dayN(ds[0])>=2*span-1,prev=hasPrev?rank(inPrev):[],pos=new Map(prev.map((x,i)=>[x.n,i]));
+  const pd=ds.filter(inP),B=Math.max(2,Math.min(span===7?7:span===30?6:12,pd.length)),bi=new Map(pd.map((d,i)=>[d,Math.min(B-1,Math.floor(i*B/pd.length))]));
+  const series=x=>{const v=Array(B).fill(0);x.dates.forEach(d=>{if(bi.has(d))v[bi.get(d)]++});return v};
+  const move=(x,i)=>{if(!hasPrev)return"";const p=pos.get(x.n);if(p===undefined)return `<span class="tp-mv new">${esc(t("topNew"))}</span>`;const dlt=p-i;
+    return dlt>0?`<span class="tp-mv up" title="${esc(t("topUp")(dlt))}">▲ ${dlt}</span>`:dlt<0?`<span class="tp-mv dn" title="${esc(t("topDn")(-dlt))}">▼ ${-dlt}</span>`:`<span class="tp-mv">${t("topEq")}</span>`};
+  const cnt=x=>topKind==="sujets"?t("topPostsN")(x.c):t("cites")(x.c);
+  const lnk=x=>x.href?` href="${esc(x.href)}"${x.ext?' target="_blank" rel="noopener"':""}`:"";
+  const kinds=[["outils",t("topTools"),"plug"],["personnes",t("topPeople"),"user"],["sujets",t("topTags"),"hash"]];
+  let h=pageHead(t("topA"),t("topB"),t("topP"))+`<div class="tp-bar"><div class="rx-tabs" role="group" aria-label="${esc(t("kindL"))}">${kinds.map(([k,l,ic])=>`<button class="topic" data-tpk="${k}" aria-pressed="${topKind===k}"><svg class="ti" viewBox="0 0 24 24" aria-hidden="true">${TI[ic]||TI.hash}</svg>${esc(l)}</button>`).join("")}</div></div>`;
+  if(!cur.length)return h+empty(t("topNone"));
+  const f=cur[0];
+  const tl=topKind==="outils",tp=topKind==="personnes";
+  h+=`<a class="tp-feat"${lnk(f)}><div class="pc${tl?" dk":""}" style="--pc-blobs:${blobOf(f.n)}">${tl?logoImg(f):tp?photoImg(f):""}<b>${esc(f.n)}</b></div>
+   <div class="tp-fb"><div><h2>${esc(f.n)}</h2><div class="tp-meta"><span class="tp-c">${esc(cnt(f))}</span>${move(f,0)}</div></div>${f.note?`<p>${esc(f.note)}</p>`:""}</div></a>`;
+  if(cur.length>1)h+=`<ol class="tp-list">${cur.slice(1).map((x,j)=>{const i=j+1;return `<li><a class="tp-row"${lnk(x)}><span class="i">${String(i+1).padStart(2,"0")}</span>
+   <span class="tp-av${tl?" dk":""}${tp?" rd":""}" style="--pc-blobs:${blobOf(x.n)}" aria-hidden="true">${tl?logoImg(x):tp?photoImg(x):""}${x.tag?tagIcon(x.tag):`<span>${esc(String(x.n).trim().charAt(0).toUpperCase())}</span>`}</span>
+   <span class="tp-nm"><b>${esc(x.n)}</b>${x.note||x.sub?`<small>${esc(x.sub||x.note)}</small>`:""}</span>
+   <span class="tp-r"><span class="tp-rc"><span class="tp-c">${esc(cnt(x))}</span>${move(x,i)}</span></span></a></li>`}).join("")}</ol>`;
+  return h+`<p class="tp-foot">${esc((hasPrev?t("topFoot"):t("topFootAll"))(pd.length,short(last)))}</p>`}
 
 async function viewList(kind){const eds=await allEds();const q=s=>!query||JSON.stringify(s).toLowerCase().includes(query);let body="";
   if(kind==="outils"){const xs=collect(eds,"outils").filter(q).sort((a,b)=>b._dates.length-a._dates.length);body=xs.length?`<div class="tiles">${xs.map(toolHTML).join("")}</div>`:empty(t("emptyTools"));return pageHead(t("toolsA"),t("toolsB"),t("toolsP"))+body}
@@ -809,6 +892,7 @@ let qt;$("#q").addEventListener("input",e=>{clearTimeout(qt);qt=setTimeout(()=>{
 document.addEventListener("keydown",e=>{if(e.key==="Escape")closeMenu()});
 document.addEventListener("click",async e=>{
   if(!e.target.closest(".nav-inner"))closeMenu();
+  const tk=e.target.closest("[data-tpk],[data-tpp]");if(tk){if(tk.dataset.tpk)topKind=tk.dataset.tpk;if(tk.dataset.tpp)topPer=tk.dataset.tpp;const y=scrollY;await render();scrollTo(0,y);return}
   const rf=e.target.closest("[data-rxf]");if(rf){const v=rf.dataset.rxf;document.querySelectorAll("[data-rxf]").forEach(b=>b.setAttribute("aria-pressed",String(b===rf)));let n=0;document.querySelectorAll("#rxGrid .rx-card").forEach(c=>{const ok=!v||c.dataset.tag===v;c.hidden=!ok||(n++>=6&&!v)});const mb=document.getElementById("rxMore");if(mb)mb.parentElement.hidden=!!v;return}
   const rm=e.target.closest("#rxMore");if(rm){const hid=[...document.querySelectorAll("#rxGrid .rx-card[hidden]")];hid.slice(0,6).forEach(x=>x.hidden=false);if(hid.length<=6)rm.parentElement.remove();return}
   const ms=e.target.closest("#moreSynth");if(ms){const hid=[...document.querySelectorAll("#synths .synth[hidden]")];hid.slice(0,2).forEach(x=>x.hidden=false);if(hid.length<=2)ms.parentElement.remove();return}

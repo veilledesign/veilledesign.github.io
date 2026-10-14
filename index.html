@@ -769,7 +769,7 @@ function topSpark(vals,big){const w=big?120:72,h=big?30:22,n=vals.length;if(n<2)
 const SI="https://cdn.jsdelivr.net/npm/simple-icons@16.33.0/icons/";
 function logoSrcs(name,url){const n=String(name).toLowerCase(),w=n.split(/[\s(]/)[0],sl=x=>x.replace(/\+/g,"plus").replace(/\./g,"dot").replace(/&/g,"and").replace(/[^a-z0-9]/g,"");
   const k=[...new Set([sl(n),sl(w)])].filter(Boolean),c=[...k.map(x=>"assets/logos/"+x+".svg"),...k.map(x=>SI+x+".svg")];let d="";try{d=new URL(url).hostname}catch(e){}
-  if(d)c.push("https://www.google.com/s2/favicons?sz=128&domain="+d);return c}
+  if(d&&!/(^|\.)(linkedin\.com|lnkd\.in|x\.com|twitter\.com|substack\.com|youtube\.com|youtu\.be|medium\.com|github\.com)$/.test(d))c.push("https://www.google.com/s2/favicons?sz=128&domain="+d);return c}
 function logoImg(x){const c=logoSrcs(x.n,x.href);return `<img class="tp-lg mono" alt="" src="${esc(c[0])}" data-srcs="${esc(c.slice(1).join("|"))}">`}
 document.addEventListener("error",e=>{const i=e.target;if(i&&i.classList&&i.classList.contains("tp-lg"))logoErr(i)},true);
 function logoErr(i){const r=(i.dataset.srcs||"").split("|").filter(Boolean);if(!r.length){i.hidden=true;return}i.src=r.shift();i.dataset.srcs=r.join("|");if(!/\/logos\/|simple-icons/.test(i.src))i.classList.remove("mono")}

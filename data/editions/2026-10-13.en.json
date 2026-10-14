@@ -1,0 +1,159 @@
+{
+  "apercu": true,
+  "date": "2026-10-13",
+  "essentiel": [
+    "Preview from tonight's test (3 posts): the full 7:50 pm edition will replace this page.",
+    "Design system teams are building their own AI tools: Figma plugins, design.md files and prototypes in production code.",
+    "The debate is shifting: giving agents write access through MCP is pointless without someone deciding what should not become a component."
+  ],
+  "evenements": [
+    {
+      "date": "Thursday, October 22, 2026",
+      "lieu": "Berlin (Zalando HQ)",
+      "nom": "Into Design Systems × Zalando: Machine-ready, but people-first",
+      "note": "Free, last spots. How Zalando's Design System team builds with AI.",
+      "url": "https://lnkd.in/ghQ3qvA7"
+    }
+  ],
+  "notes": "Sorting by date mostly brings noise (job ads, engineering). Sorting by relevance with design-focused queries works well.",
+  "outils": [
+    {
+      "nom": "Figma MCP",
+      "note": "Agents read tokens, create components and write to the canvas. At the heart of today's debate.",
+      "url": ""
+    },
+    {
+      "nom": "Weave Design System",
+      "note": "Design system built with Claude and VS Code, worth studying for its documentation structure.",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=Weave%20Design%20System%20Claude"
+    },
+    {
+      "nom": "design.md (Zalando approach)",
+      "note": "Design system documentation written to be read by AI agents.",
+      "url": "https://lnkd.in/ghQ3qvA7"
+    }
+  ],
+  "personnes": [
+    {
+      "nom": "Ramon Aguiar Chipoco",
+      "pourquoi": "Well-argued takes on design system governance in the age of agents.",
+      "role": "Product Designer, B2B design systems",
+      "url": ""
+    },
+    {
+      "nom": "Sundas I.",
+      "pourquoi": "Builds and documents design systems with Claude, with a focus on accessibility.",
+      "role": "UX & Product Designer",
+      "url": ""
+    },
+    {
+      "nom": "Into Design Systems",
+      "pourquoi": "Go-to meetups and talks on design systems and AI.",
+      "role": "Design systems community",
+      "url": ""
+    }
+  ],
+  "posts": [
+    {
+      "auteur": "Into Design Systems",
+      "concret": [
+        "Talk “Machine-ready, but people-first” by Dana Baddad and Gonzalo Vásquez Correa, Senior Product Designers at Zalando",
+        "AI-generated Figma plugins for their own pain points",
+        "design.md files: system documentation written to be read by agents",
+        "Free meetup on Thursday, October 22 at Zalando HQ in Berlin"
+      ],
+      "engagement": "Posted 6 h ago",
+      "id": "zalando",
+      "idee": "Zalando's Design System team shows how it used AI to build Figma plugins, design.md files and a prototyping environment in production code, and explains that the hard part wasn't building the tool but making and documenting the decision behind it.",
+      "role": "Design systems community and meetups",
+      "tags": [
+        "design-system",
+        "figma",
+        "IA"
+      ],
+      "url": "https://lnkd.in/ghQ3qvA7"
+    },
+    {
+      "auteur": "Sundas I.",
+      "commentaires": "11 comments, mostly asking for the link and feedback on the structure.",
+      "concret": [
+        "Same structure for every component: variants, states, anatomy, sizes, behavior per screen, do's and don'ts, and an interactive “Try it”",
+        "Every component targets WCAG 2.2, explained in plain language on the component page",
+        "Version 1 is live, link in the post's comments"
+      ],
+      "engagement": "24 reactions · 11 comments",
+      "id": "weave",
+      "idee": "Launch of Weave, a design system built with VS Code and Claude, outside Figma, where every component follows the same structure and accessibility is part of the system instead of a separate document.",
+      "role": "UX & Product Designer, inclusive and AI-driven design",
+      "tags": [
+        "design-system",
+        "claude",
+        "accessibilité"
+      ],
+      "url": "https://www.linkedin.com/search/results/content/?keywords=Weave%20Design%20System%20Claude"
+    },
+    {
+      "auteur": "Ramon Aguiar Chipoco",
+      "commentaires": "He closes with a question: who owns the “no” in your design system?",
+      "concret": [
+        "Lessons from governing the Castanha Design System (web and mobile)",
+        "Most of his time: deciding what should not become a component",
+        "Without that layer, you get a library growing faster than anyone can audit it"
+      ],
+      "engagement": "3 reactions · 4 comments",
+      "id": "castanha",
+      "idee": "Figma pitches MCP servers as the link between design systems and AI, with agents reading tokens and creating components. He agrees on the plumbing, but argues an agent with write access is only as good as the governance behind it.",
+      "role": "Product Designer, ex-iFood and Caju, B2B design systems",
+      "tags": [
+        "design-system",
+        "MCP",
+        "gouvernance"
+      ],
+      "url": "https://www.linkedin.com/search/results/content/?keywords=Castanha%20Design%20System%20MCP"
+    }
+  ],
+  "tendances": [
+    {
+      "titre": "Design systems become machine-readable",
+      "texte": "Tokens, .md files and MCP bridge the system and the agents. A design system's raw material becomes an interface for AI."
+    },
+    {
+      "titre": "Designers step out of Figma",
+      "texte": "Complete design systems are being built with Claude and VS Code, with living documentation and a “Try it” sandbox."
+    },
+    {
+      "titre": "Governance before automation",
+      "texte": "The real work is still the decision and its documentation, not producing the artifact."
+    }
+  ],
+  "titre": "Design systems enter the age of agents, and governance becomes the real topic",
+  "syntheses": [
+    {
+      "id": "machines",
+      "titre": "Design systems become machine-readable",
+      "texte": "Tokens, design.md files and MCP servers bridge the system and the agents. Documentation is no longer written only for humans: it becomes the interface AI reads to produce consistent screens.",
+      "posts": [
+        "zalando",
+        "castanha"
+      ]
+    },
+    {
+      "id": "hors-figma",
+      "titre": "Designers step out of Figma",
+      "texte": "Complete design systems are being built with Claude and VS Code, with living documentation and a “Try it” sandbox. Prototyping moves closer to production code, and Figma is no longer the only starting point.",
+      "posts": [
+        "weave",
+        "zalando"
+      ]
+    },
+    {
+      "id": "gouvernance",
+      "titre": "Governance before automation",
+      "texte": "Giving agents write access is worthless without someone deciding what should not become a component. The real work is still the decision and its documentation, not producing the artifact.",
+      "posts": [
+        "castanha",
+        "zalando"
+      ]
+    }
+  ]
+}

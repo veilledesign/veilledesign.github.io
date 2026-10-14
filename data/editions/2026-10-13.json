@@ -1,0 +1,159 @@
+{
+  "apercu": true,
+  "date": "2026-10-13",
+  "essentiel": [
+    "Aperçu tiré du test de ce soir (3 posts) : l'édition complète de 19h50 remplacera cette page.",
+    "Les équipes design system construisent leurs propres outils IA : plugins Figma, fichiers design.md et prototypes en code de production.",
+    "Le débat se déplace : donner aux agents un accès en écriture via MCP ne sert à rien sans quelqu'un qui décide de ce qui ne doit pas devenir un composant."
+  ],
+  "evenements": [
+    {
+      "date": "Jeudi 22 octobre 2026",
+      "lieu": "Berlin (siège Zalando)",
+      "nom": "Into Design Systems × Zalando : Machine-ready, but people-first",
+      "note": "Gratuit, dernières places. Comment l'équipe Design System de Zalando construit avec l'IA.",
+      "url": "https://lnkd.in/ghQ3qvA7"
+    }
+  ],
+  "notes": "Le tri par date ramène surtout du bruit (offres d'emploi, ingénierie). Le tri par pertinence avec des requêtes ciblées design fonctionne bien.",
+  "outils": [
+    {
+      "nom": "Figma MCP",
+      "note": "Les agents lisent les tokens, créent des composants et écrivent sur le canvas. C'est au cœur du débat du jour.",
+      "url": ""
+    },
+    {
+      "nom": "Weave Design System",
+      "note": "Design system construit avec Claude et VS Code, à étudier pour sa structure de documentation.",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=Weave%20Design%20System%20Claude"
+    },
+    {
+      "nom": "design.md (approche Zalando)",
+      "note": "Documentation du design system rédigée pour être lue par les agents IA.",
+      "url": "https://lnkd.in/ghQ3qvA7"
+    }
+  ],
+  "personnes": [
+    {
+      "nom": "Ramon Aguiar Chipoco",
+      "pourquoi": "Points de vue argumentés sur la gouvernance des design systems à l'ère des agents.",
+      "role": "Product Designer, design systems B2B",
+      "url": ""
+    },
+    {
+      "nom": "Sundas I.",
+      "pourquoi": "Construit et documente des design systems avec Claude, avec un focus sur l'accessibilité.",
+      "role": "UX & Product Designer",
+      "url": ""
+    },
+    {
+      "nom": "Into Design Systems",
+      "pourquoi": "Meetups et talks de référence sur les design systems et l'IA.",
+      "role": "Communauté design systems",
+      "url": ""
+    }
+  ],
+  "posts": [
+    {
+      "auteur": "Into Design Systems",
+      "concret": [
+        "Talk « Machine-ready, but people-first » par Dana Baddad et Gonzalo Vásquez Correa, Senior Product Designers chez Zalando",
+        "Plugins Figma générés avec l'IA pour leurs propres points de friction",
+        "Fichiers design.md : la documentation du système pensée pour être lue par les agents",
+        "Meetup gratuit le jeudi 22 octobre au siège de Zalando à Berlin"
+      ],
+      "engagement": "Publié il y a 6 h",
+      "id": "zalando",
+      "idee": "L'équipe Design System de Zalando montre comment elle a utilisé l'IA pour construire des plugins Figma, des fichiers design.md et un environnement de prototypage en code de production, et explique que le plus dur n'a pas été de construire l'outil mais de prendre et documenter la décision derrière.",
+      "role": "Communauté et meetups design systems",
+      "tags": [
+        "design-system",
+        "figma",
+        "IA"
+      ],
+      "url": "https://lnkd.in/ghQ3qvA7"
+    },
+    {
+      "auteur": "Sundas I.",
+      "commentaires": "11 commentaires, surtout des demandes de lien et de retours sur la structure.",
+      "concret": [
+        "Structure identique pour chaque composant : variantes, états, anatomie, tailles, comportement par écran, à faire / à éviter, et un « Try it » interactif",
+        "Chaque composant vise WCAG 2.2, expliqué en langage simple sur la page du composant",
+        "Version 1 en ligne, lien dans les commentaires du post"
+      ],
+      "engagement": "24 réactions · 11 commentaires",
+      "id": "weave",
+      "idee": "Lancement de Weave, un design system construit avec VS Code et Claude, hors de Figma, où chaque composant suit la même structure et où l'accessibilité fait partie du système au lieu d'être un document à part.",
+      "role": "UX & Product Designer, design inclusif et piloté par l'IA",
+      "tags": [
+        "design-system",
+        "claude",
+        "accessibilité"
+      ],
+      "url": "https://www.linkedin.com/search/results/content/?keywords=Weave%20Design%20System%20Claude"
+    },
+    {
+      "auteur": "Ramon Aguiar Chipoco",
+      "commentaires": "Il conclut par la question : qui détient le « non » dans ton design system ?",
+      "concret": [
+        "Retour d'expérience sur la gouvernance du Castanha Design System (web et mobile)",
+        "L'essentiel de son temps : décider de ce qui ne doit pas devenir un composant",
+        "Sans cette couche, on obtient une bibliothèque qui grandit plus vite que quiconque ne peut l'auditer"
+      ],
+      "engagement": "3 réactions · 4 commentaires",
+      "id": "castanha",
+      "idee": "Figma présente les serveurs MCP comme le lien entre design systems et IA, avec des agents qui lisent les tokens et créent des composants. Il est d'accord sur la tuyauterie, mais rappelle qu'un agent avec accès en écriture ne vaut que la gouvernance qui est derrière.",
+      "role": "Product Designer, ex-iFood et Caju, design systems B2B",
+      "tags": [
+        "design-system",
+        "MCP",
+        "gouvernance"
+      ],
+      "url": "https://www.linkedin.com/search/results/content/?keywords=Castanha%20Design%20System%20MCP"
+    }
+  ],
+  "tendances": [
+    {
+      "texte": "Tokens, fichiers .md et MCP servent de pont entre le système et les agents. La matière première d'un design system devient une interface pour l'IA.",
+      "titre": "Le design system devient lisible par les machines"
+    },
+    {
+      "texte": "Des design systems complets sont construits avec Claude et VS Code, avec une documentation vivante et un bac à sable « Try it ».",
+      "titre": "Les designers sortent de Figma"
+    },
+    {
+      "texte": "Le vrai travail reste la décision et sa documentation, pas la production de l'artefact.",
+      "titre": "La gouvernance avant l'automatisation"
+    }
+  ],
+  "titre": "Les design systems entrent dans l'ère des agents, et la gouvernance devient le vrai sujet",
+  "syntheses": [
+    {
+      "id": "machines",
+      "titre": "Le design system devient lisible par les machines",
+      "texte": "Tokens, fichiers design.md et serveurs MCP servent de pont entre le système et les agents. La documentation n'est plus seulement écrite pour des humains : elle devient l'interface que l'IA lit pour produire des écrans cohérents.",
+      "posts": [
+        "zalando",
+        "castanha"
+      ]
+    },
+    {
+      "id": "hors-figma",
+      "titre": "Les designers sortent de Figma",
+      "texte": "Des design systems complets sont construits avec Claude et VS Code, avec une documentation vivante et un bac à sable « Try it ». Le prototypage se rapproche du code de production, et Figma n'est plus le seul point de départ.",
+      "posts": [
+        "weave",
+        "zalando"
+      ]
+    },
+    {
+      "id": "gouvernance",
+      "titre": "La gouvernance avant l'automatisation",
+      "texte": "Donner aux agents un accès en écriture ne vaut rien sans quelqu'un qui décide de ce qui ne doit pas devenir un composant. Le vrai travail reste la décision et sa documentation, pas la production de l'artefact.",
+      "posts": [
+        "castanha",
+        "zalando"
+      ]
+    }
+  ]
+}

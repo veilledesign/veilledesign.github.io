@@ -1,67 +1,111 @@
 {
   "date": "2026-10-16",
-  "titre": "Written context becomes the raw material of design with agents",
+  "titre": "Agents enter design systems and learn when to stop",
   "essentiel": [
-    "Figma announces Specs: markdown on the canvas, designed as a container for context, fed via MCP and GitHub (open beta in the coming weeks).",
-    "Design systems have a new consumer, AI agents, and Design Systems Unfiltered publishes a first guide to making them usable by agents.",
-    "On the agent UX side, a permission pattern worth remembering: show what will change, why the agent is asking, that it can be undone, and let people say no calmly."
+    "Design systems have a new consumer, AI agents, and Figma is launching Specs, a markdown context container connected to MCP.",
+    "On the agent UX side, the pattern of \"plan, then execute, reversible, with an easy way to decline\" is presented as a permission model worth reusing.",
+    "Slim day: 4 posts selected, no relevant events or offers."
   ],
   "syntheses": [
     {
-      "id": "specs-contexte",
-      "titre": "Figma makes written context an object on the canvas",
-      "texte": "With Specs, Figma presents markdown as a new medium on the canvas, a container for context that flows through MCP, GitHub and other tools. Written context (intentions, rules, specs) stops being a side document. One reply to the post asks whether an agent will be able to write back into a Spec via MCP, and the answer doesn't appear in what I was able to read.",
+      "id": "ds-agents",
+      "titre": "Design systems now need to be readable by agents",
+      "texte": "Érica Menin starts from a simple observation: our design systems have a not-so-new consumer, AI agents, and she is beginning to make them usable by those agents. Figma is moving in the same direction with Specs, a markdown medium on the canvas presented as a context container. MCP and GitHub bring this context in and out. Written documentation thus becomes the interface between the designer and the agent.",
       "posts": [
-        "x-specs"
-      ]
-    },
-    {
-      "id": "ds-consommateur-ia",
-      "titre": "Design systems now have AI as a user",
-      "texte": "Érica Menin starts from the observation that AI agents are a consumer of design systems, and that this isn't really new anymore. Her article covers the first steps to make them usable by AI. Read alongside Specs, it shows that machine-readable documentation is becoming a central workstream.",
-      "posts": [
-        "sub-menin-ds-ia",
-        "x-specs"
+        "menin-ds-ia",
+        "field-specs"
       ]
     },
     {
       "id": "permissions-agents",
-      "titre": "Agent permission patterns are real design work",
-      "texte": "Lisa Demchenko takes the example of The Drive AI, which shows a plan before acting and keeps changes reversible: an almost mundane preview-then-execute, and that's a compliment. She sees these as design decisions and would like to see more designers in these discussions. The pattern she keeps: what will change, why the agent is asking, that it can be undone, and a calm way to decline.",
+      "titre": "Designing agent permissions is becoming a real design topic",
+      "texte": "Lisa Demchenko takes the example of a product that shows its plan before acting on your files and keeps changes reversible. From it she draws a permission model: what will change, why the agent is asking, that the action can be undone, and a calm way to decline. For her these are design decisions, and she wants to see more designers in these discussions.",
       "posts": [
-        "sub-demchenko-permissions"
+        "demchenko-permission"
+      ]
+    },
+    {
+      "id": "mcp-contexte",
+      "titre": "MCP connects AI to tools and moves context around",
+      "texte": "Figma presents MCP as a way to move context to and from the canvas, with a reply asking whether an agent could write back into a Spec. A LinkedIn post sums up the idea in terms of roles: a connected tool gives AI a team function, including a \"Product Designer\" via Figma. The focus is shifting from the tool to the context you feed it.",
+      "posts": [
+        "field-specs",
+        "bharambe-mcp-roles"
       ]
     }
   ],
   "tendances": [
     {
-      "titre": "Figma makes written context an object on the canvas",
-      "texte": "Specs places markdown on the Figma canvas as a container for context, connected to MCP and GitHub. Documentation moves into the design tool."
+      "titre": "Design systems now need to be readable by agents",
+      "texte": "Design systems have one more consumer, AI agents. Figma Specs (markdown on the canvas, connected to MCP and GitHub) makes written documentation the interface between the designer and the agent."
     },
     {
-      "titre": "Design systems now have AI as a user",
-      "texte": "AI agents consume design systems, and teams are starting to make them usable by agents."
+      "titre": "Designing agent permissions is becoming a real design topic",
+      "texte": "Plan shown before execution, reversible changes, easy refusal: a simple permission model that designers can claim as their own territory."
     },
     {
-      "titre": "Agent permission patterns are real design work",
-      "texte": "Previewing, explaining, allowing people to undo and to decline: these interface choices are a matter of design, not just engineering."
+      "titre": "MCP connects AI to tools and moves context around",
+      "texte": "Between Specs and the lists of \"roles\" gained by connecting a tool to AI, the question becomes: what context do we provide, and in which direction does it flow?"
     }
   ],
   "posts": [
     {
-      "id": "x-specs",
+      "id": "menin-ds-ia",
+      "source": "substack",
+      "auteur": "Érica Menin",
+      "auteurUrl": "https://substack.com/@emenin",
+      "role": "Author of the Design Systems Unfiltered newsletter",
+      "idee": "Our design systems have a new reader. The article \"Starting to make a design system usable by AI\" starts from the observation that AI agents are now consumers of our systems, and begins preparing them for that.",
+      "concret": [
+        "Starting point: design systems have a \"not-so-new\" consumer, AI agents",
+        "Article title: starting to make a design system usable by AI",
+        "Only the introduction is visible in the search results"
+      ],
+      "commentaires": "",
+      "url": "https://designsystemsunfiltered.substack.com/p/starting-to-make-a-design-system",
+      "engagement": "",
+      "tags": [
+        "design system",
+        "IA",
+        "documentation"
+      ]
+    },
+    {
+      "id": "demchenko-permission",
+      "source": "substack",
+      "auteur": "Lisa Demchenko",
+      "auteurUrl": "https://substack.com/@llsbet",
+      "role": "Author of the Process to Pixels newsletter (UX and the city)",
+      "idee": "Agents are learning where to stop. In \"Answers are turning into interfaces, and agents are learning where to stop\", Lisa Demchenko argues that these choices are design decisions.",
+      "concret": [
+        "Example: The Drive AI shows a plan of what it will do with your files before acting",
+        "Changes remain reversible: a \"preview then execute\" pattern",
+        "Permission model to keep: what will change, why the agent is asking, that it can be undone, a calm way to say no",
+        "She wants to see more designers in these discussions"
+      ],
+      "commentaires": "",
+      "url": "https://processtopixels.substack.com/p/answers-are-turning-into-interfaces",
+      "engagement": "",
+      "tags": [
+        "agents",
+        "permissions",
+        "UX"
+      ]
+    },
+    {
+      "id": "field-specs",
       "source": "x",
       "auteur": "Dylan Field",
       "auteurUrl": "https://x.com/zoink",
       "role": "",
-      "idee": "Context becomes a design object. Figma presents Specs as a new medium for markdown on the canvas, a container for your context, connected to other tools through MCP and GitHub.",
+      "idee": "Figma is adding markdown to its canvas. \"Specs\" is presented as a context container, connected to MCP and GitHub.",
       "concret": [
-        "Specs: a medium for markdown directly on the Figma canvas",
-        "Designed as a container for context",
-        "MCP, GitHub, etc. to bring context into and out of Figma and make it flow across the platform",
-        "Rolling out in open beta in the coming weeks"
+        "Specs: a new medium for markdown on the Figma canvas",
+        "Designed as a context container",
+        "MCP, GitHub, etc. are used to bring context in and out of Figma and distribute it across the platform",
+        "Rolling out in open beta \"in the coming weeks\""
       ],
-      "commentaires": "An excerpt of a reply asks whether an agent can write back into a Spec via MCP. The answer does not appear in the results.",
+      "commentaires": "One reply asks: can an agent write back into a Spec via MCP?",
       "url": "https://x.com/zoink/status/2110607559271010422",
       "engagement": "",
       "tags": [
@@ -71,57 +115,36 @@
       ]
     },
     {
-      "id": "sub-menin-ds-ia",
-      "source": "substack",
-      "auteur": "Érica Menin",
-      "auteurUrl": "https://substack.com/@emenin",
-      "role": "Author of the Design Systems Unfiltered newsletter",
-      "idee": "Your design system has a new user. AI agents already consume design systems, and this article offers first steps to prepare them for it.",
+      "id": "bharambe-mcp-roles",
+      "source": "linkedin",
+      "auteur": "Kiran Pitambar Bharambe",
+      "auteurUrl": "https://www.linkedin.com/in/kiran-pitambar-bharambe-332336118/",
+      "role": "GrayCyan",
+      "idee": "Connecting AI to the right tool gives it a role in the team. The post runs through tool-role pairs, including one for design with Figma.",
       "concret": [
-        "Starting point: AI agents are a consumer of design systems, \"not so new\"",
-        "The article covers the first steps to make a design system usable by AI",
-        "The details of the steps are not visible in the collected excerpt"
+        "Engineering: GitHub = PR reviewer, Playwright = QA, Docker = DevOps, AWS = cloud architect, Chrome = web automation",
+        "Product and design: Supabase = SaaS in a weekend, Figma = \"Product Designer\" (description truncated in the excerpt)",
+        "Quick list format, mainly useful as a framing of the \"one connected tool, one role\" idea"
       ],
       "commentaires": "",
-      "url": "https://designsystemsunfiltered.substack.com/p/starting-to-make-a-design-system",
+      "url": "https://www.linkedin.com/in/kiran-pitambar-bharambe-332336118/",
       "engagement": "",
       "tags": [
-        "design systems",
-        "agents IA"
-      ]
-    },
-    {
-      "id": "sub-demchenko-permissions",
-      "source": "substack",
-      "auteur": "Lisa Demchenko",
-      "auteurUrl": "https://substack.com/@llsbet",
-      "role": "Author of the UX and the city newsletter",
-      "idee": "An agent needs to know where to stop. Answers are turning into interfaces, and agents are learning to ask before acting.",
-      "concret": [
-        "The Drive AI shows a plan of what it will do with your files",
-        "Changes remain reversible: a preview-then-execute pattern that is almost \"boringly sensible\"",
-        "These are design decisions, and the author would like to see more designers in these discussions",
-        "Permission pattern to keep: what will change, why the agent is asking, that it can be undone, and a calm way to say no"
-      ],
-      "commentaires": "",
-      "url": "https://processtopixels.substack.com/p/answers-are-turning-into-interfaces",
-      "engagement": "",
-      "tags": [
-        "UX agentique",
-        "permissions",
-        "patterns"
+        "MCP",
+        "agents",
+        "Figma"
       ]
     }
   ],
   "outils": [
     {
       "nom": "Figma Specs",
-      "note": "Markdown on the canvas as a container for context, connected through MCP and GitHub. Open beta announced for the coming weeks.",
+      "note": "Markdown on the Figma canvas, a context container connected to MCP and GitHub. Open beta announced for the coming weeks.",
       "url": "https://x.com/zoink/status/2110607559271010422"
     },
     {
       "nom": "Claude Design",
-      "note": "Seen in a post from 10/10, outside the 24-hour window: it now works within conversations, alongside Claude Docs and Claude Slides.",
+      "note": "According to Claude's LinkedIn page (post from Oct. 10), it now also works within conversations. Nate Parrott, the product designer behind the tool, uses it for wireframing and to generate 15 versions of a flow.",
       "url": "https://www.linkedin.com/showcase/claude/"
     }
   ],
@@ -129,21 +152,29 @@
     {
       "nom": "Érica Menin",
       "role": "Author of Design Systems Unfiltered",
-      "pourquoi": "She writes about preparing design systems for AI agents.",
+      "pourquoi": "She is working on preparing a design system so it can be used by AI agents.",
       "url": "https://substack.com/@emenin",
       "plateforme": "substack",
       "photo": ""
     },
     {
       "nom": "Lisa Demchenko",
-      "role": "Author of UX and the city",
-      "pourquoi": "She formalizes permission and reversibility patterns for agents.",
+      "role": "Author of Process to Pixels (UX and the city)",
+      "pourquoi": "She formalizes permission patterns for agents, with a clear design angle.",
       "url": "https://substack.com/@llsbet",
       "plateforme": "substack",
+      "photo": ""
+    },
+    {
+      "nom": "Dylan Field",
+      "role": "",
+      "pourquoi": "He announces Figma Specs and the link with MCP and GitHub.",
+      "url": "https://x.com/zoink",
+      "plateforme": "x",
       "photo": ""
     }
   ],
   "evenements": [],
   "offres": [],
-  "notes": "Thin collection: only 3 posts retained. On LinkedIn, several queries came back empty and the few results were outside the 24-hour window or too truncated to use. Discarded: a LinkedIn post in the form of a \"tool + MCP = role\" list (little substance), the Claude LinkedIn page dated 10/10, and Marcin Treder's article (\"I Let an AI Into My Figma File\") dated 11/10, both too old. The Substack excerpts are short, so the details of Érica Menin's article remain to be read. No relevant events or offers."
+  "notes": "Slim day: 4 posts selected. Several LinkedIn queries (agents/product design, design tokens, vibe coding) and X queries (design system AI) returned nothing, and the only usable LinkedIn source is a truncated excerpt (post by Kiran Pitambar Bharambe). The Substack excerpts are also partial (introductions). Dylan Field's post dates from Oct. 15 and may already have appeared in yesterday's edition. Outside the 24-hour window, and therefore not selected: Claude Design (LinkedIn, Oct. 10, mentioned in the tools) and \"I Let an AI Into My Figma File\" by Marcin Treder (Substack, Oct. 11, https://marcintreder.substack.com/p/i-let-an-ai-into-my-figma-file). No engagement data available."
 }

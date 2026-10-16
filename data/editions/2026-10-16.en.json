@@ -1,0 +1,147 @@
+{
+  "date": "2026-10-16",
+  "titre": "Design systems open up to agents, Figma plugs in its MCPs",
+  "essentiel": [
+    "Design systems have a new consumer: AI agents, and documentation becomes the key topic.",
+    "Figma announces 20 new MCP partners (Config India) and puts controls on agent actions.",
+    "Slim day: few usable posts, and no individual LinkedIn posts surfaced."
+  ],
+  "syntheses": [
+    {
+      "id": "design-system-agents",
+      "titre": "Design systems are now read by agents too",
+      "texte": "Érica Menin starts from an observation: AI agents are a \"not so new\" consumer of design systems, and she is beginning to make her own usable by AI. On the Figma side, the new controls on how agents operate and the code layers feature (open beta) point in the same direction: the tool becomes a surface that agents read and manipulate. What matters is the clarity of what you put behind it.",
+      "posts": [
+        "p1",
+        "p3"
+      ]
+    },
+    {
+      "id": "figma-agents-mcp",
+      "titre": "Figma expands its MCP ecosystem and sets guardrails for its agents",
+      "texte": "Figma announces 20 new MCP partners at Config India, including Linear, Notion, Mistral, Zed and Microsoft 365 Copilot. A newsletter also notes new controls on how agents operate on the platform, as well as a code layers feature in open beta. The direction is clear: connect Figma to many agent tools, with a governance layer. The real effects (adoption, usage) remain to be seen.",
+      "posts": [
+        "p2",
+        "p3"
+      ]
+    }
+  ],
+  "tendances": [
+    {
+      "titre": "Design systems are now read by agents too",
+      "texte": "Agents are already consumers of design systems. Making documentation and structure usable by AI is becoming a workstream in its own right."
+    },
+    {
+      "titre": "Figma expands its MCP ecosystem and sets guardrails for its agents",
+      "texte": "20 new MCP partners and new controls on agent actions: Figma is positioning itself as a platform open to agents, with a governance framework."
+    }
+  ],
+  "posts": [
+    {
+      "id": "p1",
+      "source": "substack",
+      "auteur": "Érica Menin",
+      "auteurUrl": "https://substack.com/@emenin",
+      "role": "Author of the Design Systems Unfiltered newsletter",
+      "idee": "Your design systems already have a new reader: the AI agent.",
+      "concret": [
+        "Starting point: AI agents are a consumer of design systems, and already well established.",
+        "The article describes the first steps to make a design system usable by AI."
+      ],
+      "commentaires": "",
+      "url": "https://designsystemsunfiltered.substack.com/p/starting-to-make-a-design-system",
+      "engagement": "",
+      "tags": [
+        "design system",
+        "agents IA",
+        "documentation"
+      ]
+    },
+    {
+      "id": "p2",
+      "source": "x",
+      "auteur": "Figma",
+      "auteurUrl": "https://x.com/figma",
+      "role": "Official Figma account",
+      "idee": "Figma opens the door wide to agents via MCP.",
+      "concret": [
+        "20 new MCP partners announced at Config India.",
+        "Among them: Amp, ClickUp, Linear, Notion, Mistral, Zed, OpenCode, Cline, Junie by JetBrains, Microsoft 365 Copilot."
+      ],
+      "commentaires": "",
+      "url": "https://x.com/figma/status/2110613762030063799",
+      "engagement": "",
+      "tags": [
+        "Figma",
+        "MCP",
+        "agents"
+      ]
+    },
+    {
+      "id": "p3",
+      "source": "substack",
+      "auteur": "Omni Universe",
+      "auteurUrl": "https://substack.com/@omniterminal",
+      "role": "Author of the Omni Terminal newsletter (market angle)",
+      "idee": "Figma sets guardrails for its agents before rolling them out widely.",
+      "concret": [
+        "New controls on how AI agents operate on the Figma platform.",
+        "Code layers feature in open beta.",
+        "Market take: possible differentiation, but limited impact as long as adoption and monetization remain unclear."
+      ],
+      "commentaires": "",
+      "url": "https://omniterminal.substack.com/p/chip-industry-warns-tariffs-could",
+      "engagement": "",
+      "tags": [
+        "Figma",
+        "gouvernance",
+        "code layers"
+      ]
+    }
+  ],
+  "outils": [
+    {
+      "nom": "Figma MCP",
+      "note": "20 new partners announced at Config India (Linear, Notion, Mistral, Zed, Microsoft 365 Copilot, etc.).",
+      "url": "https://x.com/figma/status/2110613762030063799"
+    },
+    {
+      "nom": "Figma code layers",
+      "note": "Feature in open beta, accompanied by controls on agent actions (according to a newsletter, details not verified).",
+      "url": "https://omniterminal.substack.com/p/chip-industry-warns-tariffs-could"
+    },
+    {
+      "nom": "Claude Design",
+      "note": "According to Claude's LinkedIn page (indexed around 10/10, outside the 24-hour window): Claude Design now works within conversations, alongside Claude Docs and Claude Slides.",
+      "url": "https://www.linkedin.com/showcase/claude/"
+    }
+  ],
+  "personnes": [
+    {
+      "nom": "Érica Menin",
+      "role": "Author of Design Systems Unfiltered",
+      "pourquoi": "Concretely tackles how to make a design system available to AI agents.",
+      "url": "https://substack.com/@emenin",
+      "plateforme": "substack",
+      "photo": ""
+    }
+  ],
+  "evenements": [
+    {
+      "nom": "Config India (Figma)",
+      "date": "",
+      "lieu": "India",
+      "note": "Announcement of 20 new MCP partners.",
+      "url": "https://x.com/figma/status/2110613762030063799"
+    }
+  ],
+  "offres": [
+    {
+      "poste": "Senior Product Designer, Okta for AI Agents",
+      "entreprise": "Okta",
+      "lieu": "",
+      "url": "https://a16zjobs.substack.com/p/open-roles-for-operators-at-anduril"
+    }
+  ],
+  "notes": "Slim day: only 3 posts retained. LinkedIn queries surfaced no usable individual posts (generic or empty pages), and X queries on \"design system\" returned nothing. Several results were truncated. The Omni Terminal post is a market newsletter of which only the Figma excerpt was read. The Claude page is about a week old. The Okta job offer comes from an a16z newsletter dated 12/10 (location not specified). No engagement figures available."
+}

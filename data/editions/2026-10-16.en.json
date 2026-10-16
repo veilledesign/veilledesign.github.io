@@ -1,118 +1,127 @@
 {
   "date": "2026-10-16",
-  "titre": "Design systems open up to agents, Figma plugs in its MCPs",
+  "titre": "Written context becomes the raw material of design with agents",
   "essentiel": [
-    "Design systems have a new consumer: AI agents, and documentation becomes the key topic.",
-    "Figma announces 20 new MCP partners (Config India) and puts controls on agent actions.",
-    "Slim day: few usable posts, and no individual LinkedIn posts surfaced."
+    "Figma announces Specs: markdown on the canvas, designed as a container for context, fed via MCP and GitHub (open beta in the coming weeks).",
+    "Design systems have a new consumer, AI agents, and Design Systems Unfiltered publishes a first guide to making them usable by agents.",
+    "On the agent UX side, a permission pattern worth remembering: show what will change, why the agent is asking, that it can be undone, and let people say no calmly."
   ],
   "syntheses": [
     {
-      "id": "design-system-agents",
-      "titre": "Design systems are now read by agents too",
-      "texte": "Érica Menin starts from an observation: AI agents are a \"not so new\" consumer of design systems, and she is beginning to make her own usable by AI. On the Figma side, the new controls on how agents operate and the code layers feature (open beta) point in the same direction: the tool becomes a surface that agents read and manipulate. What matters is the clarity of what you put behind it.",
+      "id": "specs-contexte",
+      "titre": "Figma makes written context an object on the canvas",
+      "texte": "With Specs, Figma presents markdown as a new medium on the canvas, a container for context that flows through MCP, GitHub and other tools. Written context (intentions, rules, specs) stops being a side document. One reply to the post asks whether an agent will be able to write back into a Spec via MCP, and the answer doesn't appear in what I was able to read.",
       "posts": [
-        "p1",
-        "p3"
+        "x-specs"
       ]
     },
     {
-      "id": "figma-agents-mcp",
-      "titre": "Figma expands its MCP ecosystem and sets guardrails for its agents",
-      "texte": "Figma announces 20 new MCP partners at Config India, including Linear, Notion, Mistral, Zed and Microsoft 365 Copilot. A newsletter also notes new controls on how agents operate on the platform, as well as a code layers feature in open beta. The direction is clear: connect Figma to many agent tools, with a governance layer. The real effects (adoption, usage) remain to be seen.",
+      "id": "ds-consommateur-ia",
+      "titre": "Design systems now have AI as a user",
+      "texte": "Érica Menin starts from the observation that AI agents are a consumer of design systems, and that this isn't really new anymore. Her article covers the first steps to make them usable by AI. Read alongside Specs, it shows that machine-readable documentation is becoming a central workstream.",
       "posts": [
-        "p2",
-        "p3"
+        "sub-menin-ds-ia",
+        "x-specs"
+      ]
+    },
+    {
+      "id": "permissions-agents",
+      "titre": "Agent permission patterns are real design work",
+      "texte": "Lisa Demchenko takes the example of The Drive AI, which shows a plan before acting and keeps changes reversible: an almost mundane preview-then-execute, and that's a compliment. She sees these as design decisions and would like to see more designers in these discussions. The pattern she keeps: what will change, why the agent is asking, that it can be undone, and a calm way to decline.",
+      "posts": [
+        "sub-demchenko-permissions"
       ]
     }
   ],
   "tendances": [
     {
-      "titre": "Design systems are now read by agents too",
-      "texte": "Agents are already consumers of design systems. Making documentation and structure usable by AI is becoming a workstream in its own right."
+      "titre": "Figma makes written context an object on the canvas",
+      "texte": "Specs places markdown on the Figma canvas as a container for context, connected to MCP and GitHub. Documentation moves into the design tool."
     },
     {
-      "titre": "Figma expands its MCP ecosystem and sets guardrails for its agents",
-      "texte": "20 new MCP partners and new controls on agent actions: Figma is positioning itself as a platform open to agents, with a governance framework."
+      "titre": "Design systems now have AI as a user",
+      "texte": "AI agents consume design systems, and teams are starting to make them usable by agents."
+    },
+    {
+      "titre": "Agent permission patterns are real design work",
+      "texte": "Previewing, explaining, allowing people to undo and to decline: these interface choices are a matter of design, not just engineering."
     }
   ],
   "posts": [
     {
-      "id": "p1",
+      "id": "x-specs",
+      "source": "x",
+      "auteur": "Dylan Field",
+      "auteurUrl": "https://x.com/zoink",
+      "role": "",
+      "idee": "Context becomes a design object. Figma presents Specs as a new medium for markdown on the canvas, a container for your context, connected to other tools through MCP and GitHub.",
+      "concret": [
+        "Specs: a medium for markdown directly on the Figma canvas",
+        "Designed as a container for context",
+        "MCP, GitHub, etc. to bring context into and out of Figma and make it flow across the platform",
+        "Rolling out in open beta in the coming weeks"
+      ],
+      "commentaires": "An excerpt of a reply asks whether an agent can write back into a Spec via MCP. The answer does not appear in the results.",
+      "url": "https://x.com/zoink/status/2110607559271010422",
+      "engagement": "",
+      "tags": [
+        "Figma",
+        "MCP",
+        "Specs"
+      ]
+    },
+    {
+      "id": "sub-menin-ds-ia",
       "source": "substack",
       "auteur": "Érica Menin",
       "auteurUrl": "https://substack.com/@emenin",
       "role": "Author of the Design Systems Unfiltered newsletter",
-      "idee": "Your design systems already have a new reader: the AI agent.",
+      "idee": "Your design system has a new user. AI agents already consume design systems, and this article offers first steps to prepare them for it.",
       "concret": [
-        "Starting point: AI agents are a consumer of design systems, and already well established.",
-        "The article describes the first steps to make a design system usable by AI."
+        "Starting point: AI agents are a consumer of design systems, \"not so new\"",
+        "The article covers the first steps to make a design system usable by AI",
+        "The details of the steps are not visible in the collected excerpt"
       ],
       "commentaires": "",
       "url": "https://designsystemsunfiltered.substack.com/p/starting-to-make-a-design-system",
       "engagement": "",
       "tags": [
-        "design system",
-        "agents IA",
-        "documentation"
+        "design systems",
+        "agents IA"
       ]
     },
     {
-      "id": "p2",
-      "source": "x",
-      "auteur": "Figma",
-      "auteurUrl": "https://x.com/figma",
-      "role": "Official Figma account",
-      "idee": "Figma opens the door wide to agents via MCP.",
-      "concret": [
-        "20 new MCP partners announced at Config India.",
-        "Among them: Amp, ClickUp, Linear, Notion, Mistral, Zed, OpenCode, Cline, Junie by JetBrains, Microsoft 365 Copilot."
-      ],
-      "commentaires": "",
-      "url": "https://x.com/figma/status/2110613762030063799",
-      "engagement": "",
-      "tags": [
-        "Figma",
-        "MCP",
-        "agents"
-      ]
-    },
-    {
-      "id": "p3",
+      "id": "sub-demchenko-permissions",
       "source": "substack",
-      "auteur": "Omni Universe",
-      "auteurUrl": "https://substack.com/@omniterminal",
-      "role": "Author of the Omni Terminal newsletter (market angle)",
-      "idee": "Figma sets guardrails for its agents before rolling them out widely.",
+      "auteur": "Lisa Demchenko",
+      "auteurUrl": "https://substack.com/@llsbet",
+      "role": "Author of the UX and the city newsletter",
+      "idee": "An agent needs to know where to stop. Answers are turning into interfaces, and agents are learning to ask before acting.",
       "concret": [
-        "New controls on how AI agents operate on the Figma platform.",
-        "Code layers feature in open beta.",
-        "Market take: possible differentiation, but limited impact as long as adoption and monetization remain unclear."
+        "The Drive AI shows a plan of what it will do with your files",
+        "Changes remain reversible: a preview-then-execute pattern that is almost \"boringly sensible\"",
+        "These are design decisions, and the author would like to see more designers in these discussions",
+        "Permission pattern to keep: what will change, why the agent is asking, that it can be undone, and a calm way to say no"
       ],
       "commentaires": "",
-      "url": "https://omniterminal.substack.com/p/chip-industry-warns-tariffs-could",
+      "url": "https://processtopixels.substack.com/p/answers-are-turning-into-interfaces",
       "engagement": "",
       "tags": [
-        "Figma",
-        "gouvernance",
-        "code layers"
+        "UX agentique",
+        "permissions",
+        "patterns"
       ]
     }
   ],
   "outils": [
     {
-      "nom": "Figma MCP",
-      "note": "20 new partners announced at Config India (Linear, Notion, Mistral, Zed, Microsoft 365 Copilot, etc.).",
-      "url": "https://x.com/figma/status/2110613762030063799"
-    },
-    {
-      "nom": "Figma code layers",
-      "note": "Feature in open beta, accompanied by controls on agent actions (according to a newsletter, details not verified).",
-      "url": "https://omniterminal.substack.com/p/chip-industry-warns-tariffs-could"
+      "nom": "Figma Specs",
+      "note": "Markdown on the canvas as a container for context, connected through MCP and GitHub. Open beta announced for the coming weeks.",
+      "url": "https://x.com/zoink/status/2110607559271010422"
     },
     {
       "nom": "Claude Design",
-      "note": "According to Claude's LinkedIn page (indexed around 10/10, outside the 24-hour window): Claude Design now works within conversations, alongside Claude Docs and Claude Slides.",
+      "note": "Seen in a post from 10/10, outside the 24-hour window: it now works within conversations, alongside Claude Docs and Claude Slides.",
       "url": "https://www.linkedin.com/showcase/claude/"
     }
   ],
@@ -120,28 +129,21 @@
     {
       "nom": "Érica Menin",
       "role": "Author of Design Systems Unfiltered",
-      "pourquoi": "Concretely tackles how to make a design system available to AI agents.",
+      "pourquoi": "She writes about preparing design systems for AI agents.",
       "url": "https://substack.com/@emenin",
+      "plateforme": "substack",
+      "photo": ""
+    },
+    {
+      "nom": "Lisa Demchenko",
+      "role": "Author of UX and the city",
+      "pourquoi": "She formalizes permission and reversibility patterns for agents.",
+      "url": "https://substack.com/@llsbet",
       "plateforme": "substack",
       "photo": ""
     }
   ],
-  "evenements": [
-    {
-      "nom": "Config India (Figma)",
-      "date": "",
-      "lieu": "India",
-      "note": "Announcement of 20 new MCP partners.",
-      "url": "https://x.com/figma/status/2110613762030063799"
-    }
-  ],
-  "offres": [
-    {
-      "poste": "Senior Product Designer, Okta for AI Agents",
-      "entreprise": "Okta",
-      "lieu": "",
-      "url": "https://a16zjobs.substack.com/p/open-roles-for-operators-at-anduril"
-    }
-  ],
-  "notes": "Slim day: only 3 posts retained. LinkedIn queries surfaced no usable individual posts (generic or empty pages), and X queries on \"design system\" returned nothing. Several results were truncated. The Omni Terminal post is a market newsletter of which only the Figma excerpt was read. The Claude page is about a week old. The Okta job offer comes from an a16z newsletter dated 12/10 (location not specified). No engagement figures available."
+  "evenements": [],
+  "offres": [],
+  "notes": "Thin collection: only 3 posts retained. On LinkedIn, several queries came back empty and the few results were outside the 24-hour window or too truncated to use. Discarded: a LinkedIn post in the form of a \"tool + MCP = role\" list (little substance), the Claude LinkedIn page dated 10/10, and Marcin Treder's article (\"I Let an AI Into My Figma File\") dated 11/10, both too old. The Substack excerpts are short, so the details of Érica Menin's article remain to be read. No relevant events or offers."
 }

@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-19",
+  "titre": "Agentic design watch for October 19, 2026: a design system must be readable by AI",
+  "essentiel": [
+    "A design system is only \"AI-ready\" if it has a token layer the agent can refer to.",
+    "The Figma agent is out of beta, and Figma specs is presented as a possible source of truth.",
+    "Slim day: little usable design content, mostly off-topic LinkedIn profiles."
+  ],
+  "syntheses": [
+    {
+      "id": "ds-ai-ready",
+      "titre": "Without a token layer, a design system isn't ready for AI",
+      "texte": "A Substack post published today explains how to check whether a design system is ready for AI. It builds on a five-level model published this summer by Billy Sweetman (Headway). At the lowest level, \"Ad hoc\", components are copied and rebuilt, with no token to point to. John Rodrigues' masterclass on \"AI-ready\" design systems goes in the same direction: preparing the system matters as much as the tool.",
+      "posts": [
+        "ai-ready-ds-check",
+        "figma-agent-specs"
+      ]
+    },
+    {
+      "id": "figma-agent-specs",
+      "titre": "The Figma agent is out of beta and Figma specs aims to become the source of truth",
+      "texte": "According to a masterclass held on October 15, Figma's agent is no longer in beta. Figma also launched Figma specs, presented as the pivot of the source of truth for design systems. On the ecosystem side, Figma announced 20 new MCP partners at Config India (X post of October 15). The question shifts: where should the agent read the system's truth?",
+      "posts": [
+        "figma-agent-specs"
+      ]
+    }
+  ],
+  "tendances": [
+    {
+      "titre": "Without a token layer, a design system isn't ready for AI",
+      "texte": "A post published today describes a five-level maturity model. At the lowest level, components are copied and rebuilt, with no token to point to. Documentation and tokens become the prerequisite for an AI to iterate cleanly."
+    },
+    {
+      "titre": "The Figma agent is out of beta and Figma specs aims to become the source of truth",
+      "texte": "Figma's agent is presented as out of beta, with Figma specs as a possible source of truth. The MCP ecosystem is widening with 20 new partners announced at Config India. It remains to be seen where the agent actually reads the system's truth."
+    }
+  ],
+  "posts": [
+    {
+      "id": "ai-ready-ds-check",
+      "source": "substack",
+      "auteur": "Lisa Demchenko",
+      "auteurUrl": "https://substack.com/@llsbet",
+      "role": "Substack newsletter (processtopixels)",
+      "idee": "A design system without a token layer isn't ready for AI.",
+      "concret": [
+        "The post explains how to check for yourself whether a design system is ready for AI.",
+        "It builds on the five-level model published this summer by Billy Sweetman, Head of Design at Headway, a design and development studio in Wisconsin.",
+        "At the \"Ad hoc\" level, components are copied and rebuilt, and there is no token layer to point to."
+      ],
+      "commentaires": "",
+      "url": "https://processtopixels.substack.com/p/is-your-design-system-ai-ready-heres",
+      "engagement": "",
+      "tags": [
+        "design systems",
+        "tokens",
+        "IA"
+      ]
+    },
+    {
+      "id": "figma-agent-specs",
+      "source": "substack",
+      "auteur": "John Rodrigues",
+      "auteurUrl": "https://substack.com/@johnrodrigues",
+      "role": "Hosts masterclasses on Figma Agent and AI-ready design systems",
+      "idee": "The Figma agent is out of beta.",
+      "concret": [
+        "Recap of an October 15 masterclass on Figma Agent and \"AI-ready\" design systems.",
+        "Figma's agent is presented as out of beta.",
+        "Figma also launched Figma specs, presented as the pivot of what will become the source of truth."
+      ],
+      "commentaires": "",
+      "url": "https://johnrodrigues.substack.com/p/figma-agent-is-here-how-it-will-help",
+      "engagement": "",
+      "tags": [
+        "Figma",
+        "agent",
+        "design systems"
+      ]
+    }
+  ],
+  "outils": [
+    {
+      "nom": "Figma Agent",
+      "note": "Presented as out of beta, with Figma specs (source: John Rodrigues' post).",
+      "url": "https://johnrodrigues.substack.com/p/figma-agent-is-here-how-it-will-help"
+    },
+    {
+      "nom": "Figma MCP",
+      "note": "20 new partners announced at Config India, including Linear, Notion, Mistral, Cline, Zed and Microsoft 365 Copilot (Figma X post of October 15).",
+      "url": "https://x.com/figma/status/2110613762030063799"
+    }
+  ],
+  "personnes": [
+    {
+      "nom": "Lisa Demchenko",
+      "role": "Author of posts on design systems and AI (Substack)",
+      "pourquoi": "Offers a concrete method to check whether a design system is ready for AI.",
+      "url": "https://substack.com/@llsbet",
+      "plateforme": "substack",
+      "photo": ""
+    },
+    {
+      "nom": "John Rodrigues",
+      "role": "Hosts masterclasses on Figma Agent and AI-ready design systems",
+      "pourquoi": "Tracks the arrival of the Figma agent and Figma specs on the design system side.",
+      "url": "https://substack.com/@johnrodrigues",
+      "plateforme": "substack",
+      "photo": ""
+    },
+    {
+      "nom": "Billy Sweetman",
+      "role": "Head of Design at Headway",
+      "pourquoi": "Author of the five-level maturity model for a design system facing AI, cited today.",
+      "url": "",
+      "plateforme": "",
+      "photo": ""
+    }
+  ],
+  "evenements": [],
+  "offres": [],
+  "notes": "Slim day: no usable LinkedIn source. The LinkedIn queries mostly returned profiles (a student looking for an internship, a university profile) with no design content, and two LinkedIn queries as well as the X query \"design system AI\" came back empty. A LinkedIn post about carousels made with Claude was discarded (excerpt mixed with another topic, little design information). A Packt post from October 12 was discarded (too old). John Rodrigues' post dates from October 17 and Figma's X post from October 15: outside the 24-hour window, kept for lack of more recent content."
+}

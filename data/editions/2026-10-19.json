@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-19",
+  "titre": "Veille design agentique du 19 octobre 2026 : un design system doit être lisible par l'IA",
+  "essentiel": [
+    "Un design system n'est « prêt pour l'IA » que s'il a une couche de tokens à laquelle l'agent peut se référer.",
+    "L'agent Figma est sorti de bêta et Figma specs est présenté comme une possible source de confiance.",
+    "Journée maigre : peu de contenu design exploitable, surtout des profils LinkedIn hors sujet."
+  ],
+  "syntheses": [
+    {
+      "id": "ds-ai-ready",
+      "titre": "Sans couche de tokens, un design system n'est pas prêt pour l'IA",
+      "texte": "Un billet Substack publié aujourd'hui explique comment vérifier si un design system est prêt pour l'IA. Il s'appuie sur un modèle en cinq niveaux publié cet été par Billy Sweetman (Headway). Au niveau le plus bas, « Ad hoc », les composants sont copiés et reconstruits, sans token vers lequel pointer. La masterclass de John Rodrigues sur les design systems « AI-ready » va dans le même sens : la préparation du système compte autant que l'outil.",
+      "posts": [
+        "ai-ready-ds-check",
+        "figma-agent-specs"
+      ]
+    },
+    {
+      "id": "figma-agent-specs",
+      "titre": "L'agent Figma sort de bêta et Figma specs vise à devenir la source de vérité",
+      "texte": "Selon une masterclass tenue le 15 octobre, l'agent de Figma n'est plus en bêta. Figma a aussi lancé Figma specs, présentées comme pivot de la source de confiance pour les design systems. Côté écosystème, Figma a annoncé 20 nouveaux partenaires MCP à Config India (post X du 15 octobre). La question se déplace : où l'agent doit-il lire la vérité du système ?",
+      "posts": [
+        "figma-agent-specs"
+      ]
+    }
+  ],
+  "tendances": [
+    {
+      "titre": "Sans couche de tokens, un design system n'est pas prêt pour l'IA",
+      "texte": "Un billet publié aujourd'hui décrit un modèle de maturité en cinq niveaux. Au plus bas, les composants sont copiés et reconstruits, sans token vers lequel pointer. La documentation et les tokens deviennent le prérequis pour qu'une IA itère proprement."
+    },
+    {
+      "titre": "L'agent Figma sort de bêta et Figma specs vise à devenir la source de vérité",
+      "texte": "L'agent de Figma est présenté comme sorti de bêta, avec Figma specs comme possible source de confiance. L'écosystème MCP s'élargit avec 20 nouveaux partenaires annoncés à Config India. Reste à savoir où l'agent lit réellement la vérité du système."
+    }
+  ],
+  "posts": [
+    {
+      "id": "ai-ready-ds-check",
+      "source": "substack",
+      "auteur": "Lisa Demchenko",
+      "auteurUrl": "https://substack.com/@llsbet",
+      "role": "Newsletter Substack (processtopixels)",
+      "idee": "Un design system sans couche de tokens n'est pas prêt pour l'IA.",
+      "concret": [
+        "Le billet explique comment vérifier soi-même si un design system est prêt pour l'IA.",
+        "Il s'appuie sur le modèle en cinq niveaux publié cet été par Billy Sweetman, Head of Design chez Headway, studio de design et développement du Wisconsin.",
+        "Au niveau « Ad hoc », les composants sont copiés et reconstruits, et il n'y a aucune couche de tokens vers laquelle pointer."
+      ],
+      "commentaires": "",
+      "url": "https://processtopixels.substack.com/p/is-your-design-system-ai-ready-heres",
+      "engagement": "",
+      "tags": [
+        "design systems",
+        "tokens",
+        "IA"
+      ]
+    },
+    {
+      "id": "figma-agent-specs",
+      "source": "substack",
+      "auteur": "John Rodrigues",
+      "auteurUrl": "https://substack.com/@johnrodrigues",
+      "role": "Anime des masterclass sur Figma Agent et les design systems prêts pour l'IA",
+      "idee": "L'agent Figma est sorti de bêta.",
+      "concret": [
+        "Compte rendu d'une masterclass du 15 octobre sur Figma Agent et les design systems « AI-ready ».",
+        "L'agent de Figma est présenté comme sorti de bêta.",
+        "Figma a aussi lancé Figma specs, présentées comme pivot de ce qui deviendra la source de confiance."
+      ],
+      "commentaires": "",
+      "url": "https://johnrodrigues.substack.com/p/figma-agent-is-here-how-it-will-help",
+      "engagement": "",
+      "tags": [
+        "Figma",
+        "agent",
+        "design systems"
+      ]
+    }
+  ],
+  "outils": [
+    {
+      "nom": "Figma Agent",
+      "note": "Présenté comme sorti de bêta, avec Figma specs (source : billet de John Rodrigues).",
+      "url": "https://johnrodrigues.substack.com/p/figma-agent-is-here-how-it-will-help"
+    },
+    {
+      "nom": "Figma MCP",
+      "note": "20 nouveaux partenaires annoncés à Config India, dont Linear, Notion, Mistral, Cline, Zed et Microsoft 365 Copilot (post X de Figma du 15 octobre).",
+      "url": "https://x.com/figma/status/2110613762030063799"
+    }
+  ],
+  "personnes": [
+    {
+      "nom": "Lisa Demchenko",
+      "role": "Autrice de billets sur les design systems et l'IA (Substack)",
+      "pourquoi": "Propose une méthode concrète pour vérifier si un design system est prêt pour l'IA.",
+      "url": "https://substack.com/@llsbet",
+      "plateforme": "substack",
+      "photo": ""
+    },
+    {
+      "nom": "John Rodrigues",
+      "role": "Anime des masterclass sur Figma Agent et les design systems AI-ready",
+      "pourquoi": "Suit l'arrivée de l'agent Figma et de Figma specs côté design systems.",
+      "url": "https://substack.com/@johnrodrigues",
+      "plateforme": "substack",
+      "photo": ""
+    },
+    {
+      "nom": "Billy Sweetman",
+      "role": "Head of Design chez Headway",
+      "pourquoi": "Auteur du modèle en cinq niveaux de maturité d'un design system face à l'IA, cité aujourd'hui.",
+      "url": "",
+      "plateforme": "",
+      "photo": ""
+    }
+  ],
+  "evenements": [],
+  "offres": [],
+  "notes": "Journée maigre : aucune source LinkedIn exploitable. Les requêtes LinkedIn ont renvoyé surtout des profils (étudiant en recherche de stage, profil universitaire) sans contenu design, et deux requêtes LinkedIn ainsi que la requête X « design system AI » sont revenues vides. Un post LinkedIn sur des carrousels faits avec Claude a été écarté (extrait mêlé à un autre sujet, peu d'informations design). Un billet Packt du 12 octobre a été écarté (trop ancien). Le billet de John Rodrigues date du 17 octobre et le post X de Figma du 15 octobre : hors fenêtre de 24 h, gardés faute de contenu plus récent."
+}

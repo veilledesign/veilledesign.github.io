@@ -1,0 +1,146 @@
+{
+  "date": "2026-10-20",
+  "titre": "The design system becomes the interface between the designer and the agent",
+  "essentiel": [
+    "Two Substack newsletters describe the same prerequisite: a named, tokenized, documented design system, otherwise the AI guesses.",
+    "The end-to-end AI workflow ends with a handoff of the \"why\": a decision log, a video, or a pull request.",
+    "Dylan Field (Figma), as summarized by Scuttlebutt: \"design is the new code,\" and AI lowers the floor of production without raising the ceiling."
+  ],
+  "syntheses": [
+    {
+      "id": "design-system-lisible-ia",
+      "titre": "A design system without tokens stays unreadable to AI",
+      "texte": "Lisa Demchenko picks up a five-level model published by Billy Sweetman (Headway). The lowest level, \"Ad hoc,\" describes components that are copied and rebuilt, with no token layer to point to. Evangeline reaches the same prerequisite through practice: she builds with her real design system via a rules file or a sandbox repo, then guides the agent by naming the precise token. Both posts show that a named, structured system determines the quality of what the agent produces.",
+      "posts": [
+        "p1",
+        "p2"
+      ]
+    },
+    {
+      "id": "handoff-du-pourquoi",
+      "titre": "The handoff shifts toward the \"why\" of decisions",
+      "texte": "In her six-step workflow, Evangeline asks the AI to keep a decision log. She then delivers a walkthrough video or a pull request rather than a mockup. Testing is done with a shareable prototype, with a version selector, in front of real users. The designer's work shifts toward documenting choices that the agent and the team can reread.",
+      "posts": [
+        "p2"
+      ]
+    },
+    {
+      "id": "design-nouveau-code",
+      "titre": "Design becomes the new code, but the ceiling doesn't move",
+      "texte": "According to Scuttlebutt's summary of Dylan Field's interview on All-In, Figma's growth reportedly accelerated to 48% after Anthropic launched Claude Design. Field argues that design is the new code, since everyone can now produce code. He adds that AI lowers the floor of production without raising the ceiling, and that people who take non-consensus risks do better. This is a reading of a summary, not of the full interview.",
+      "posts": [
+        "p3"
+      ]
+    }
+  ],
+  "tendances": [
+    {
+      "titre": "A design system without tokens stays unreadable to AI",
+      "texte": "The five-level maturity model (Headway) and Evangeline's workflow converge: without consistent components or a token layer, the agent has nothing reliable to build on."
+    },
+    {
+      "titre": "The handoff shifts toward the \"why\" of decisions",
+      "texte": "An AI-maintained decision log, a walkthrough video, or a pull request: the designer's deliverable becomes the explanation of their choices."
+    },
+    {
+      "titre": "Design becomes the new code, but the ceiling doesn't move",
+      "texte": "Dylan Field, via Scuttlebutt's summary: producing is within everyone's reach, so what sets people apart remains risk-taking and judgment."
+    }
+  ],
+  "posts": [
+    {
+      "id": "p1",
+      "source": "substack",
+      "auteur": "Lisa Demchenko",
+      "auteurUrl": "https://substack.com/@llsbet",
+      "role": "Author on Substack",
+      "idee": "A design system is only AI-ready if it has a token layer. Lisa Demchenko shares her method for checking her own, building on a five-level maturity model published by Headway.",
+      "concret": [
+        "The model comes from Billy Sweetman, Head of Design at Headway, a design and development studio in Wisconsin, published this summer.",
+        "It has five maturity levels for a design system in the face of AI.",
+        "At the \"Ad hoc\" level, components are copied and rebuilt, and there is no token layer to point to.",
+        "Lisa Demchenko uses it to assess her own system."
+      ],
+      "commentaires": "",
+      "url": "https://processtopixels.substack.com/p/is-your-design-system-ai-ready-heres",
+      "engagement": "",
+      "tags": [
+        "design systems",
+        "tokens",
+        "maturité"
+      ]
+    },
+    {
+      "id": "p2",
+      "source": "substack",
+      "auteur": "Evangeline",
+      "auteurUrl": "https://substack.com/@eggsvans",
+      "role": "Author of the newsletter Evangeline & AI designers",
+      "idee": "The AI design workflow comes down to six steps, and it starts from the real design system. Evangeline details the prompts and files she uses every day.",
+      "concret": [
+        "Build with your real design system: a rules file or a sandbox repo makes the output look like the product.",
+        "Guide with precise words: name the token, select the DOM element, use \"copy for agent\" then paste. Mastering front-end vocabulary also saves tokens.",
+        "Test with a link: a shareable prototype with a version selector, in front of real users.",
+        "Hand off the why: the AI keeps the decision log, then you deliver a walkthrough video or a pull request."
+      ],
+      "commentaires": "",
+      "url": "https://evangelineng.substack.com/p/the-end-to-end-ai-design-workflow",
+      "engagement": "",
+      "tags": [
+        "workflow",
+        "handoff",
+        "agents"
+      ]
+    },
+    {
+      "id": "p3",
+      "source": "substack",
+      "auteur": "Scuttlebutt",
+      "auteurUrl": "https://substack.com/@getscuttlebutt",
+      "role": "Scuttlebutt newsletter (summary of the interview with Dylan Field, CEO of Figma, on All-In)",
+      "idee": "Design is the new code. That is the thesis Dylan Field defends in this interview, summarized by Scuttlebutt.",
+      "concret": [
+        "Figma's growth reportedly accelerated to 48% after Anthropic launched Claude Design.",
+        "Design is the new code, because everyone can now produce code.",
+        "AI lowers the floor of production without raising the ceiling; those who take non-consensus risks stand out.",
+        "The post's title is about Adobe and the 16 months of regulatory review."
+      ],
+      "commentaires": "",
+      "url": "https://getscuttlebutt.substack.com/p/figma-ceo-on-adobe-16-months-of-regulatory",
+      "engagement": "",
+      "tags": [
+        "Figma",
+        "Claude Design",
+        "stratégie"
+      ]
+    }
+  ],
+  "outils": [
+    {
+      "nom": "Claude Design, Docs et Slides",
+      "note": "Claude LinkedIn page dated 10/13: Claude Docs and Claude Slides are launched, and Claude Design now works inside conversations (one-pager, deck, and visual in a single place).",
+      "url": "https://www.linkedin.com/showcase/claude/"
+    }
+  ],
+  "personnes": [
+    {
+      "nom": "Lisa Demchenko",
+      "role": "Author on Substack",
+      "pourquoi": "She offers a concrete method for checking whether a design system is ready for AI.",
+      "url": "https://substack.com/@llsbet",
+      "plateforme": "substack",
+      "photo": "https://substackcdn.com/image/fetch/$s_!qHEf!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd8d15348-9c6c-4a0d-a108-a1754372c619_2316x2316.png"
+    },
+    {
+      "nom": "Evangeline",
+      "role": "Author of the newsletter Evangeline & AI designers",
+      "pourquoi": "She details a complete AI design workflow, with prompts and files, from the design system to the handoff.",
+      "url": "https://substack.com/@eggsvans",
+      "plateforme": "substack",
+      "photo": ""
+    }
+  ],
+  "evenements": [],
+  "offres": [],
+  "notes": "Thin collection: 3 posts retained, all on Substack. No usable LinkedIn post from the last 24 hours: the queries \"design tokens AI\" and \"agentic UX\" returned nothing, and \"Untitled UI AI\" only gave generic LinkedIn pages. Two LinkedIn results (Claude page from 10/13, Sahar Lepa's post from 10/14 on vibe coding by designers) are about a week old: the first is kept as a tool, the second is discarded. The Substack excerpts are truncated: for Evangeline's workflow, only 4 of the 6 steps were readable, and only the first result of the \"Figma AI\" query could be read. No engagement figures were available. No relevant events or offers."
+}

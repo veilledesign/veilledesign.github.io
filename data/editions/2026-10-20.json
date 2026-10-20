@@ -1,0 +1,146 @@
+{
+  "date": "2026-10-20",
+  "titre": "Le design system devient l'interface entre le designer et l'agent",
+  "essentiel": [
+    "Deux newsletters Substack décrivent le même prérequis : un design system nommé, tokenisé et documenté, sinon l'IA devine.",
+    "Le workflow IA de bout en bout se termine par un handoff du « pourquoi » : journal de décisions, vidéo ou pull request.",
+    "Dylan Field (Figma), résumé par Scuttlebutt : « design is the new code », et l'IA baisse le plancher de la production sans relever le plafond."
+  ],
+  "syntheses": [
+    {
+      "id": "design-system-lisible-ia",
+      "titre": "Un design system sans tokens reste illisible pour l'IA",
+      "texte": "Lisa Demchenko reprend un modèle en cinq niveaux publié par Billy Sweetman (Headway). Le niveau le plus bas, « Ad hoc », décrit des composants copiés et reconstruits, sans couche de tokens vers laquelle pointer. Evangeline arrive au même prérequis par la pratique : elle construit avec son vrai design system via un fichier de règles ou un repo bac à sable, puis guide l'agent en nommant le token précis. Les deux posts montrent qu'un système nommé et structuré conditionne la qualité de ce que l'agent produit.",
+      "posts": [
+        "p1",
+        "p2"
+      ]
+    },
+    {
+      "id": "handoff-du-pourquoi",
+      "titre": "Le handoff se déplace vers le « pourquoi » des décisions",
+      "texte": "Dans son workflow en six étapes, Evangeline demande à l'IA de tenir un journal de décisions. Elle livre ensuite une vidéo de présentation ou une pull request plutôt qu'une maquette. Les tests se font avec un prototype partageable, avec sélecteur de versions, devant de vrais utilisateurs. Le travail du designer se déplace vers la documentation des choix, que l'agent et l'équipe peuvent relire.",
+      "posts": [
+        "p2"
+      ]
+    },
+    {
+      "id": "design-nouveau-code",
+      "titre": "Le design devient le nouveau code, mais le plafond ne bouge pas",
+      "texte": "Selon le résumé de l'interview de Dylan Field sur All-In publié par Scuttlebutt, la croissance de Figma aurait accéléré à 48 % après le lancement de Claude Design par Anthropic. Field y défend que le design est le nouveau code, puisque tout le monde peut produire du code. Il ajoute que l'IA baisse le plancher de la production sans relever le plafond, et que les personnes qui prennent des risques non consensuels s'en sortent mieux. La lecture reste celle d'un résumé, pas de l'interview complète.",
+      "posts": [
+        "p3"
+      ]
+    }
+  ],
+  "tendances": [
+    {
+      "titre": "Un design system sans tokens reste illisible pour l'IA",
+      "texte": "Modèle de maturité en cinq niveaux (Headway) et workflow d'Evangeline convergent : sans composants cohérents ni couche de tokens, l'agent n'a rien de fiable sur quoi s'appuyer."
+    },
+    {
+      "titre": "Le handoff se déplace vers le « pourquoi » des décisions",
+      "texte": "Journal de décisions tenu par l'IA, vidéo de présentation ou pull request : le livrable du designer devient l'explication de ses choix."
+    },
+    {
+      "titre": "Le design devient le nouveau code, mais le plafond ne bouge pas",
+      "texte": "Dylan Field, via le résumé de Scuttlebutt : produire est à la portée de tous, ce qui distingue reste la prise de risque et le jugement."
+    }
+  ],
+  "posts": [
+    {
+      "id": "p1",
+      "source": "substack",
+      "auteur": "Lisa Demchenko",
+      "auteurUrl": "https://substack.com/@llsbet",
+      "role": "Autrice sur Substack",
+      "idee": "Un design system n'est prêt pour l'IA que s'il a une couche de tokens. Lisa Demchenko partage sa méthode pour vérifier le sien, en s'appuyant sur un modèle de maturité en cinq niveaux publié par Headway.",
+      "concret": [
+        "Le modèle vient de Billy Sweetman, Head of Design chez Headway, studio de design et développement du Wisconsin, publié cet été.",
+        "Il compte cinq niveaux de maturité d'un design system face à l'IA.",
+        "Au niveau « Ad hoc », les composants sont copiés et reconstruits, et il n'y a aucune couche de tokens vers laquelle pointer.",
+        "Lisa Demchenko s'en sert pour évaluer son propre système."
+      ],
+      "commentaires": "",
+      "url": "https://processtopixels.substack.com/p/is-your-design-system-ai-ready-heres",
+      "engagement": "",
+      "tags": [
+        "design systems",
+        "tokens",
+        "maturité"
+      ]
+    },
+    {
+      "id": "p2",
+      "source": "substack",
+      "auteur": "Evangeline",
+      "auteurUrl": "https://substack.com/@eggsvans",
+      "role": "Autrice de la newsletter Evangeline & AI designers",
+      "idee": "Le workflow design avec IA tient en six étapes, et il part du vrai design system. Evangeline détaille les prompts et les fichiers qu'elle utilise chaque jour.",
+      "concret": [
+        "Construire avec son vrai design system : un fichier de règles ou un repo bac à sable fait ressembler la sortie au produit.",
+        "Guider avec des mots précis : nommer le token, sélectionner l'élément DOM, utiliser « copy for agent » puis coller. Maîtriser le vocabulaire front-end fait aussi économiser des tokens.",
+        "Tester avec un lien : un prototype partageable avec sélecteur de versions, devant de vrais utilisateurs.",
+        "Transmettre le pourquoi : l'IA tient le journal de décisions, puis on livre une vidéo de présentation ou une pull request."
+      ],
+      "commentaires": "",
+      "url": "https://evangelineng.substack.com/p/the-end-to-end-ai-design-workflow",
+      "engagement": "",
+      "tags": [
+        "workflow",
+        "handoff",
+        "agents"
+      ]
+    },
+    {
+      "id": "p3",
+      "source": "substack",
+      "auteur": "Scuttlebutt",
+      "auteurUrl": "https://substack.com/@getscuttlebutt",
+      "role": "Newsletter Scuttlebutt (résumé de l'interview de Dylan Field, CEO de Figma, sur All-In)",
+      "idee": "Le design est le nouveau code. C'est la thèse que Dylan Field défend dans cette interview, résumée par Scuttlebutt.",
+      "concret": [
+        "La croissance de Figma aurait accéléré à 48 % après le lancement de Claude Design par Anthropic.",
+        "Le design est le nouveau code, parce que tout le monde peut désormais produire du code.",
+        "L'IA baisse le plancher de la production sans relever le plafond ; ceux qui prennent des risques non consensuels se distinguent.",
+        "Le titre du post porte sur Adobe et les 16 mois de revue réglementaire."
+      ],
+      "commentaires": "",
+      "url": "https://getscuttlebutt.substack.com/p/figma-ceo-on-adobe-16-months-of-regulatory",
+      "engagement": "",
+      "tags": [
+        "Figma",
+        "Claude Design",
+        "stratégie"
+      ]
+    }
+  ],
+  "outils": [
+    {
+      "nom": "Claude Design, Docs et Slides",
+      "note": "Page LinkedIn de Claude datée du 13/10 : Claude Docs et Claude Slides sont lancés, et Claude Design fonctionne désormais dans les conversations (one-pager, deck et visuel dans un même endroit).",
+      "url": "https://www.linkedin.com/showcase/claude/"
+    }
+  ],
+  "personnes": [
+    {
+      "nom": "Lisa Demchenko",
+      "role": "Autrice sur Substack",
+      "pourquoi": "Elle propose une méthode concrète pour vérifier si un design system est prêt pour l'IA.",
+      "url": "https://substack.com/@llsbet",
+      "plateforme": "substack",
+      "photo": "https://substackcdn.com/image/fetch/$s_!qHEf!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd8d15348-9c6c-4a0d-a108-a1754372c619_2316x2316.png"
+    },
+    {
+      "nom": "Evangeline",
+      "role": "Autrice de la newsletter Evangeline & AI designers",
+      "pourquoi": "Elle détaille un workflow design avec IA complet, avec prompts et fichiers, du design system au handoff.",
+      "url": "https://substack.com/@eggsvans",
+      "plateforme": "substack",
+      "photo": ""
+    }
+  ],
+  "evenements": [],
+  "offres": [],
+  "notes": "Collecte maigre : 3 posts retenus, tous sur Substack. Aucun post LinkedIn exploitable des dernières 24 h : les requêtes « design tokens AI » et « agentic UX » n'ont rien renvoyé, « Untitled UI AI » n'a donné que des pages génériques LinkedIn. Deux résultats LinkedIn (page Claude du 13/10, post de Sahar Lepa du 14/10 sur le vibe coding par des designers) datent d'environ une semaine : le premier est gardé en outil, le second est écarté. Les extraits Substack sont tronqués : pour le workflow d'Evangeline, seules 4 étapes sur 6 étaient lisibles, et seul le premier résultat de la requête « Figma AI » a pu être lu. Aucun chiffre d'engagement n'était disponible. Aucun événement ni offre pertinents."
+}

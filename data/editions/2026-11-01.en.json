@@ -1,0 +1,265 @@
+{
+  "date": "2026-11-01",
+  "titre": "Written context becomes the raw material for agents",
+  "essentiel": [
+    "Figma launches Specs: requirements, design rules and docs in Markdown, wired through MCP.",
+    "Several designers place the human approval point at one precise spot rather than everywhere.",
+    "Penpot + Codex shows an open path when Figma's MCP quotas block."
+  ],
+  "syntheses": [
+    {
+      "id": "contexte-avant-generation",
+      "titre": "Context before generation",
+      "texte": "Figma Specs, tokens as constraints and Dhruv Sood's single spec all say the same thing: an agent does better reading written rules than guessing from an image. Typical AI mistakes (hard-coded value, invented variant, forgotten state) can be caught in review, but are better prevented upstream. The AI for UX round-up adds the flip side: without heuristics, a polished screen hides missing error paths.",
+      "posts": [
+        "iflow-figma-specs",
+        "ebeli-specs-contexte",
+        "upadhyay-tokens-contraintes",
+        "sood-spec-unique",
+        "aiforux-roundup-nov1"
+      ]
+    },
+    {
+      "id": "agent-propose-designer-valide",
+      "titre": "The agent proposes, the designer approves",
+      "texte": "Three posts put human decision at a precise spot: before bulk application for Rajesh Raote, at PR review for Dhruv Sood, and through a single write-enabled agent for Slsabil Zabady. The disagreement is about complexity: multiplying specialised agents protects, but may cost more than it brings, which Zabady promises to measure.",
+      "posts": [
+        "raote-act-show-ask",
+        "sood-spec-unique",
+        "zabady-studio-agents"
+      ]
+    },
+    {
+      "id": "mcp-s-ouvre-avec-limites",
+      "titre": "MCP opens up, with limits",
+      "texte": "MCP now connects Figma, Penpot, Codex and in-house tools like Reddit Proto. Vivek Kartha's field report reminds of the friction: free-plan quotas, fonts, debugging. Penpot becomes an open alternative when Figma's limits block, while Figma pushes Specs to keep context in-house.",
+      "posts": [
+        "kartha-penpot-codex",
+        "zabady-studio-agents",
+        "iflow-figma-specs",
+        "aiforux-roundup-nov1"
+      ]
+    }
+  ],
+  "tendances": [
+    {
+      "titre": "Context before generation",
+      "texte": "Figma Specs, tokens as constraints and Dhruv Sood's single spec all say the same thing: an agent does better reading written rules than guessing from an image. Typical AI mistakes (hard-coded value, invented variant, forgotten state) can be caught in review, but are better prevented upstream. The AI for UX round-up adds the flip side: without heuristics, a polished screen hides missing error paths."
+    },
+    {
+      "titre": "The agent proposes, the designer approves",
+      "texte": "Three posts put human decision at a precise spot: before bulk application for Rajesh Raote, at PR review for Dhruv Sood, and through a single write-enabled agent for Slsabil Zabady. The disagreement is about complexity: multiplying specialised agents protects, but may cost more than it brings, which Zabady promises to measure."
+    },
+    {
+      "titre": "MCP opens up, with limits",
+      "texte": "MCP now connects Figma, Penpot, Codex and in-house tools like Reddit Proto. Vivek Kartha's field report reminds of the friction: free-plan quotas, fonts, debugging. Penpot becomes an open alternative when Figma's limits block, while Figma pushes Specs to keep context in-house."
+    }
+  ],
+  "posts": [
+    {
+      "id": "raote-act-show-ask",
+      "source": "linkedin",
+      "auteur": "Rajesh Raote",
+      "auteurUrl": "",
+      "role": "Product Designer",
+      "idee": "An agent that asks permission for everything isn't very agentic. Rajesh Raote proposes drawing the line between autonomy and control with three levels: act, show, ask.",
+      "concret": [
+        "ACT: low-risk work the agent does on its own.",
+        "SHOW: work it completes but makes visible so the user understands.",
+        "ASK: consequential actions that need explicit approval.",
+        "Example: an agent writing product copy for 5,000 listings asks for approval when applying in bulk, not at every step."
+      ],
+      "commentaires": "Few reactions so far.",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=agentic%20design%20UX&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "2 reactions",
+      "tags": [
+        "agentic ux",
+        "interaction"
+      ]
+    },
+    {
+      "id": "sood-spec-unique",
+      "source": "linkedin",
+      "auteur": "Dhruv Sood",
+      "auteurUrl": "",
+      "role": "Senior UX Designer at Hewlett Packard Enterprise",
+      "idee": "Drift comes from the handoff between tools, not from talent. Dhruv Sood has one spec read by all three links: mockup, preview, code.",
+      "concret": [
+        "Claude writes the spec: states, tokens, acceptance checks.",
+        "Lovable builds the preview from the same tokens.",
+        "Cursor checks each PR against the spec before merge.",
+        "AI mistakes caught in review: a hard-coded hex value, an invented 14px gap, a missing error state.",
+        "He tracks visual bugs after release and review rounds to sign-off."
+      ],
+      "commentaires": "",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=agentic%20design%20UX&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "5-page carousel",
+      "tags": [
+        "design system",
+        "agentic ux",
+        "handoff"
+      ]
+    },
+    {
+      "id": "zabady-studio-agents",
+      "source": "linkedin",
+      "auteur": "Slsabil Zabady",
+      "auteurUrl": "",
+      "role": "Senior UI/UX Designer, founder of Uxera",
+      "idee": "Rather than one agent doing everything, a team of seven specialised agents. Slsabil Zabady tests the idea with Figma, Claude Code and Codex.",
+      "concret": [
+        "Each agent has a role, a persona and permissions: design system analyst, UI architect, Figma builder, QA reviewer.",
+        "Only one agent may write to the final design, with explicit approval.",
+        "Tests run in sandbox copies, separate from the original screens.",
+        "Next post will say whether more agents actually means better results."
+      ],
+      "commentaires": "Open question: one agent or a specialised team?",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=%22design%20system%22%20AI%20Figma&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "39 reactions, 4 comments",
+      "tags": [
+        "agents",
+        "figma",
+        "claude code"
+      ]
+    },
+    {
+      "id": "iflow-figma-specs",
+      "source": "linkedin",
+      "auteur": "iFlow.bot",
+      "auteurUrl": "https://www.linkedin.com/company/iflow-bot/",
+      "role": "AI news account",
+      "idee": "Figma launches Specs, an open-beta Markdown editor for product requirements, design rules and technical docs.",
+      "concret": [
+        "Documents can be standalone or sit next to designs.",
+        "They can include design elements, FigJam diagrams and code blocks.",
+        "Through MCP, you pull in context (GitHub, analytics) and push changes back, for example to Linear.",
+        "Gradual rollout on paid and education plans."
+      ],
+      "commentaires": "",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=Figma%20MCP&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "",
+      "tags": [
+        "figma",
+        "mcp",
+        "documentation"
+      ]
+    },
+    {
+      "id": "ebeli-specs-contexte",
+      "source": "linkedin",
+      "auteur": "Egberipou Ebeli",
+      "auteurUrl": "https://www.linkedin.com/in/egberipou-ebeli/",
+      "role": "Frontend developer",
+      "idee": "AI doesn't just need instructions, it needs context. Egberipou Ebeli reads Figma Specs as an answer to that gap.",
+      "concret": [
+        "A screenshot tells an agent what a product looks like; a spec tells it what it should do.",
+        "An agent could generate an interface or code from the spec and attached designs.",
+        "It could also inspect a finished design to produce technical documentation."
+      ],
+      "commentaires": "",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=Figma%20MCP&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "1 reaction",
+      "tags": [
+        "figma",
+        "documentation",
+        "contexte"
+      ]
+    },
+    {
+      "id": "kartha-penpot-codex",
+      "source": "linkedin",
+      "auteur": "Vivek Kartha",
+      "auteurUrl": "https://www.linkedin.com/in/vkartha/",
+      "role": "Staff Engineer",
+      "idee": "Blocked by the MCP call limit on Figma's free plan, Vivek Kartha redoes his design in Penpot with Codex and keeps an editable file.",
+      "concret": [
+        "Codex creates screens, layouts and reusable components in Penpot through its official, free and open MCP server.",
+        "Result: five desktop views, five mobile views and a filter sheet.",
+        "Fonts and text wrapping needed fixes, and the setup needed debugging."
+      ],
+      "commentaires": "",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=Figma%20MCP&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "2 reactions",
+      "tags": [
+        "mcp",
+        "penpot",
+        "figma"
+      ]
+    },
+    {
+      "id": "upadhyay-tokens-contraintes",
+      "source": "linkedin",
+      "auteur": "Rahul Upadhyay",
+      "auteurUrl": "",
+      "role": "Founder and Product Designer at Pencil and Screen",
+      "idee": "Generating UI with AI is easy; keeping it consistent with an existing design system is harder. A design system must also give the AI its constraints.",
+      "concret": [
+        "Risks named: component variants that don't exist, colours outside tokens, inconsistencies across the product.",
+        "Approach explored with a client: tokens, explicit rules and validation of generated code."
+      ],
+      "commentaires": "",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=%22design%20tokens%22%20AI&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "",
+      "tags": [
+        "design system",
+        "tokens",
+        "agentic ux"
+      ]
+    },
+    {
+      "id": "aiforux-roundup-nov1",
+      "source": "substack",
+      "auteur": "Patrick Neeman",
+      "auteurUrl": "https://aiforux.substack.com",
+      "role": "AI for UX newsletter",
+      "idee": "Polished is not usable. This week's round-up connects the limits of UI generators, grounding in a design system, and the return of hands-on makers.",
+      "concret": [
+        "2026 study: 138 generated mobile screens (Figma, Banani, Stitch) scored on Nielsen's heuristics; good visual conventions, weak support (errors, recovery).",
+        "Reddit Proto, an in-house prototyping tool built on a design system MCP, reportedly reached full adoption with 700+ prototypes.",
+        "Transilience case: a solo designer builds a design system after three inconsistent MVPs.",
+        "UX job postings reportedly down 71% from the 2022 peak."
+      ],
+      "commentaires": "",
+      "url": "https://aiforux.substack.com/p/october-26-november-1-round-up-ai",
+      "engagement": "1 reaction",
+      "tags": [
+        "design system",
+        "ia ux",
+        "revue"
+      ]
+    }
+  ],
+  "outils": [
+    {
+      "nom": "Figma Specs",
+      "note": "Open-beta Markdown editor for specs and design rules, with MCP.",
+      "url": ""
+    },
+    {
+      "nom": "Penpot MCP",
+      "note": "Official, free and open MCP server, used with Codex.",
+      "url": "https://penpot.app"
+    }
+  ],
+  "personnes": [
+    {
+      "nom": "Vivek Kartha",
+      "role": "Staff Engineer",
+      "pourquoi": "Tests Codex and Penpot over MCP and documents the friction.",
+      "url": "https://www.linkedin.com/in/vkartha/",
+      "plateforme": "linkedin",
+      "photo": ""
+    },
+    {
+      "nom": "Patrick Neeman",
+      "role": "AI for UX newsletter",
+      "pourquoi": "Useful weekly round-up on AI applied to UX.",
+      "url": "https://aiforux.substack.com",
+      "plateforme": "substack",
+      "photo": ""
+    }
+  ],
+  "evenements": [],
+  "offres": [],
+  "notes": "Catch-up edition published on a Sunday after more than ten days without one. Reduced collection: 4 LinkedIn queries, 1 Substack query, X skipped (not a scheduled day). LinkedIn post links point to the originating search, as no readable permalink was available."
+}

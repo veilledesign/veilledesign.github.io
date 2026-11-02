@@ -1,0 +1,329 @@
+{
+  "date": "2026-11-02",
+  "titre": "Le design system devient un fichier que l'agent lit, et qu'on vérifie",
+  "essentiel": [
+    "Google (DESIGN.md), NN/g (UX.md) et Figma (Specs) convergent : le livrable de design devient un fichier lisible par l'IA.",
+    "La dérive des agents se mesure désormais : Rico annonce 31,6 % de respect d'un design system par Claude Code, Mantis signale les couleurs à moins de ΔE 5 d'un token.",
+    "Le travail de design glisse dans le produit lui-même : plugin canvas pour Claude Code, Replica de GitHub, Framer piloté par MCP depuis un téléphone."
+  ],
+  "syntheses": [
+    {
+      "id": "ds-lisible-machine",
+      "titre": "Le design system s'écrit pour être lu par une machine",
+      "texte": "Souharda Mukherjee relève que Google, NN/g et Figma arrivent au même endroit en six mois : un fichier que l'IA lit, pas un deck. Workshopr montre ce que ça donne concrètement : des tokens nommés par leur rôle et un commentaire qui interdit à l'agent de « restaurer » une couleur qui casse le contraste AA. GitHub va dans le même sens avec Replica, qui prototype à partir des composants et de la documentation de l'équipe. Hani Husamuddin rappelle en contrepoint que la passation humaine (variables en trois couches, mapping 1:1 Tailwind v4) reste la base que l'agent réutilise.",
+      "posts": [
+        "souharda-fichier-ia",
+        "workshopr-tokens-commentes",
+        "github-replica",
+        "husamuddin-rutera-tailwind"
+      ]
+    },
+    {
+      "id": "derive-se-mesure",
+      "titre": "La dérive se mesure, elle ne se devine plus",
+      "texte": "Deux outils publient des chiffres sur l'écart entre ce que génère l'agent et le système. Rico annonce que Claude Code ne suit un design system fourni que 31,6 % du temps (chiffre d'éditeur, à vérifier) et propose un contrôle avant livraison. Mantis apprend le style d'une app en production et signale les valeurs « presque justes » (#465569 au lieu de #475569, 15 px au lieu de 16 px). Workshopr ajoute une troisième voie : écrire le ratio de contraste dans le commentaire du token, pour que personne n'ait à faire confiance à l'œil.",
+      "posts": [
+        "rico-gout-agents",
+        "truong-mantis-derive",
+        "workshopr-tokens-commentes"
+      ]
+    },
+    {
+      "id": "design-dans-le-produit",
+      "titre": "Le design se fait dans le produit, plus seulement dans la maquette",
+      "texte": "Raya B. a construit un plugin Claude Code qui transforme n'importe quelle page en canvas : on édite de vrais composants avec leurs props, avec des contrôles d'accessibilité en continu. Ayoub Kada décrit un flux sans passation : écrans clés dans Figma, envoi à Claude par le MCP, « le vrai build, jamais un prototype ». Iliyass Oulad modifie un site Framer depuis son téléphone via le MCP officiel, mais garde la direction artistique au bureau. Tous gardent une étape de relecture humaine.",
+      "posts": [
+        "raya-canvas-claude-code",
+        "kada-plus-de-handoff",
+        "oulad-framer-mcp",
+        "github-replica"
+      ]
+    }
+  ],
+  "posts": [
+    {
+      "id": "souharda-fichier-ia",
+      "source": "linkedin",
+      "auteur": "Souharda Mukherjee",
+      "auteurUrl": "https://www.linkedin.com/in/souharda-lead-designer/",
+      "role": "Lead Product Designer, design systems prêts pour l'IA (Dubaï)",
+      "idee": "Le nouveau livrable de design n'est pas un deck, c'est un fichier que l'IA lit. Google a ouvert DESIGN.md, NN/g propose UX.md, Figma lance Specs : trois équipes, même conclusion en six mois.",
+      "concret": [
+        "DESIGN.md (Google) : comment le produit doit apparaître",
+        "UX.md (Nielsen Norman Group) : recherche, vocabulaire et contexte utilisateur pour l'IA",
+        "Figma Specs : langage de design documenté pour humains et agents",
+        "Test : des captures du design system au lieu du fichier donnent des couleurs, espacements et styles approximés"
+      ],
+      "commentaires": "Question ouverte : où vit votre raisonnement de design, et une machine peut-elle le lire ?",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=%22design%20system%22%20AI%20Figma&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "Publié il y a moins d'une heure",
+      "tags": [
+        "documentation",
+        "design-system",
+        "contexte"
+      ]
+    },
+    {
+      "id": "workshopr-tokens-commentes",
+      "source": "substack",
+      "auteur": "Workshopr.io",
+      "auteurUrl": "https://workshopr.substack.com",
+      "role": "Newsletter d'un designer devenu design engineer",
+      "idee": "Le fichier de tokens est la preuve du passage au design engineering. L'auteur publie son platform-tokens.css : cinq rouges nommés par leur rôle et des commentaires adressés à la personne, ou à l'agent, qui ouvrira le fichier.",
+      "concret": [
+        "--brand, --brand-ink (5,02:1), --brand-line, --brand-soft, --brand-tint",
+        "Commentaire « Do not restore » : l'ancienne teinte casse le contraste AA sur tous les boutons primaires",
+        "Ratio de contraste écrit dans le commentaire, renvoi vers un audit daté",
+        "Fichier de 973 lignes, sans rien masquer"
+      ],
+      "commentaires": "",
+      "url": "https://workshopr.substack.com/p/from-product-design-to-design-engineer",
+      "engagement": "7 j'aime (publié le 30 octobre)",
+      "tags": [
+        "design-tokens",
+        "accessibilité",
+        "design-engineer"
+      ]
+    },
+    {
+      "id": "github-replica",
+      "source": "substack",
+      "auteur": "Tech Trends News Update",
+      "auteurUrl": "https://techtrendsnewsupdate.substack.com",
+      "role": "Newsletter tech",
+      "idee": "GitHub ouvre Replica, un outil de prototypage IA nourri par le design system de l'équipe. On décrit une interface dans l'app Copilot et un prototype fonctionnel s'affiche à côté, construit avec les composants, motifs et docs existants.",
+      "concret": [
+        "Licence MIT, dépôt github/replica",
+        "Plugin canvas pour l'app Copilot, applis de départ, Replica Hub auto-hébergé pour commenter",
+        "Local : app Copilot, Git et Node.js sur macOS ou Linux",
+        "Limite : prototype non prêt pour la production ; accessibilité et interactions à évaluer à part"
+      ],
+      "commentaires": "",
+      "url": "https://techtrendsnewsupdate.substack.com/p/github-open-sources-replica-for-ai",
+      "engagement": "Annonce GitHub du 28 octobre",
+      "tags": [
+        "prototypage",
+        "design-system",
+        "agents"
+      ]
+    },
+    {
+      "id": "husamuddin-rutera-tailwind",
+      "source": "linkedin",
+      "auteur": "Hani Husamuddin",
+      "auteurUrl": "https://www.linkedin.com/in/hanihusam/",
+      "role": "Frontend & UI Engineer, design systems",
+      "idee": "Une passation de design system se prépare pour l'humain avant l'agent. Il partage un fichier Figma complet, une appli fictive de réservation de bus, pour montrer comment il livre un système à une équipe Tailwind CSS v4.",
+      "concret": [
+        "75 variables en 3 couches : primitives, sémantiques (clair/sombre), composants",
+        "Composant Seat avec variantes Status × Type et propriété Focus",
+        "Aucun état ne repose sur la couleur seule (coche, bord pointillé, hachures)",
+        "Tokens mappés 1:1 sur Tailwind CSS v4, démo navigable au clavier, gratuit sur Figma Community"
+      ],
+      "commentaires": "",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=%22design%20system%22%20AI%20Figma&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "1 réaction, 1 commentaire",
+      "tags": [
+        "design-tokens",
+        "accessibilité",
+        "figma"
+      ]
+    },
+    {
+      "id": "rico-gout-agents",
+      "source": "linkedin",
+      "auteur": "Bekay Oryngazy",
+      "auteurUrl": "https://www.linkedin.com/in/bekay-oryngazy-1a4068358/",
+      "role": "Cofondateur de Rico (Astana)",
+      "idee": "L'IA ne conçoit pas, elle fait la moyenne. Rico se présente comme une infrastructure de design pour agents de code : il donne des règles de goût à l'agent puis vérifie chaque écran avant livraison.",
+      "concret": [
+        "Chiffre annoncé : Claude Code suit un design system fourni 31,6 % du temps (mesure de l'éditeur)",
+        "Test à l'aveugle annoncé : 9 personnes sur 10 préfèrent Rico",
+        "742 utilisateurs revendiqués, gratuit : tryrico.com"
+      ],
+      "commentaires": "",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=Claude%20design%20system&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "Faible (lancement)",
+      "tags": [
+        "agents",
+        "design-system",
+        "qualité"
+      ]
+    },
+    {
+      "id": "truong-mantis-derive",
+      "source": "linkedin",
+      "auteur": "Vu Linh Truong",
+      "auteurUrl": "https://www.linkedin.com/in/vu-linh-truong-4330b4317/",
+      "role": "Ingénieur full-stack, créateur de Mantis (open source)",
+      "idee": "Votre agent a écrit #465569, votre token est #475569. Personne ne le verra, votre design system si. Mantis apprend le style réel d'une app et signale les valeurs presque justes.",
+      "concret": [
+        "mantis learn : parcourt chaque route, taille d'écran et thème, relève couleurs (avec variables CSS), tailles, rayons, espacements, motion",
+        "Alerte « off-style » si une couleur est à moins de ΔE 5 d'une couleur maison sans en être une",
+        "Test sur 5 sites : 0 alerte sur tailwindcss.com et vercel.com, 2 sur stripe.com, 4 sur linear.app et github.com"
+      ],
+      "commentaires": "Repartagé par MergeWatch : la revue passe de « ça s'affiche ? » à « ça respecte les contraintes du produit ? ».",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=%22design%20tokens%22%20AI&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "Repartagé par MergeWatch",
+      "tags": [
+        "design-tokens",
+        "qualité",
+        "agents"
+      ]
+    },
+    {
+      "id": "raya-canvas-claude-code",
+      "source": "linkedin",
+      "auteur": "Raya B.",
+      "auteurUrl": "https://www.linkedin.com/in/raayaa/",
+      "role": "Design Lead",
+      "idee": "Le calque visuel qui manquait à Claude Code. Son plugin transforme n'importe quelle page du navigateur en canvas : on édite à la main ou avec Claude, sur de vrais composants, et la modification arrive dans le code.",
+      "concret": [
+        "Édition de vrais composants avec leurs vraies props",
+        "Modifications contraintes par le design system, import de fichiers Figma",
+        "Contrôles d'accessibilité pendant la conception",
+        "Changement livré dans les bons fichiers, prêt pour revue"
+      ],
+      "commentaires": "",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=Claude%20design%20system&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "24 réactions",
+      "tags": [
+        "claude",
+        "prototypage",
+        "design-system"
+      ]
+    },
+    {
+      "id": "kada-plus-de-handoff",
+      "source": "x",
+      "auteur": "Ayoub Kada",
+      "auteurUrl": "https://x.com/Ayoubka_",
+      "role": "Designer",
+      "idee": "Je ne fais plus de passation. Son flux : écrans clés dans Figma, envoi à Claude via le MCP Figma, demande du vrai build et jamais d'un prototype, motion avec Higgsfield, itération sur chaque détail, mise en ligne.",
+      "concret": [
+        "Figma MCP + Claude pour le build",
+        "Higgsfield pour la motion",
+        "Article « Designers don't hand off anymore (part 1) »"
+      ],
+      "commentaires": "",
+      "url": "https://x.com/Ayoubka_/status/2117046860879740939",
+      "engagement": "10 j'aime, environ 600 vues",
+      "tags": [
+        "MCP",
+        "figma",
+        "vibe-coding"
+      ]
+    },
+    {
+      "id": "oulad-framer-mcp",
+      "source": "linkedin",
+      "auteur": "Iliyass Oulad",
+      "auteurUrl": "https://www.linkedin.com/in/iliyass-oulad/",
+      "role": "Expert Framer, Reiya Studio",
+      "idee": "Une mise à jour client faite en terrasse, depuis un téléphone. Claude, connecté à Framer par le MCP officiel, change le titre et ajoute une section en trois messages ; il relit et valide.",
+      "concret": [
+        "MCP officiel Framer utilisable depuis le navigateur ou le téléphone",
+        "Sur Mac : passage de Figma à Framer via le MCP",
+        "Limite posée : la direction artistique reste au bureau"
+      ],
+      "commentaires": "",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=Figma%20MCP&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "5 réactions (partenaire Framer)",
+      "tags": [
+        "MCP",
+        "claude",
+        "prototypage"
+      ]
+    }
+  ],
+  "outils": [
+    {
+      "nom": "Replica (GitHub)",
+      "note": "Prototypage IA open source à partir du design system de l'équipe, dans l'app Copilot.",
+      "url": "https://github.com/github/replica"
+    },
+    {
+      "nom": "Mantis",
+      "note": "Vérificateur d'UI open source : apprend le style réel d'une app et signale les valeurs hors tokens.",
+      "url": ""
+    },
+    {
+      "nom": "Rico",
+      "note": "Règles de goût et contrôle d'écran pour agents de code ; chiffres d'éditeur à vérifier.",
+      "url": "https://tryrico.com"
+    },
+    {
+      "nom": "Framer MCP",
+      "note": "MCP officiel pour modifier un projet Framer depuis Claude.",
+      "url": ""
+    },
+    {
+      "nom": "ilse",
+      "note": "Barre d'outils sur une app React : clic sur un élément, note envoyée à l'agent avec fichier et ligne, réglages sur vos tokens.",
+      "url": "https://lnkd.in/gcBhVxdB"
+    },
+    {
+      "nom": "Figma Specs",
+      "note": "Documentation du langage de design pour humains et agents.",
+      "url": ""
+    }
+  ],
+  "personnes": [
+    {
+      "nom": "Souharda Mukherjee",
+      "role": "Lead Product Designer, design systems prêts pour l'IA",
+      "pourquoi": "Relie DESIGN.md, UX.md et Figma Specs avec un test concret.",
+      "url": "https://www.linkedin.com/in/souharda-lead-designer/",
+      "plateforme": "linkedin",
+      "photo": "https://media.licdn.com/dms/image/v2/D4D03AQGjblv5hX4MoQ/profile-displayphoto-scale_100_100/B4DZ5J5Cu1HAAY-/0/1779356155548?e=1795046400&v=beta&t=r2-ggQvIxCXc9OAlkZqwCLtLcD_zvaIjUsk6B0Av4vw"
+    },
+    {
+      "nom": "Vu Linh Truong",
+      "role": "Ingénieur, créateur de Mantis",
+      "pourquoi": "Mesure la dérive des tokens dans le code écrit par les agents.",
+      "url": "https://www.linkedin.com/in/vu-linh-truong-4330b4317/",
+      "plateforme": "linkedin",
+      "photo": "https://media.licdn.com/dms/image/v2/D5603AQEYR6jWP5wRmQ/profile-displayphoto-scale_100_100/B56aF2RZFoGoAY-/0/1792985634825?e=1795046400&v=beta&t=-E9FVknsqeYcGfmtB5nK0gMcIq4aiQvHNCpg2zpM5SA"
+    },
+    {
+      "nom": "Raya B.",
+      "role": "Design Lead",
+      "pourquoi": "Construit un canvas visuel pour Claude Code, contraint par le design system.",
+      "url": "https://www.linkedin.com/in/raayaa/",
+      "plateforme": "linkedin",
+      "photo": "https://media.licdn.com/dms/image/v2/D4D03AQH5ptllHWDIpg/profile-displayphoto-scale_100_100/B4DZu4cGZJJsAc-/0/1768325935223?e=1795046400&v=beta&t=F4RxGOoKa6_DWINhUOAC4IKYqPRXuRch3uHq4y62Xh0"
+    },
+    {
+      "nom": "Ayoub Kada",
+      "role": "Designer",
+      "pourquoi": "Documente un flux Figma MCP vers build réel, sans passation.",
+      "url": "https://x.com/Ayoubka_",
+      "plateforme": "x",
+      "photo": ""
+    }
+  ],
+  "evenements": [],
+  "offres": [
+    {
+      "poste": "Product Designer, Design Systems",
+      "entreprise": "Anthropic",
+      "lieu": "Hybride, États-Unis",
+      "url": "https://designsystems.jobs"
+    }
+  ],
+  "notes": "LinkedIn : 5 requêtes (« design agentique » sans résultat), fil d'accueil pauvre. Substack : le filtre 24 h ne marche qu'en tri Récent ; les deux articles retenus datent du 30 octobre. X : recherches maigres, rien de retenu dans l'onglet AI-Native Designers. Les URL LinkedIn renvoient vers la recherche d'origine.",
+  "tendances": [
+    {
+      "titre": "Le design system s'écrit pour être lu par une machine",
+      "texte": "Souharda Mukherjee relève que Google, NN/g et Figma arrivent au même endroit en six mois : un fichier que l'IA lit, pas un deck."
+    },
+    {
+      "titre": "La dérive se mesure, elle ne se devine plus",
+      "texte": "Deux outils publient des chiffres sur l'écart entre ce que génère l'agent et le système."
+    },
+    {
+      "titre": "Le design se fait dans le produit, plus seulement dans la maquette",
+      "texte": "Raya B."
+    }
+  ]
+}

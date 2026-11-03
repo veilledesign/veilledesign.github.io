@@ -1,0 +1,345 @@
+{
+  "date": "2026-11-03",
+  "titre": "Les règles ne suffisent plus : l'agent a besoin de goût, de doc et de limites",
+  "essentiel": [
+    "Le design system donne les règles à l'agent, les références lui donnent le goût : Eno lance marked.dev, un MCP de références design, et annonce 80 % d'allers-retours en moins.",
+    "Rendre un design system « AI-ready », c'est surtout faire enfin la documentation qu'on devait déjà aux humains, comme le résument les recommandations de Figma.",
+    "Côté produit, la question n'est plus la puissance de l'agent mais son autonomie : quand il agit, quand il demande, quand il s'arrête."
+  ],
+  "syntheses": [
+    {
+      "id": "regles-et-gout",
+      "titre": "Le design system donne les règles, les références donnent le goût",
+      "texte": "Maxime Podgorski (Eno) résume une idée qui revient : le design system cadre l'agent, mais ce sont les références qui lui donnent le goût. AJ fait le même constat côté code, où les agents recyclent les mêmes boutons et dégradés tant qu'on ne les branche pas sur des registres de composants. Shikha Lakhani montre que les grandes équipes (Reddit, Stripe, Adobe) construisent leurs propres outils de prototypage pour une seule raison : que le résultat ressemble enfin à leur marque.",
+      "posts": [
+        "podgorski-marked-mcp",
+        "aj-registres-ui",
+        "lakhani-build-or-buy"
+      ]
+    },
+    {
+      "id": "ai-ready-pour-humains",
+      "titre": "« AI-ready » veut dire documenté, enfin",
+      "texte": "Jessica Trocmé relit les recommandations de Figma pour son agent (noms cohérents, auto layout, descriptions, page d'exemples) et constate que c'est ce qu'on devait déjà aux développeurs. Loïc Bertetto va plus loin : ses consignes vivent dans des process écrits que Claude relit seul, et poser les fondations d'un design system passe d'une semaine à quelques heures. Tous deux insistent sur la même limite : ces process ne tranchent pas à la place du designer.",
+      "posts": [
+        "trocme-ai-ready",
+        "bertetto-process-ecrits",
+        "lakhani-build-or-buy"
+      ]
+    },
+    {
+      "id": "autonomie-appropriee",
+      "titre": "Concevoir l'autonomie de l'agent, pas sa puissance",
+      "texte": "Syed Zubair Ahmed décrit une interface d'agent comme un système de contrôle en 7 couches, de l'intention à la reprise après erreur. Arun Chandra propose trois règles simples : répondre seul, faire des changements à faible risque dans des limites définies, demander l'accord avant toute décision lourde, avec des actions traçables et réversibles. Jon Barrett rappelle que ce contrôle passe aussi par les mots, jusqu'au message de validation humaine.",
+      "posts": [
+        "ahmed-7-couches",
+        "chandra-autonomie",
+        "barrett-ux-writing-hitl"
+      ]
+    },
+    {
+      "id": "mcp-limites-pratiques",
+      "titre": "Le MCP design se heurte encore à des limites pratiques",
+      "texte": "Guillaume O. a voulu dessiner des écrans avec Claude Code via le MCP de Figma : quotas vite atteints, puis Penpot trop lent sur un gros fichier, avant de trouver un outil plus léger. En parallèle, les branchements se multiplient (MCP, CLI shadcn, skills) pour donner à l'agent des composants et des références. L'outillage avance vite, mais le coût et la fluidité restent des critères de choix.",
+      "posts": [
+        "ojardias-quotas-mcp",
+        "aj-registres-ui",
+        "podgorski-marked-mcp"
+      ]
+    }
+  ],
+  "posts": [
+    {
+      "id": "podgorski-marked-mcp",
+      "source": "linkedin",
+      "auteur": "Maxime Podgorski",
+      "auteurUrl": "https://www.linkedin.com/in/maxime-podgorski/",
+      "role": "Design chez Eno",
+      "idee": "Le design system donne les règles, les références donnent le goût. Après un an de design exécuté par des agents, Eno transforme son moteur interne en outil : marked.dev, un MCP qui relie des références design à Claude, Codex, Cursor ou Figma.",
+      "concret": [
+        "marked.dev : MCP qui sélectionne des références design à partir d'un prompt",
+        "Compatible Claude, Codex, Cursor, Figma",
+        "Annoncé : +80 % d'allers-retours en moins avec les agents, moins de tokens",
+        "Références de la UI jusqu'à l'animation de composants"
+      ],
+      "commentaires": "Post de lancement, discussion surtout positive autour de la notion de « taste » donnée aux agents.",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=Figma%20MCP&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "59 réactions, 17 commentaires, 4 republications",
+      "tags": [
+        "MCP",
+        "agents",
+        "design-system"
+      ]
+    },
+    {
+      "id": "trocme-ai-ready",
+      "source": "linkedin",
+      "auteur": "Jessica Trocmé",
+      "auteurUrl": "https://www.linkedin.com/in/jessica-trocme/",
+      "role": "Product Designer senior, mentore UX/UI et Figma",
+      "idee": "L'IA n'invente pas une nouvelle exigence. Elle rend visible la documentation qu'on repoussait depuis des années : les recommandations de Figma pour un design system lisible par son IA sont celles qu'on devait déjà aux humains.",
+      "concret": [
+        "Noms cohérents pour calques et composants : l'IA lit les noms",
+        "Auto layout pour exprimer structure et comportement responsive",
+        "Composants réutilisables plutôt qu'écrans recopiés",
+        "Descriptions sur composants, styles et variables",
+        "Une page « Exemples » dans la librairie publiée",
+        "Exemple : un fond de bouton utilisant une couleur nommée « texte »"
+      ],
+      "commentaires": "Peu de commentaires, question ouverte « tout est documenté » ou « c'est dans ma tête ».",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=%22design%20system%22%20AI%20Figma&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "5 réactions, 2 commentaires",
+      "tags": [
+        "design-system",
+        "documentation",
+        "figma"
+      ]
+    },
+    {
+      "id": "bertetto-process-ecrits",
+      "source": "linkedin",
+      "auteur": "Loïc Bertetto",
+      "auteurUrl": "https://www.linkedin.com/in/lo%C3%AFc-bertetto-b4113a51/",
+      "role": "Senior UI/UX Designer freelance, B2B SaaS",
+      "idee": "J'ai arrêté de réexpliquer mon métier à l'IA. Ses consignes vivent dans des process écrits (skills) que Claude relit seul, avec un déclencheur, les infos à réclamer, les étapes et le moment où il rend la main.",
+      "concret": [
+        "Chaque process : description qui décide quand il s'active, infos à demander, étapes, références",
+        "Le process design system refuse les wireframes et renvoie vers l'exploration UX",
+        "Fondations et nommage des tokens : d'une semaine à quelques heures",
+        "Les process s'arrêtent dès qu'il faut trancher sur le visuel ou avec le client"
+      ],
+      "commentaires": "Publié depuis une heure, peu de réactions au moment de la lecture.",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=Claude%20design%20system&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "Récent, engagement encore faible",
+      "tags": [
+        "claude",
+        "documentation",
+        "design-tokens"
+      ]
+    },
+    {
+      "id": "ahmed-7-couches",
+      "source": "linkedin",
+      "auteur": "Syed Zubair Ahmed",
+      "auteurUrl": "https://www.linkedin.com/in/zuuahmed/",
+      "role": "AI Product Designer, Dubaï",
+      "idee": "Une interface d'agent n'est pas un écran de chat. C'est un système de contrôle en 7 couches : intention, contexte, planification, actions, contrôle humain, résultats, transparence et reprise.",
+      "concret": [
+        "Exemple : organiser un séminaire pour 12 personnes",
+        "Montrer les étapes d'exécution avant d'agir",
+        "Afficher les tâches accomplies plutôt que l'historique du chat",
+        "Expliquer les blocages et proposer des alternatives"
+      ],
+      "commentaires": "Publié depuis quelques minutes.",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=%22AI%20agents%22%20%22product%20design%22&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "Récent",
+      "tags": [
+        "agentic-ux",
+        "agents"
+      ]
+    },
+    {
+      "id": "chandra-autonomie",
+      "source": "linkedin",
+      "auteur": "Arun Chandra",
+      "auteurUrl": "https://www.linkedin.com/in/arun-chandra-v/",
+      "role": "Product Leader, plateformes et systèmes IA",
+      "idee": "Ne pas viser l'autonomie maximale, mais l'autonomie appropriée. Construire un agent qui agit est un exploit technique ; construire un agent qui sait quand agir, demander ou s'arrêter est un exploit produit.",
+      "concret": [
+        "Trois règles : répondre seul, changements à faible risque dans des limites définies, accord humain pour les décisions lourdes",
+        "Chaque action traçable et réversible",
+        "Exemple : agent de support qui modifie une adresse, rembourse ou annule une commande"
+      ],
+      "commentaires": "",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=%22AI%20agents%22%20%22product%20design%22&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "Publié il y a 4 h",
+      "tags": [
+        "agentic-ux",
+        "gouvernance"
+      ]
+    },
+    {
+      "id": "lakhani-build-or-buy",
+      "source": "substack",
+      "auteur": "Shikha Lakhani",
+      "auteurUrl": "https://shikhalakhani848637.substack.com",
+      "role": "Autrice de la newsletter shikha lakhani",
+      "idee": "Construire ou acheter son outil de prototypage IA ? Reddit, Stripe, Adobe et Miro ont construit le leur pour une raison principale : les outils génériques ne ressemblent pas à leur marque.",
+      "concret": [
+        "Reddit Proto : un MCP relie les composants produit au code de production",
+        "Prototypes sur données réelles, partage interne sans risque de fuite",
+        "Les annotations de revue deviennent des modifications ciblées",
+        "Quatre manques des outils autonomes (v0, Lovable) : marque, données réelles, partage, réutilisation du code"
+      ],
+      "commentaires": "",
+      "url": "https://shikhalakhani848637.substack.com/p/to-build-or-buy-the-new-wave-of-ai",
+      "engagement": "Publié dans la matinée",
+      "tags": [
+        "prototypage",
+        "design-system",
+        "MCP"
+      ]
+    },
+    {
+      "id": "aj-registres-ui",
+      "source": "substack",
+      "auteur": "AJ",
+      "auteurUrl": "https://ajseven.substack.com",
+      "role": "Auteur de la newsletter AJ",
+      "idee": "Les agents de code recyclent toujours les mêmes motifs. Pour sortir des boutons et dégradés génériques, il faut les brancher sur des bibliothèques et registres de composants qu'ils peuvent chercher, lire et installer.",
+      "concret": [
+        "7 ressources : Rare UI, Cult UI, 21st.dev, Magic UI, Aceternity UI, NS-UI, React Bits",
+        "Trois modes de branchement : MCP, CLI shadcn, skills dédiés",
+        "React Bits Pro : registre, skill d'installation et support MCP"
+      ],
+      "commentaires": "",
+      "url": "https://ajseven.substack.com/p/7-ui-libraries-and-registries-your",
+      "engagement": "Publié il y a 21 h",
+      "tags": [
+        "vibe-coding",
+        "MCP",
+        "agents"
+      ]
+    },
+    {
+      "id": "ojardias-quotas-mcp",
+      "source": "linkedin",
+      "auteur": "Guillaume O.",
+      "auteurUrl": "https://www.linkedin.com/in/guillaume-ojardias/",
+      "role": "Développeur full-stack (Python, React)",
+      "idee": "Les quotas du MCP de Figma tombent vite dès qu'un agent enchaîne les actions. Pour dessiner des écrans avec Claude Code, ce développeur est passé de Figma à Penpot, puis à FigCraft, plus léger sur un gros fichier.",
+      "concret": [
+        "Figma MCP : quotas d'appels vite atteints, même en abonnement payant",
+        "Penpot : MCP complet mais rendu lent sur des dizaines d'écrans clair et sombre",
+        "FigCraft : moteur de rendu plus léger, serveur MCP",
+        "Reste à migrer le travail déjà fait dans Penpot"
+      ],
+      "commentaires": "",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=Figma%20MCP&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "Publié il y a 23 h",
+      "tags": [
+        "MCP",
+        "figma",
+        "penpot"
+      ]
+    },
+    {
+      "id": "barrett-ux-writing-hitl",
+      "source": "linkedin",
+      "auteur": "Jon Barrett",
+      "auteurUrl": "https://www.linkedin.com/in/jon-barrett-129bb9b/",
+      "role": "Ingénieur agents IA et contexte",
+      "idee": "Le contrôle d'un agent passe aussi par les mots. L'article suit un tunnel d'achat, du message d'erreur vague « Invalid input » jusqu'au message de validation humaine (HITL) d'un agent.",
+      "concret": [
+        "Une phrase plus claire suffit à corriger un numéro de carte en quelques secondes",
+        "UX writing pour l'IA et Claude Design",
+        "Du message d'erreur au guide de style"
+      ],
+      "commentaires": "",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=agentic%20design%20UX&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "Publié il y a 19 h",
+      "tags": [
+        "ux-writing",
+        "agentic-ux"
+      ]
+    }
+  ],
+  "outils": [
+    {
+      "nom": "marked.dev",
+      "note": "MCP d'Eno qui fournit des références design à l'agent (Claude, Codex, Cursor, Figma).",
+      "url": "https://marked.dev"
+    },
+    {
+      "nom": "FigCraft",
+      "note": "Outil de design avec serveur MCP, plus léger que Penpot sur un gros fichier selon Guillaume O.",
+      "url": ""
+    },
+    {
+      "nom": "21st.dev",
+      "note": "Registre de composants que l'agent peut chercher et installer.",
+      "url": "https://21st.dev"
+    },
+    {
+      "nom": "Magic UI",
+      "note": "Composants animés React, utilisables par un agent de code.",
+      "url": "https://magicui.design"
+    },
+    {
+      "nom": "React Bits",
+      "note": "Composants animés ; version Pro avec registre, skill et MCP.",
+      "url": "https://reactbits.dev"
+    },
+    {
+      "nom": "Figma agent × Google Drive",
+      "note": "Connecter Docs, Sheets et Slides à l'agent Figma (plans Starter et plus).",
+      "url": "https://figma.bot/4yWADCT"
+    }
+  ],
+  "personnes": [
+    {
+      "nom": "Maxime Podgorski",
+      "role": "Design chez Eno",
+      "pourquoi": "Un an de design exécuté par des agents, et un outil (marked.dev) qui en sort.",
+      "url": "https://www.linkedin.com/in/maxime-podgorski/",
+      "plateforme": "linkedin",
+      "photo": "https://media.licdn.com/dms/image/v2/D4E03AQFMke57ByjXBQ/profile-displayphoto-scale_100_100/B4EaFP3b21HwAc-/0/1792341295364?e=1795046400&v=beta&t=KuYQA7r46-JiAOTAc5PXfjmG8oHB2K8gC1-lmMPF9Bw"
+    },
+    {
+      "nom": "Jessica Trocmé",
+      "role": "Product Designer senior, mentore",
+      "pourquoi": "Traduit les recommandations IA de Figma en pratiques concrètes, en français.",
+      "url": "https://www.linkedin.com/in/jessica-trocme/",
+      "plateforme": "linkedin",
+      "photo": "https://media.licdn.com/dms/image/v2/D4E03AQGn43QtlzPkRQ/profile-displayphoto-scale_100_100/B4EZ3dWoMVIMAg-/0/1777535195811?e=1795046400&v=beta&t=n4tuPmzokMNBZAQFC8PTqdHtqt5qp39JaGTVYj-yKVo"
+    },
+    {
+      "nom": "Loïc Bertetto",
+      "role": "Senior UI/UX Designer freelance",
+      "pourquoi": "Partage des process écrits pour Claude appliqués au design system.",
+      "url": "https://www.linkedin.com/in/lo%C3%AFc-bertetto-b4113a51/",
+      "plateforme": "linkedin",
+      "photo": "https://media.licdn.com/dms/image/v2/D4D03AQEolMxZHwj4CQ/profile-displayphoto-shrink_100_100/B4DZRkZIn6HYAU-/0/1736851098695?e=1795046400&v=beta&t=LprNpxn02uum93qKIe7URGfa14rRPj0WgjRBm-zWd-8"
+    },
+    {
+      "nom": "Syed Zubair Ahmed",
+      "role": "AI Product Designer",
+      "pourquoi": "Cadres clairs pour concevoir des interfaces d'agents.",
+      "url": "https://www.linkedin.com/in/zuuahmed/",
+      "plateforme": "linkedin",
+      "photo": "https://media.licdn.com/dms/image/v2/D4D03AQGplSExx1pTFg/profile-displayphoto-scale_100_100/B4DaDUie8AGsAY-/0/1790272207512?e=1795046400&v=beta&t=GK6Ipg5Zj3j6GgDGy5I1xeEu_rVGmY4KIneovwRVNCE"
+    }
+  ],
+  "evenements": [
+    {
+      "nom": "Atelier « Intégrer l'IA dans ton process design sur Figma » (Romain Dao)",
+      "date": "4, 13, 20, 25 et 27 novembre 2026",
+      "lieu": "En visio",
+      "note": "3 h en petit groupe : cadrer l'IA, UI et user flows depuis un brief, audit de librairie, MCP et skills. Payant.",
+      "url": "https://www.linkedin.com/in/romaindao/"
+    },
+    {
+      "nom": "UX Design Awards, Spring 2027",
+      "date": "Dépôt des projets avant le 17 novembre 2026",
+      "lieu": "En ligne",
+      "note": "Jury incluant Ranjeet Tayi (UX Design IA, Salesforce).",
+      "url": "https://www.linkedin.com/company/ux-design-awards/"
+    }
+  ],
+  "offres": [],
+  "notes": "LinkedIn : 5 requêtes (« design system » AI Figma, agentic design UX, Figma MCP, Claude design system, « AI agents » « product design ») et fil d'accueil peu fourni. Substack : le filtre « 24 h » ne marche qu'avec le tri « Récent ». X non consulté le mardi.",
+  "tendances": [
+    {
+      "titre": "Le design system donne les règles, les références donnent le goût",
+      "texte": "Maxime Podgorski (Eno) résume une idée qui revient : le design system cadre l'agent, mais ce sont les références qui lui donnent le goût. AJ fait le même constat côté code, où les agents recyclent les mêmes boutons et dégradés tant qu'on ne les branche pas sur des registres de composants. Shikha Lakhani montre que les grandes équipes (Reddit, Stripe, Adobe) construisent leurs propres outils de prototypage pour une seule raison : que le résultat ressemble enfin à leur marque."
+    },
+    {
+      "titre": "« AI-ready » veut dire documenté, enfin",
+      "texte": "Jessica Trocmé relit les recommandations de Figma pour son agent (noms cohérents, auto layout, descriptions, page d'exemples) et constate que c'est ce qu'on devait déjà aux développeurs. Loïc Bertetto va plus loin : ses consignes vivent dans des process écrits que Claude relit seul, et poser les fondations d'un design system passe d'une semaine à quelques heures. Tous deux insistent sur la même limite : ces process ne tranchent pas à la place du designer."
+    },
+    {
+      "titre": "Concevoir l'autonomie de l'agent, pas sa puissance",
+      "texte": "Syed Zubair Ahmed décrit une interface d'agent comme un système de contrôle en 7 couches, de l'intention à la reprise après erreur. Arun Chandra propose trois règles simples : répondre seul, faire des changements à faible risque dans des limites définies, demander l'accord avant toute décision lourde, avec des actions traçables et réversibles. Jon Barrett rappelle que ce contrôle passe aussi par les mots, jusqu'au message de validation humaine."
+    }
+  ]
+}

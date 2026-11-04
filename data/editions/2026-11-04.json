@@ -1,0 +1,375 @@
+{
+  "date": "2026-11-04",
+  "titre": "Connecter son design system à l'IA ne suffit pas : il faut qu'elle s'en serve vraiment",
+  "essentiel": [
+    "Les builders IA rendent un sosie du design system : Christine Vallaure propose un manifeste de composants et un MCP pour que l'agent utilise les vrais.",
+    "Le débat « Figma est mort » s'intensifie (Revolut, Penpot, Desigma), mais il porte surtout sur un fichier source lisible par l'agent.",
+    "Mesurer et relire ce que l'agent fait du système devient une pratique : évaluations IA du design system et tests de régression visuelle."
+  ],
+  "syntheses": [
+    {
+      "id": "sosie-pas-systeme",
+      "titre": "Connecter son design system ne suffit pas : l'IA rend un sosie",
+      "texte": "Christine Vallaure et Albear Halim décrivent le même piège par deux bouts. Les builders lisent le système puis en reconstruisent une copie qui ne pointe vers aucun vrai composant, et l'IA reproduit fidèlement les défauts de l'existant parce qu'elle copie ce qu'elle voit. Octahedroid ajoute la cause en amont : sans tokens, l'agent répète les valeurs codées en dur. La réponse proposée converge : un manifeste de composants, un MCP que l'agent interroge, et le designer qui garde la décision sur le fonctionnement du produit.",
+      "posts": [
+        "vallaure-sosie-ds",
+        "halim-anciens-problemes",
+        "octahedroid-tokens-prod"
+      ]
+    },
+    {
+      "id": "figma-mort-ou-pas",
+      "titre": "Le débat « Figma est mort » porte en fait sur le fichier source",
+      "texte": "Revolut pousserait ses designers vers des prototypes en code, un builder livre 200 écrans dans Penpot via MCP, et Desigma promet un Figma local avec serveur MCP. En face, Brett juge le MCP Figma sous-estimé et des designers répondent qu'ils ne voient aucune raison de partir. Personne ne défend vraiment l'écran statique : tous cherchent un fichier que l'agent peut lire et modifier, et que l'équipe peut encore commenter.",
+      "posts": [
+        "mcquade-revolut-code",
+        "randriambinintsoa-penpot-200",
+        "brett-figma-mcp-sous-estime",
+        "yapi-desigma"
+      ]
+    },
+    {
+      "id": "mesurer-ce-que-fait-agent",
+      "titre": "Ce que l'agent fait du système se mesure et se relit",
+      "texte": "Sam Alexander propose quatre évaluations pour prouver un design system face à l'IA : formats, fidélité aux tokens, adoption des composants, coût. Artem Kireev attaque l'angle mort côté code : l'agent modifie un token et personne ne voit les états qu'il touche, d'où des tests visuels dont les références sont approuvées par un humain. Les deux posent la même règle : l'agent propose, le responsable du composant valide.",
+      "posts": [
+        "alexander-evals-ds",
+        "kireev-regression-visuelle",
+        "octahedroid-tokens-prod"
+      ]
+    },
+    {
+      "id": "cout-du-mcp",
+      "titre": "Le MCP design a un prix : tokens, quotas et fiabilité",
+      "texte": "Le benchmark d'Into Design Systems chiffre l'écart : le MCP Figma officiel consomme 108 % de tokens de plus qu'une CLI sur 26 tâches, avec un plafond de 200 appels par jour. Sur X, l'enthousiasme pour le MCP Figma se heurte à des retours qui le trouvent bon sur un petit frame et fragile sur du vrai travail. Même côté Penpot, le flux exige un onglet actif et des petites étapes vérifiées.",
+      "posts": [
+        "intods-figma-cli",
+        "brett-figma-mcp-sous-estime",
+        "randriambinintsoa-penpot-200"
+      ]
+    }
+  ],
+  "tendances": [
+    {
+      "titre": "Connecter son design system ne suffit pas : l'IA rend un sosie",
+      "texte": "Les builders reconstruisent une copie du design system au lieu d'utiliser les vrais composants : manifeste et MCP deviennent indispensables."
+    },
+    {
+      "titre": "Le débat « Figma est mort » porte en fait sur le fichier source",
+      "texte": "Revolut, Penpot, Desigma ou MCP Figma : tous cherchent un fichier que l'agent lit et modifie, et que l'équipe peut encore commenter."
+    },
+    {
+      "titre": "Ce que l'agent fait du système se mesure et se relit",
+      "texte": "Évaluations IA du design system et tests de régression visuelle : l'agent propose, le responsable du composant valide."
+    }
+  ],
+  "posts": [
+    {
+      "id": "vallaure-sosie-ds",
+      "source": "substack",
+      "auteur": "Christine Vallaure",
+      "auteurUrl": "https://christinevallaure.substack.com",
+      "role": "Designer et formatrice, newsletter Moonlearning",
+      "idee": "Les builders IA rendent un sosie de votre design system. Lovable, Bolt ou Claude Design lisent le système puis en reconstruisent leur propre version, souvent sur shadcn et Tailwind : le premier écran ressemble, rien ne pointe vers les vrais composants, et le développeur reconstruit tout.",
+      "concret": [
+        "Deux briques nécessaires : un manifeste (liste des composants dans laquelle l'agent pioche) et un MCP pour que l'agent demande au lieu de se souvenir",
+        "Route rapide : le MCP Storybook ; route sérieuse : un MCP de design system sur mesure",
+        "Nomme le « prototype wall » : enthousiasme en semaine 1, doutes en semaine 3, abandon au mois 2",
+        "Série en trois parties ; partie 3 « du code à Figma et retour » le 10 novembre"
+      ],
+      "commentaires": "",
+      "url": "https://christinevallaure.substack.com/p/ai-prototyping-inside-your-design",
+      "engagement": "8 mentions j'aime, lecture de 21 min",
+      "tags": [
+        "design-system",
+        "prototypage",
+        "MCP"
+      ]
+    },
+    {
+      "id": "halim-anciens-problemes",
+      "source": "linkedin",
+      "auteur": "Albear Halim",
+      "auteurUrl": "https://www.linkedin.com/in/albearhalim/",
+      "role": "Product designer IA chez Incorta, créateur du plugin UX Crit",
+      "idee": "L'IA copie ce qu'elle voit, pas pourquoi l'écran doit changer. Il a donné un fichier Figma et le nom du design system à l'IA : propre et cohérent en quelques minutes, mais tous les anciens défauts reconstruits à l'identique.",
+      "concret": [
+        "13 entrées de menu sans hiérarchie, recherche cachée dans le menu, bulle de chat sur le tableau : reproduites telles quelles",
+        "Gardé ce que l'IA fait bien : tokens, composants, icônes",
+        "Temps réinvesti sur la décision : comment le produit doit fonctionner"
+      ],
+      "commentaires": "",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=%22design%20system%22%20AI%20Figma&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "6 réactions, 1 commentaire",
+      "tags": [
+        "design-system",
+        "figma",
+        "gouvernance"
+      ]
+    },
+    {
+      "id": "mcquade-revolut-code",
+      "source": "linkedin",
+      "auteur": "Leon McQuade",
+      "auteurUrl": "https://www.linkedin.com/in/leonmcquade/",
+      "role": "Chief AI Officer, conférencier",
+      "idee": "Revolut pousserait ses designers hors de Figma. Selon lui, une équipe plus rapide avait donné son design system au niveau du code à un LLM, puis construit ses parcours dessus sous forme d'artefacts cliquables plutôt que de frames statiques.",
+      "concret": [
+        "Trois étapes citées : design system en code donné au LLM, prompts pour construire les parcours, artefacts vivants testables sur n'importe quel appareil",
+        "Gain annoncé : 4 fois plus rapide",
+        "Information de seconde main, non sourcée dans le post : à vérifier"
+      ],
+      "commentaires": "",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=%22design%20system%22%20AI%20Figma&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "Publié quelques minutes avant la collecte",
+      "tags": [
+        "design-system",
+        "prototypage",
+        "vibe-coding"
+      ]
+    },
+    {
+      "id": "randriambinintsoa-penpot-200",
+      "source": "linkedin",
+      "auteur": "Mandaniaina Randriambinintsoa",
+      "auteurUrl": "https://www.linkedin.com/in/mandaniaina-randriambinintsoa-a75553178/",
+      "role": "Product builder IA, développeur fullstack",
+      "idee": "Plus de 200 écrans dans un vrai fichier Penpot, faits par Codex. Via le MCP officiel de Penpot, l'agent a lu les pages, compris les composants, créé les tokens, décliné mobile et desktop, relié les parcours et corrigé les détails.",
+      "concret": [
+        "Couvre authentification, onboarding, plusieurs rôles, états d'erreur et administration",
+        "Limites : l'onglet doit rester actif, chaque modification importante demande une vérification visuelle, avancer par petites étapes",
+        "Testé aussi avec le MCP Figma : « pas top » et payant selon lui"
+      ],
+      "commentaires": "Constant Lawagnan D. (Product Designer, design systems) répond qu'après avoir testé Penpot et le MCP Figma avec Claude et Codex, il ne voit aucune raison de quitter Figma, plus mûr et plus flexible.",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=Figma%20MCP&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "Publié il y a 1 jour, débat en commentaires",
+      "tags": [
+        "MCP",
+        "agents",
+        "design-system"
+      ]
+    },
+    {
+      "id": "brett-figma-mcp-sous-estime",
+      "source": "x",
+      "auteur": "Brett (@BrettFromDJ)",
+      "auteurUrl": "https://x.com/BrettFromDJ",
+      "role": "Compte X design, très suivi sur les workflows Figma × Claude",
+      "idee": "Le MCP Figma serait le grand oublié. Pour lui, on peut concevoir n'importe quoi dans Figma et laisser Claude le construire au pixel près en quelques minutes, pendant que les designers s'épuisent à jouer les développeurs.",
+      "concret": [
+        "Workflow décrit : concevoir dans Figma, puis faire construire par Claude via le MCP en quelques minutes",
+        "Thèse : les designers s'épuisent à jouer les développeurs au lieu d'exploiter ce que le MCP rend possible depuis le canevas"
+      ],
+      "commentaires": "Dans les citations, une agence crédite le MCP Figma de 5 fois plus de visuels livrés, tandis que Rahul Singh Bhadoriya raconte l'avoir abandonné sur des projets réels.",
+      "url": "https://x.com/BrettFromDJ/status/2117655774579310674",
+      "engagement": "2 000 mentions j'aime, 191 000 vues",
+      "tags": [
+        "MCP",
+        "figma",
+        "claude"
+      ]
+    },
+    {
+      "id": "intods-figma-cli",
+      "source": "substack",
+      "auteur": "Into Design Systems + AI",
+      "auteurUrl": "https://intodesignsystems.substack.com",
+      "role": "Newsletter et meetups design systems × IA",
+      "idee": "Le MCP Figma officiel coûte deux fois plus de tokens qu'une CLI. Retour de l'AI Design Jam : un designer sans bagage d'ingénieur pilote Figma avec Claude Code via une CLI open source qui parle directement à l'app.",
+      "concret": [
+        "Benchmark perso sur 26 tâches : CLI 1,7 M tokens en 407 s, MCP officiel 3,5 M tokens en 658 s (+108 %)",
+        "Quota du MCP officiel : 200 appels d'outils par jour sur un siège Full Professional, et un prompt peut en consommer plusieurs",
+        "Figma CLI : pas de clé API, pas de serveur MCP, pas de crédits IA Figma ; plus de 1 000 étoiles GitHub",
+        "Le canevas reste nécessaire pour les ajustements fins"
+      ],
+      "commentaires": "",
+      "url": "https://intodesignsystems.substack.com/p/design-in-figma-with-claude-code-figma-cli",
+      "engagement": "7 mentions j'aime, 1 commentaire",
+      "tags": [
+        "figma",
+        "MCP",
+        "claude"
+      ]
+    },
+    {
+      "id": "alexander-evals-ds",
+      "source": "linkedin",
+      "auteur": "Sam Alexander",
+      "auteurUrl": "https://www.linkedin.com/in/sxalexander/",
+      "role": "Head of AI Evals chez Knapsack",
+      "idee": "Un design system se prouve désormais avec des évaluations IA. Il propose quatre zones de mesure, et insiste : ce qui aide l'agent à consommer le système aide aussi les humains.",
+      "concret": [
+        "Readiness : le système est-il disponible dans les bons formats ?",
+        "Design Fidelity : l'IA utilise-t-elle les tokens liés à l'intention de design ?",
+        "Component Adoption : l'IA choisit-elle et utilise-t-elle correctement les composants ?",
+        "Coût par résultat de qualité"
+      ],
+      "commentaires": "",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=%22design%20tokens%22%20AI&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "4 réactions, 5 commentaires",
+      "tags": [
+        "design-system",
+        "agents",
+        "gouvernance"
+      ]
+    },
+    {
+      "id": "kireev-regression-visuelle",
+      "source": "substack",
+      "auteur": "Artem Kireev",
+      "auteurUrl": "",
+      "role": "Auteur de la newsletter Artem's Substack",
+      "idee": "Les agents corrigent ce qu'on demande et changent ce qu'on ne demande pas. Le code compile, les tests passent, et un bouton trois écrans plus loin a changé de couleur : la régression visuelle est l'étape de revue qu'on saute.",
+      "concret": [
+        "Playwright toHaveScreenshot ou tests visuels Storybook ; seuil par défaut 0,2, à resserrer pour les composants liés aux tokens",
+        "Générer les références dans le même conteneur que la CI",
+        "Couvrir chaque état des composants partagés, puis 5 ou 6 parcours qui rapportent",
+        "Règle : l'agent peut proposer une nouvelle référence, le responsable du composant l'approuve"
+      ],
+      "commentaires": "",
+      "url": "https://substack.com/home/post/p-223366588",
+      "engagement": "Lecture de 6 min",
+      "tags": [
+        "design-system",
+        "agents",
+        "gouvernance"
+      ]
+    },
+    {
+      "id": "octahedroid-tokens-prod",
+      "source": "linkedin",
+      "auteur": "Octahedroid",
+      "auteurUrl": "https://www.linkedin.com/company/octahedroid/",
+      "role": "Agence produit et design systems",
+      "idee": "Un agent copie les valeurs codées en dur qu'il trouve. Sans tokens, il répète les hex et les espacements uniques dans chaque composant ; l'agence raconte comment elle a ajouté des tokens à un produit déjà en production.",
+      "concret": [
+        "Chiffre zeroheight 2026 cité : 59 % des équipes voient de l'UI construite en contournant leur design system",
+        "Méthode : inventaire, puis couche sémantique",
+        "Article sur ce dont un agent a besoin au-delà des tokens"
+      ],
+      "commentaires": "",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=%22design%20tokens%22%20AI&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "2 réactions",
+      "tags": [
+        "design-tokens",
+        "design-system",
+        "figma"
+      ]
+    },
+    {
+      "id": "yapi-desigma",
+      "source": "linkedin",
+      "auteur": "Paul Yapi",
+      "auteurUrl": "https://www.linkedin.com/in/paul-yapi/",
+      "role": "Product Designer chez Orange Money Group",
+      "idee": "Un Figma gratuit, open source et hors ligne, mais pas encore prêt. Desigma, app de design en Rust, tourne en local et embarque déjà un serveur MCP pour que les agents modifient le fichier ouvert.",
+      "concret": [
+        "Auto layout, variantes, variables, mode dev qui sort du React, du Tailwind ou du SwiftUI",
+        "Ouvre les .fig, collaboration temps réel sans serveur",
+        "Alpha très précoce, de l'aveu même du développeur"
+      ],
+      "commentaires": "",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=Figma%20MCP&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "3 réactions",
+      "tags": [
+        "figma",
+        "MCP",
+        "prototypage"
+      ]
+    }
+  ],
+  "outils": [
+    {
+      "nom": "Figma CLI",
+      "note": "Pilote Figma depuis Claude Code sans clé API ni serveur MCP, moins gourmand en tokens que le MCP officiel selon son auteur.",
+      "url": "https://github.com/silships/figma-cli"
+    },
+    {
+      "nom": "Storybook MCP",
+      "note": "Route rapide de Christine Vallaure pour prototyper avec les vrais composants du design system.",
+      "url": "https://storybook.js.org"
+    },
+    {
+      "nom": "Playwright",
+      "note": "Tests de régression visuelle avec toHaveScreenshot pour attraper la dérive des agents.",
+      "url": "https://playwright.dev/docs/test-snapshots"
+    },
+    {
+      "nom": "Penpot MCP",
+      "note": "MCP officiel de Penpot utilisé pour faire produire plus de 200 écrans à Codex.",
+      "url": "https://penpot.app"
+    },
+    {
+      "nom": "Desigma",
+      "note": "App de design locale en Rust avec serveur MCP, en alpha très précoce.",
+      "url": "https://lnkd.in/eSPa9kf5"
+    },
+    {
+      "nom": "M3E Canvas",
+      "note": "Material 3 Expressive dans le navigateur, avec un bouton qui transforme la maquette en prompt précis pour Claude Code ou Codex.",
+      "url": "https://lnkd.in/erRwdNib"
+    },
+    {
+      "nom": "MoleUI",
+      "note": "Design system SaaS pour Paper : dashboards, chat IA, CRM, pages marketing.",
+      "url": "https://x.com/itsjamik/status/2117847004827017415"
+    },
+    {
+      "nom": "Mebius Forms Kit",
+      "note": "112 composants de formulaires, dans Figma, en code ou via MCP.",
+      "url": "https://mebius.design/freebies/forms"
+    }
+  ],
+  "personnes": [
+    {
+      "nom": "Christine Vallaure",
+      "role": "Designer et formatrice, Moonlearning",
+      "pourquoi": "Série pratique sur le prototypage IA à l'intérieur d'un vrai design system, expliquée pour des designers non codeurs.",
+      "url": "https://substack.com/@christinevallaure",
+      "plateforme": "substack",
+      "photo": ""
+    },
+    {
+      "nom": "Sam Alexander",
+      "role": "Head of AI Evals chez Knapsack",
+      "pourquoi": "Formalise comment évaluer la façon dont les agents consomment un design system.",
+      "url": "https://www.linkedin.com/in/sxalexander/",
+      "plateforme": "linkedin",
+      "photo": "https://media.licdn.com/dms/image/v2/C5603AQGJ_-WgUTj9yQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1626898029584?e=1795651200&v=beta&t=se1OLiPoqc1cB1mrId-cV1PY-S6ITxu1BaaRGxFdESY"
+    },
+    {
+      "nom": "Albear Halim",
+      "role": "Product designer IA chez Incorta",
+      "pourquoi": "Retours d'expérience honnêtes sur ce que l'IA fait bien et mal avec un design system.",
+      "url": "https://www.linkedin.com/in/albearhalim/",
+      "plateforme": "linkedin",
+      "photo": "https://media.licdn.com/dms/image/v2/D4D03AQFNbDQFMNnh1w/profile-displayphoto-scale_100_100/B4DZvcV5GeJMAc-/0/1768928286276?e=1795651200&v=beta&t=ctoIT_MhY19JSvNvFNamfLoFS_J0v50Wfzw5BbPT0BI"
+    },
+    {
+      "nom": "Paul Yapi",
+      "role": "Product Designer chez Orange Money Group",
+      "pourquoi": "Repère chaque semaine des outils design × IA en français, avec un regard critique.",
+      "url": "https://www.linkedin.com/in/paul-yapi/",
+      "plateforme": "linkedin",
+      "photo": "https://media.licdn.com/dms/image/v2/D4E03AQE3NlZeuOPFbQ/profile-displayphoto-shrink_100_100/B4EZZiH6baHYAU-/0/1745402964345?e=1795651200&v=beta&t=1IOSjL1HD8-3GLD5E6a2BIL7-EZjBn8oedo82Nl-Ah4"
+    }
+  ],
+  "evenements": [
+    {
+      "nom": "Atelier Claude Design avec un design system (Memorisely)",
+      "date": "2026-11-11",
+      "lieu": "En ligne",
+      "note": "Atelier live de deux heures : tokens, composants et fondations pour que Claude Design raisonne à partir de la marque.",
+      "url": "https://lnkd.in/eJWbzXeC"
+    }
+  ],
+  "offres": [
+    {
+      "poste": "Design Systems (design system IA-native)",
+      "entreprise": "Harvey",
+      "lieu": "New York, San Francisco ou Toronto",
+      "url": "https://x.com/TheSeanGoodwin/status/2117657749240815755"
+    }
+  ],
+  "notes": "LinkedIn : 5 requêtes (« design agentique » sans résultat) et fil peu utile. Substack : le filtre 24 h ne s'applique pas sur « design systems » AI, mais fonctionne sur Figma AI. X : 2 requêtes dont Figma MCP très riche ; onglet AI-Native Designers sans contenu exploitable aujourd'hui."
+}

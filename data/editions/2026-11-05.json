@@ -1,0 +1,353 @@
+{
+  "date": "2026-11-05",
+  "titre": "Écrire le système avant de brancher l'agent",
+  "essentiel": [
+    "Design MD, context.md, wireframes écrits : le fichier texte précède le MCP et rend le prototype juste plus vite.",
+    "L'accessibilité entre dans les tokens (Mzizi, Vallaure) et revient au designer sous forme d'options chiffrées.",
+    "Face au quota Figma MCP, les designers contournent : plugin codé par Claude, MCP tiers, MCP fourni par le design system."
+  ],
+  "syntheses": [
+    {
+      "id": "fichier-avant-serveur",
+      "titre": "Le fichier texte passe avant le serveur MCP",
+      "texte": "Headway démarre les équipes avec un seul Design MD et garde le MCP pour plus tard. Jeremy Johnson consacre désormais 80 % de son temps à une spécification en texte brut et son prototype tombe juste du premier coup. Altay Suna va jusqu'à concevoir un site entier dans des fichiers lisibles, sans outil de design. Abha M le confirme à petite échelle : le brief de 4 pages bat le prompt d'une ligne.",
+      "posts": [
+        "headway-design-md",
+        "johnson-spec-first",
+        "suna-site-en-fichiers",
+        "abha-claude-design-brief"
+      ]
+    },
+    {
+      "id": "a11y-dans-les-tokens",
+      "titre": "L'accessibilité se code dans les tokens, la décision reste au designer",
+      "texte": "Project Mzizi grave ses minimums (17 px, cibles de 49 px, contraste 7:1) dans les tokens et les sert à l'agent par MCP. Christine Vallaure part des tests de contraste du code et fait poser par Claude des options chiffrées sur le canvas, avec l'interdiction de modifier les tokens. Les deux approches partagent un prérequis : mêmes tokens, mêmes noms, côté code et côté Figma, comme le promet aussi Sakani UI.",
+      "posts": [
+        "vallaure-a11y-canvas",
+        "mzizi-minimums-tokens",
+        "sakani-mcp-skill"
+      ]
+    },
+    {
+      "id": "jugement-reste-humain",
+      "titre": "L'IA fournit un meilleur départ, pas le jugement",
+      "texte": "Pavle Lucic lance « plus besoin d'apprendre le design » et récolte 96 commentaires inquiets. Abha M et Sarim Khan répondent par l'expérience : l'IA écrit le code et les écrans, mais le choix entre deux patterns ou une mise en page reste au designer. Le débat ne porte plus sur l'outil, mais sur ce que le designer garde.",
+      "posts": [
+        "pavle-apprendre-a-prompter",
+        "abha-claude-design-brief",
+        "sarim-portfolio-code"
+      ]
+    },
+    {
+      "id": "contourner-limites-mcp",
+      "titre": "Quand le MCP Figma bloque, le code prend le relais",
+      "texte": "Humza Mehmood atteint le quota Figma MCP et fait écrire à Claude un plugin qui génère tout le design system. Christine Vallaure passe par un MCP tiers (Console MCP), et Sakani UI livre son propre MCP et un skill d'agent. Le MCP officiel n'est plus la seule porte d'entrée vers le fichier.",
+      "posts": [
+        "humza-plugin-quota-mcp",
+        "sakani-mcp-skill",
+        "vallaure-a11y-canvas"
+      ]
+    }
+  ],
+  "tendances": [
+    {
+      "titre": "Le fichier texte passe avant le serveur MCP",
+      "texte": "Headway démarre les équipes avec un seul Design MD et garde le MCP pour plus tard. Jeremy Johnson consacre désormais 80 % de son temps à une spécification en texte brut et son prototype tombe juste du premier coup. Altay Suna va jusqu'à concevoir un site entier dans des fichiers lisibles, sans outil de design. Abha M le confirme à petite échelle : le brief de 4 pages bat le prompt d'une ligne."
+    },
+    {
+      "titre": "L'accessibilité se code dans les tokens, la décision reste au designer",
+      "texte": "Project Mzizi grave ses minimums (17 px, cibles de 49 px, contraste 7:1) dans les tokens et les sert à l'agent par MCP. Christine Vallaure part des tests de contraste du code et fait poser par Claude des options chiffrées sur le canvas, avec l'interdiction de modifier les tokens. Les deux approches partagent un prérequis : mêmes tokens, mêmes noms, côté code et côté Figma, comme le promet aussi Sakani UI."
+    },
+    {
+      "titre": "L'IA fournit un meilleur départ, pas le jugement",
+      "texte": "Pavle Lucic lance « plus besoin d'apprendre le design » et récolte 96 commentaires inquiets. Abha M et Sarim Khan répondent par l'expérience : l'IA écrit le code et les écrans, mais le choix entre deux patterns ou une mise en page reste au designer. Le débat ne porte plus sur l'outil, mais sur ce que le designer garde."
+    }
+  ],
+  "posts": [
+    {
+      "id": "vallaure-a11y-canvas",
+      "source": "linkedin",
+      "auteur": "Christine Vallaure de la Paz",
+      "auteurUrl": "",
+      "role": "Fondatrice de moonlearning.io, formatrice Figma et design systems IA, 2x speaker Config",
+      "idee": "Le rapport d'accessibilité devient une décision de designer. Les tests de contraste tournent dans le code ; via MCP, Claude trie les échecs (design, dev, à discuter) et pose sur le canvas Figma l'état actuel et deux options chiffrées, sans toucher aux tokens.",
+      "concret": [
+        "Console MCP (Southleft) pour lire et écrire le fichier Figma ouvert",
+        "Badges et alertes en mode sombre : 7/7 en échec aujourd'hui, option A 3/7, option B 7/7 réussis en ré-aliasant les tokens sémantiques vers une primitive plus sombre déjà dans la palette",
+        "Sous chaque option, la liste des tokens qui changent, prête pour le dev",
+        "Prompt donné : « Ne modifie aucun token »",
+        "Condition : bibliothèque Figma générée depuis le code, mêmes noms de tokens des deux côtés"
+      ],
+      "commentaires": "Elle précise que ce n'est ni un audit ni un remplacement des tests avec des personnes.",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=%22design%20system%22%20AI%20Figma&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "44 réactions, 9 commentaires, 1 repost",
+      "tags": [
+        "accessibilité",
+        "MCP",
+        "design-system"
+      ]
+    },
+    {
+      "id": "headway-design-md",
+      "source": "linkedin",
+      "auteur": "Headway",
+      "auteurUrl": "https://www.linkedin.com/company/headwayio/",
+      "role": "Agence produit qui accompagne des équipes sur Claude Code et les MCP de design system",
+      "idee": "Design MD d'abord, MCP ensuite. Pour une équipe sans développeurs qui démarre Claude Code, un seul fichier (couleurs, standards de marque, définitions de composants) suffit à produire des écrans fidèles ; le serveur MCP vient quand l'équipe partage la stack du design system.",
+      "concret": [
+        "Un fichier Design MD : couleurs, règles de marque, définitions de composants",
+        "Même fichier pour les designers sans accès au repo : reconstruire les composants dans Claude Design ou un kit Figma Make",
+        "Session « Design System MCPs » de Billy Sweetman et Tim Gremore, présentation en commentaire"
+      ],
+      "commentaires": "La présentation complète est partagée en commentaire.",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=Claude%20design%20system&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "3 commentaires",
+      "tags": [
+        "design-system",
+        "documentation",
+        "MCP"
+      ]
+    },
+    {
+      "id": "johnson-spec-first",
+      "source": "substack",
+      "auteur": "Jeremy Johnson",
+      "auteurUrl": "https://jeremyjo.substack.com",
+      "role": "Design leader depuis 20 ans, dirige une équipe UX sur les expériences IA pour l'industrie",
+      "idee": "Le levier du prototypage IA est le texte écrit avant. Il est passé de 20 % de prompt et 80 % de corrections à 80 % de spécification en texte brut en amont : le prototype tombe juste au premier ou deuxième essai.",
+      "concret": [
+        "Boucle en 5 phases : Research, Explore, Gather, Build, Share",
+        "« Words before pixels » : explorer les directions en texte avant l'UI",
+        "Un fichier context.md qui rassemble preuves clients, patterns et données internes",
+        "Walkthrough écran par écran en texte, puis build ciblé",
+        "Cartes de prompts dédiées à chaque phase ; sorties : deck, vidéo, PRD"
+      ],
+      "commentaires": "",
+      "url": "https://jeremyjo.substack.com/p/prototyping-in-the-enterprise-the",
+      "engagement": "Article Substack, 11 min de lecture",
+      "tags": [
+        "prototypage",
+        "documentation",
+        "agents"
+      ]
+    },
+    {
+      "id": "suna-site-en-fichiers",
+      "source": "linkedin",
+      "auteur": "Altay Suna",
+      "auteurUrl": "https://www.linkedin.com/in/altaysuna/",
+      "role": "Senior Product Designer indépendant, 18 ans d'expérience",
+      "idee": "Un site client conçu sans outil de design classique. Recherche, UX, architecture de l'information, wireframes écrits, design visuel et textes vivent dans des fichiers lisibles par n'importe quel outil, du brief aux pages qui fonctionnent.",
+      "concret": [
+        "Article avec extraits réels (anonymisés) des documents du projet",
+        "Wireframes écrits plutôt que dessinés",
+        "Positionnement explicite : designer avec l'IA, pas « vibe coder »"
+      ],
+      "commentaires": "",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=%22vibe%20coding%22%20designer&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "Article LinkedIn publié il y a 4 h",
+      "tags": [
+        "documentation",
+        "prototypage",
+        "claude"
+      ]
+    },
+    {
+      "id": "mzizi-minimums-tokens",
+      "source": "linkedin",
+      "auteur": "Project Mzizi by Bundu",
+      "auteurUrl": "",
+      "role": "Recherche ouverte de la Bundu Foundation : langage, outils et registre de composants pour agents et humains",
+      "idee": "Les minimums d'accessibilité vivent dans les tokens. Taille de texte, cibles tactiles, contraste et espacement minimal sont fixés par défaut, vérifiés en ligne de commande, enseignés dans les skills d'agent et servis par un MCP gratuit.",
+      "concret": [
+        "Texte courant 17 px, légendes 14 px",
+        "Cibles tactiles de 49 px",
+        "Contraste texte 7:1, pensé pour l'extérieur et les téléphones bon marché",
+        "Plancher d'espacement",
+        "Documentation qui distingue ce qui est construit, seulement conçu ou à prouver"
+      ],
+      "commentaires": "",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=%22design%20tokens%22%20AI&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "2 commentaires",
+      "tags": [
+        "accessibilité",
+        "design-tokens",
+        "MCP"
+      ]
+    },
+    {
+      "id": "abha-claude-design-brief",
+      "source": "linkedin",
+      "auteur": "Abha M",
+      "auteurUrl": "https://www.linkedin.com/in/abha-m-2b7665176/",
+      "role": "Product Designer chez Shvasa",
+      "idee": "Le brief détaillé bat le prompt d'une ligne, mais le jugement manque. Dans Claude Design, un prompt de 4 à 5 pages par rôle donne un résultat plus aligné, encore meilleur avec un design system créé via Claude Code et Figma MCP ; les choix de patterns restent à revoir.",
+      "concret": [
+        "Comparaison prompt d'une ligne vs brief de 4 à 5 pages",
+        "Design system construit avec Claude Code et Figma MCP",
+        "Exemple de choix à relire : boutons radio ou chevrons selon la complexité"
+      ],
+      "commentaires": "",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=Claude%20design%20system&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "2 réactions",
+      "tags": [
+        "claude",
+        "design-system",
+        "prototypage"
+      ]
+    },
+    {
+      "id": "pavle-apprendre-a-prompter",
+      "source": "linkedin",
+      "auteur": "Pavle Lucic",
+      "auteurUrl": "https://www.linkedin.com/in/pavle-lucic/",
+      "role": "Product Designer chez Yettel Serbie",
+      "idee": "« Les designers n'ont plus besoin d'apprendre le design. » Post volontairement provocateur : voir l'IA modifier ses vrais fichiers Figma via MCP l'enthousiasme autant qu'il l'inquiète.",
+      "concret": [
+        "Constat : création de layouts et édition de composants par l'IA via MCP",
+        "Progression perçue « chaque semaine »"
+      ],
+      "commentaires": "96 commentaires : le débat oppose savoir prompter et savoir juger, signe d'une inquiétude réelle du métier.",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=Figma%20MCP&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "123 réactions, 96 commentaires, 7 reposts",
+      "tags": [
+        "métier",
+        "MCP",
+        "figma"
+      ]
+    },
+    {
+      "id": "humza-plugin-quota-mcp",
+      "source": "linkedin",
+      "auteur": "Humza Mehmood",
+      "auteurUrl": "https://www.linkedin.com/in/aqhumza/",
+      "role": "UX/UI designer orienté IA et MVP, 8 ans d'expérience",
+      "idee": "Quota Figma MCP atteint : Claude écrit un plugin. À partir d'un écran fait dans Claude Design, il voulait générer tout le design system ; bloqué par la limite MCP, il a fait coder un plugin Figma par Claude, importé via le manifest, qui a généré fondations, variables et composants.",
+      "concret": [
+        "Écran de référence fait dans Claude Design",
+        "Cible : tokens, variables, palettes, typo, espacements, composants",
+        "Plugin Figma importé par le fichier manifest",
+        "Alternative proposée par Claude : attendre la remise à zéro du quota"
+      ],
+      "commentaires": "",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=Figma%20MCP&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "1 réaction, 1 commentaire",
+      "tags": [
+        "MCP",
+        "figma",
+        "design-system"
+      ]
+    },
+    {
+      "id": "sakani-mcp-skill",
+      "source": "linkedin",
+      "auteur": "Sakani UI",
+      "auteurUrl": "https://www.linkedin.com/company/sakaniui/",
+      "role": "Design system React open source aligné un pour un avec son fichier Figma",
+      "idee": "Un design system livré avec son MCP et son skill d'agent. Claude, Cursor et les autres outils consultent les vrais composants, props, icônes et tokens au lieu de deviner, puis vérifient le code produit avant de répondre.",
+      "concret": [
+        "130+ composants, 40+ blocs (tableaux de bord, tables, chat, facturation, auth)",
+        "Tokens en clair et sombre, surfaces glass optionnelles",
+        "Typé et accessible par défaut",
+        "npm install @sakaniui/react"
+      ],
+      "commentaires": "",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=%22design%20tokens%22%20AI&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "3 réactions, 1 repost",
+      "tags": [
+        "design-system",
+        "MCP",
+        "open-source"
+      ]
+    },
+    {
+      "id": "sarim-portfolio-code",
+      "source": "linkedin",
+      "auteur": "Sarim Khan",
+      "auteurUrl": "https://www.linkedin.com/in/sarimkhan-productdesigner/",
+      "role": "Senior Product Designer fintech et SaaS, Abou Dhabi",
+      "idee": "Claude écrit le code, le designer garde chaque décision. En reconstruisant son portfolio en vibe coding, il a vu dans le navigateur des manques qu'une maquette statique cachait.",
+      "concret": [
+        "Portfolio sarim.design reconstruit avec Claude, sans template ni développeur",
+        "Expériences de motion, découverte de Figma Weave et Jitter",
+        "Le site vérifie l'adéquation avec une offre d'emploi"
+      ],
+      "commentaires": "",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=%22vibe%20coding%22%20designer&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "13 réactions, 2 commentaires",
+      "tags": [
+        "vibe-coding",
+        "prototypage",
+        "métier"
+      ]
+    }
+  ],
+  "outils": [
+    {
+      "nom": "Console MCP (Southleft)",
+      "note": "MCP tiers pour lire et écrire le fichier Figma ouvert, utilisé pour poser des décisions d'accessibilité sur le canvas.",
+      "url": ""
+    },
+    {
+      "nom": "SakaniUI",
+      "note": "Design system React open source avec MCP et skill d'agent pour Claude et Cursor.",
+      "url": "https://sakaniui.com"
+    },
+    {
+      "nom": "Project Mzizi",
+      "note": "Registre de composants avec minimums d'accessibilité dans les tokens, CLI et MCP gratuit.",
+      "url": ""
+    },
+    {
+      "nom": "Design MD",
+      "note": "Un fichier unique (couleurs, règles de marque, composants) pour démarrer Claude Code ou Claude Design avant le MCP.",
+      "url": ""
+    },
+    {
+      "nom": "Storybook accessibility add-on",
+      "note": "Tests de contraste automatiques côté code, point de départ du workflow de Christine Vallaure.",
+      "url": ""
+    },
+    {
+      "nom": "Figma Weave",
+      "note": "Découvert par Sarim Khan pour ses expériences de motion.",
+      "url": ""
+    }
+  ],
+  "personnes": [
+    {
+      "nom": "Jeremy Johnson",
+      "role": "Design leader, équipe UX sur l'IA industrielle",
+      "pourquoi": "Playbook spec-first en 5 phases avec cartes de prompts, très applicable.",
+      "url": "https://jeremyjo.substack.com",
+      "plateforme": "substack",
+      "photo": "https://substackcdn.com/image/fetch/$s_!jho5!,w_64,h_64,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc3181559-1d8b-49c2-926b-c26ed8d82a82_800x800.jpeg"
+    },
+    {
+      "nom": "Altay Suna",
+      "role": "Senior Product Designer indépendant",
+      "pourquoi": "Documente un projet client entier conçu dans des fichiers, sans outil de design.",
+      "url": "https://www.linkedin.com/in/altaysuna/",
+      "plateforme": "linkedin",
+      "photo": "https://media.licdn.com/dms/image/v2/D4D03AQGXQuGiInWxkA/profile-displayphoto-scale_100_100/B4DaFdsuiWHYAY-/0/1792573369283?e=1795651200&v=beta&t=kEQyFBjDMl-OLY1oOKDIqX0sK1A9jnUie21uX3B_clA"
+    },
+    {
+      "nom": "Christine Vallaure",
+      "role": "Designer et formatrice, Moonlearning",
+      "pourquoi": "Série concrète sur le design system relié au code par MCP, ici appliquée à l'accessibilité.",
+      "url": "https://substack.com/@christinevallaure",
+      "plateforme": "substack",
+      "photo": ""
+    }
+  ],
+  "evenements": [],
+  "offres": [
+    {
+      "poste": "Principal UX Designer, agentic AI",
+      "entreprise": "BMC Software",
+      "lieu": "Remote (monde)",
+      "url": "https://lnkd.in/eBst4qP2"
+    }
+  ],
+  "notes": "LinkedIn : 5 requêtes (« design system » AI Figma, Figma MCP, agentic design UX, Claude design system, « design tokens » AI) plus « vibe coding » designer ; fil d'accueil sans contenu utile. Substack : filtre 24 h ignoré sur « design systems » AI, utile sur Figma AI. X non consulté le jeudi."
+}

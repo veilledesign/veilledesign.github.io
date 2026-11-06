@@ -1,0 +1,381 @@
+{
+  "date": "2026-11-06",
+  "titre": "A design system that blocks nothing is just a suggestion, for humans and agents alike",
+  "essentiel": [
+    "Governance: Florian Gampert wants a system that \"complains\" (build, linter, review), and Kitty Brown puts a well-equipped agent's reliability at 90-95%.",
+    "The design system becomes the antidote to AI's generic output: Claude Design imports one in 3 steps, and The Human Layer calls it a product's last edge.",
+    "Claude spreads across the whole design team (Utila) while Figma showcases its MCP partners in its quarterly earnings."
+  ],
+  "syntheses": [
+    {
+      "id": "systeme-qui-proteste",
+      "titre": "A design system that blocks nothing is just a suggestion",
+      "texte": "Florian Gampert is blunt: if nothing breaks when a team ignores the system, it is a suggestion, and coding agents skip it even faster than people do. Kitty Brown confirms it from the field: even with JSON context, an agents.md and a second checking agent, AI follows the system 90-95% of the time and still slips in hard-coded values. Hasib R. reaches the same conclusion on a 50-page site: the result holds thanks to strict rules (BEM, variables), then a manual polish. All three agree: the tool must enforce the rule, and humans check the rest.",
+      "posts": [
+        "gampert-systeme-qui-proteste",
+        "brown-les-5-pourcent",
+        "hasib-bricks-mcp"
+      ]
+    },
+    {
+      "id": "antidote-au-generique",
+      "titre": "The design system becomes the antidote to generic output",
+      "texte": "The Human Layer starts from one observation: when everyone builds fast with the same tools, only quality is left, and a design system is the cheapest way to get it. Julian Oczkowski demonstrates it in Claude Design: same prompt, a generic page without a system, an on-brand page with one. Nick Babich lists Claude Code repos heading the same way, including design.how to maintain and apply a system. Common thread: AI needs your decisions, including what you don't do.",
+      "posts": [
+        "human-layer-gout",
+        "oczkowski-claude-design-ds",
+        "babich-5-repos"
+      ]
+    },
+    {
+      "id": "claude-copilote-equipe",
+      "titre": "Claude becomes the whole design team's tool, not just the prototype's",
+      "texte": "At Utila, Alina Khazanova describes Claude as a project partner: internal guides, skills synced with the design system, specs sent back into Figma via MCP, project plans next to the prototype. Nick Babich gets 521 reactions on a simple list of repos for designers, a sign of strong demand. Alissa Condra points to the flip side: the tool changes so fast that her tutorials expired in three months, while UX judgment stays.",
+      "posts": [
+        "khazanova-utila-claude",
+        "babich-5-repos",
+        "condra-tutos-expirent"
+      ]
+    },
+    {
+      "id": "mcp-entre-plateformes",
+      "titre": "MCP leaves the workshop and enters the platforms",
+      "texte": "Optimizely is among the new MCP partners Figma presented with its earnings, with an agent that uses design context for A/B tests and CMS pages. Hasib R. combines Figma MCP, Bricks MCP and Claude Code to ship a 50-page WordPress site, and Utila sends its specs back into Figma the same way. MCP is becoming a standard pipe between design and production, but every account stresses the instructions you have to provide.",
+      "posts": [
+        "whitney-figma-mcp-partenaires",
+        "hasib-bricks-mcp",
+        "khazanova-utila-claude"
+      ]
+    },
+    {
+      "id": "workflow-avant-panneau",
+      "titre": "Design the agent at the workflow level, with human checkpoints",
+      "texte": "Dhruv Sood criticizes the agent dropped into a sidebar while the user still does all the work: design the full flow, give every step an owner and document every handoff. Alissa Condra keeps the same idea for her own use: hand a task over when it repeats or produces a deliverable, and keep human approvals where mistakes are costly.",
+      "posts": [
+        "sood-workflow-avant-panneau",
+        "condra-tutos-expirent"
+      ]
+    }
+  ],
+  "posts": [
+    {
+      "id": "gampert-systeme-qui-proteste",
+      "source": "linkedin",
+      "auteur": "Florian Gampert",
+      "auteurUrl": "https://www.linkedin.com/in/florian-gampert/",
+      "role": "Design Systems Architect, unified 12 brands across 86 countries",
+      "idee": "An unenforced system is a suggestion. \"Please use\" docs, a Figma library you can detach in one click, a \"looks right\" review: it all relies on people remembering, and coding agents ignore it even faster.",
+      "concret": [
+        "The build fails on a raw colour",
+        "The linter flags a local copy of a shared button",
+        "The PR can't merge until an exception has an owner",
+        "People and agents hit the same rule"
+      ],
+      "commentaires": "He closes with a question: what in your setup actually complains today?",
+      "url": "https://www.linkedin.com/feed/",
+      "engagement": "23 reactions, 1 comment",
+      "tags": [
+        "gouvernance",
+        "design-system",
+        "agents"
+      ]
+    },
+    {
+      "id": "brown-les-5-pourcent",
+      "source": "linkedin",
+      "auteur": "Kitty Brown",
+      "auteurUrl": "https://www.linkedin.com/in/kittybrown/",
+      "role": "Design Systems Lead, design systems built for agents",
+      "idee": "AI follows the system 90-95% of the time, no more. She builds components code-first in Claude Code or Cursor, then pushes them to Figma via MCP to check the remaining 5-10%.",
+      "concret": [
+        "Component context in JSON",
+        "Harness layer via an agents.md file",
+        "Second agent (Jev) to double-check",
+        "Errors seen: broken colour and spacing scales, hard-coded values instead of tokens",
+        "Testing components together, across screens and breakpoints"
+      ],
+      "commentaires": "14 comments, mostly agreeing that manual polish is still needed.",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=%22design%20system%22%20AI%20Figma&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "23 reactions, 14 comments",
+      "tags": [
+        "design-system",
+        "MCP",
+        "gouvernance"
+      ]
+    },
+    {
+      "id": "khazanova-utila-claude",
+      "source": "linkedin",
+      "auteur": "Alina Khazanova",
+      "auteurUrl": "https://www.linkedin.com/in/alina-ux-ui/",
+      "role": "Head of Product Design, Utila",
+      "idee": "Claude becomes the design team's project partner. Beyond brainstorming and prototypes, the team uses it to keep large projects on track, document its thinking and send specs back into Figma.",
+      "concret": [
+        "Internal guides on progress and workflows",
+        "Custom skills synced with the design system between Claude and Figma",
+        "Brand hub: guidelines, templates, tooling",
+        "Interactive canvas-style diagram for a complex flow",
+        "Project plan artifact next to the prototype: scope, assumptions, feedback, open questions"
+      ],
+      "commentaires": "",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=Figma%20MCP&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "11 reactions",
+      "tags": [
+        "claude",
+        "MCP",
+        "documentation"
+      ]
+    },
+    {
+      "id": "oczkowski-claude-design-ds",
+      "source": "linkedin",
+      "auteur": "Julian Oczkowski",
+      "auteurUrl": "https://www.linkedin.com/in/julianoczkowski/",
+      "role": "Lead Product Builder, Trimble",
+      "idee": "Same prompt, two results. Without a design system, Claude Design returns a generic white page; with one, the page uses the brand's fonts, colours and buttons.",
+      "concret": [
+        "Step 1: + → Design system → New design system, upload brand files or sync from GitHub",
+        "Step 2: Claude turns a one-page brand sheet into tokens and components, asks about gaps and flags colour pairs that fail contrast",
+        "Step 3: the system stays selected for the next designs",
+        "Beta on Pro and above"
+      ],
+      "commentaires": "",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=Claude%20design%20system&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "3 comments",
+      "tags": [
+        "claude",
+        "design-system",
+        "tokens"
+      ]
+    },
+    {
+      "id": "babich-5-repos",
+      "source": "linkedin",
+      "auteur": "Nick Babich",
+      "auteurUrl": "https://www.linkedin.com/in/nbabich/",
+      "role": "Design leader, product design and AI",
+      "idee": "Five GitHub repos for using Claude Code as a product designer. From UI generation refined on real screenshots to maintaining a design system.",
+      "concret": [
+        "oil-ui: generates and refines UIs from screenshots",
+        "dimensional-drawing: visual component specs (spacing, dimensions)",
+        "Awwwards-mcp: inspiration from award-winning sites",
+        "design.how: build, maintain and apply a design system",
+        "Brand Identity Skill: logos, type, palettes, guidelines",
+        "Claude Code Skills for Product Designers masterclass with Packt on November 30"
+      ],
+      "commentaires": "45 comments, mostly designers saying which one they'll try first.",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=Claude%20design%20system&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "521 reactions, 15 comments, 45 reposts",
+      "tags": [
+        "claude",
+        "skills",
+        "outils"
+      ]
+    },
+    {
+      "id": "sood-workflow-avant-panneau",
+      "source": "linkedin",
+      "auteur": "Dhruv Sood",
+      "auteurUrl": "",
+      "role": "Sr. UX Designer, Hewlett Packard Enterprise",
+      "idee": "An agent outside the workflow is just a renamed chatbot. In enterprise apps, an agent lands in a sidebar and users still do all the work: design the end-to-end flow before the panel.",
+      "concret": [
+        "Every step has an owner, agent or person",
+        "Every handoff states what the agent tried, why it stopped, what comes next",
+        "Gemini to map steps and exceptions, Replit to run the flow, VS Code to ship into the design system",
+        "Figures cited: 87% of customers say access to a human is essential, 84% give a virtual agent three tries at most",
+        "Metrics: time to pick up a handoff, how often people start over"
+      ],
+      "commentaires": "",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=agentic%20design%20UX&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "Chapter 61 of his Agentic UX series",
+      "tags": [
+        "agents",
+        "UX",
+        "workflow"
+      ]
+    },
+    {
+      "id": "whitney-figma-mcp-partenaires",
+      "source": "linkedin",
+      "auteur": "Alex Whitney",
+      "auteurUrl": "https://www.linkedin.com/in/alex-whitney-663b6717/",
+      "role": "AI Product, Optimizely",
+      "idee": "Figma puts its MCP partners in front of investors. Optimizely appeared in Figma's earnings presentation among its new MCP partners.",
+      "concret": [
+        "Optimizely's \"Mark\" agent uses design context via the Figma MCP",
+        "Use cases: A/B test variants, CMS pages, design → implementation"
+      ],
+      "commentaires": "",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=Figma%20MCP&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "83 reactions, 6 comments",
+      "tags": [
+        "MCP",
+        "figma"
+      ]
+    },
+    {
+      "id": "hasib-bricks-mcp",
+      "source": "linkedin",
+      "auteur": "Hasib R.",
+      "auteurUrl": "https://www.linkedin.com/in/haas-ib/",
+      "role": "WordPress developer, Figma to live site",
+      "idee": "Not 1-click magic, but weeks saved. A 50-page site designed in Figma, rebuilt with Claude Code, Bricks MCP and Figma MCP, nearly identical to the design.",
+      "concret": [
+        "Strict instructions: BEM classes, ACSS variables, no utilities or inline styles",
+        "Minimal wrapper containers",
+        "Manual polish: one mis-mapped image, small-breakpoint fixes",
+        "Dynamic ACF fields and query loops handled"
+      ],
+      "commentaires": "",
+      "url": "https://www.linkedin.com/search/results/content/?keywords=Figma%20MCP&datePosted=%22past-24h%22&sortBy=%22relevance%22",
+      "engagement": "1 reaction, 5 comments",
+      "tags": [
+        "MCP",
+        "figma",
+        "prototypage"
+      ]
+    },
+    {
+      "id": "human-layer-gout",
+      "source": "substack",
+      "auteur": "Ruksana Shaukat et Tanaka Kungwengwe (The Human Layer)",
+      "auteurUrl": "https://ruksanasj.substack.com",
+      "role": "Newsletter on designing AI products",
+      "idee": "Speed is free, quality isn't. When everyone builds with the same tools, a well-crafted design system becomes a product's cheapest edge.",
+      "concret": [
+        "Audit prompt: list colours, sizes, spacing, radii and buttons with usage counts",
+        "Start from an existing system: shadcn/ui, Material, Carbon",
+        "Write your principles in plain language, including what you don't do",
+        "Rules in a DESIGN.md read by AI tools",
+        "Figures cited: 34% faster with an up-to-date system (Figma), 22.5% lower agent costs at Coinbase"
+      ],
+      "commentaires": "",
+      "url": "https://ruksanasj.substack.com/p/speed-is-free-quality-isnt-ai-can",
+      "engagement": "7 likes, 2 comments",
+      "tags": [
+        "design-system",
+        "claude",
+        "documentation"
+      ]
+    },
+    {
+      "id": "condra-tutos-expirent",
+      "source": "substack",
+      "auteur": "Alissa Condra (UX Adjacent)",
+      "auteurUrl": "https://uxadjacent.substack.com",
+      "role": "UX researcher and speaker",
+      "idee": "Tool tutorials expire in weeks, UX judgment doesn't. The most-explained slide of her Cowork talk went out of date in three months after Claude's modes merged.",
+      "concret": [
+        "Timeline: Cowork and chat merged on September 16, Docs, Slides and Design on every plan on October 8",
+        "The standalone Claude Design site closes on December 14",
+        "Hand-off test: the task repeats, touches real files or produces a deliverable",
+        "Standout example: an interactive journey map built from meeting transcripts"
+      ],
+      "commentaires": "",
+      "url": "https://uxadjacent.substack.com/p/tool-tutorials-expire-in-weeks-but",
+      "engagement": "1 like, 1 comment",
+      "tags": [
+        "claude",
+        "UX",
+        "formation"
+      ]
+    }
+  ],
+  "outils": [
+    {
+      "nom": "Claude Design (design systems)",
+      "note": "Imports a brand sheet and turns it into tokens and components, with contrast checks. Beta on Pro and above.",
+      "url": ""
+    },
+    {
+      "nom": "design.how",
+      "note": "Repo to build, maintain and apply a design system with Claude Code.",
+      "url": ""
+    },
+    {
+      "nom": "dimensional-drawing",
+      "note": "Generates visual component specs (spacing, dimensions).",
+      "url": ""
+    },
+    {
+      "nom": "oil-ui",
+      "note": "Generates UIs and refines them from real screenshots.",
+      "url": ""
+    },
+    {
+      "nom": "Awwwards-mcp",
+      "note": "Gives Claude access to inspiration from award-winning sites.",
+      "url": ""
+    },
+    {
+      "nom": "Bricks MCP",
+      "note": "MCP to build Bricks WordPress sites from an agent, combined here with Figma MCP.",
+      "url": ""
+    },
+    {
+      "nom": "shadcn/ui",
+      "note": "Recommended design system base for React and Tailwind, customised via theme variables.",
+      "url": "https://ui.shadcn.com"
+    }
+  ],
+  "personnes": [
+    {
+      "nom": "Florian Gampert",
+      "role": "Design Systems Architect",
+      "pourquoi": "Short, sharp posts on design system governance in the age of agents.",
+      "url": "https://www.linkedin.com/in/florian-gampert/",
+      "plateforme": "linkedin",
+      "photo": "https://media.licdn.com/dms/image/v2/D4E03AQEEpV_xRweBFg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1696715068184?e=1795651200&v=beta&t=RyuOchEI0T-UXlYfUQ33shRgWdSCaqK_NyctafRwg_0"
+    },
+    {
+      "nom": "Kitty Brown",
+      "role": "Design Systems Lead",
+      "pourquoi": "Hands-on, quantified feedback on design systems agents actually follow.",
+      "url": "https://www.linkedin.com/in/kittybrown/",
+      "plateforme": "linkedin",
+      "photo": ""
+    },
+    {
+      "nom": "Alina Khazanova",
+      "role": "Head of Product Design, Utila",
+      "pourquoi": "Shows how a whole design team adopts Claude and the Figma MCP.",
+      "url": "https://www.linkedin.com/in/alina-ux-ui/",
+      "plateforme": "linkedin",
+      "photo": "https://media.licdn.com/dms/image/v2/D4D03AQE6PIutb-RiZQ/profile-displayphoto-scale_100_100/B4DZ6NL86sIMAY-/0/1780485185347?e=1795651200&v=beta&t=qTfWrM2pVQ5Sv7mD9MCl44eqluq5ikHWCQXBj3_BK4s"
+    },
+    {
+      "nom": "Julian Oczkowski",
+      "role": "Lead Product Builder, Trimble",
+      "pourquoi": "Step-by-step tutorials on Claude Design and design systems.",
+      "url": "https://www.linkedin.com/in/julianoczkowski/",
+      "plateforme": "linkedin",
+      "photo": "https://media.licdn.com/dms/image/v2/D4E03AQH8hYPzLQWmyA/profile-displayphoto-scale_100_100/B4EZ1egngxIUAc-/0/1775407103719?e=1795651200&v=beta&t=v8VJkJrMjFthW9PxhF6wpJYJhSzTqPKkSej_8TPqoRU"
+    }
+  ],
+  "evenements": [
+    {
+      "nom": "Claude Code Skills for Product Designers masterclass (Nick Babich × Packt)",
+      "date": "2026-11-30",
+      "lieu": "Online",
+      "note": "Claude Code skills applied to product design.",
+      "url": "https://lnkd.in/eRzqgETh"
+    }
+  ],
+  "offres": [],
+  "notes": "LinkedIn: 5 queries (\"design system\" AI Figma, agentic design UX, Figma MCP, \"design tokens\" AI, Claude design system) plus the home feed, many job posts filtered out. Substack: 24-hour filter ignored on \"design systems\" AI, effective on Figma AI design sorted by recent. X: both searches with since: and min_faves:10 showed nothing, and the AI-Native Designers community only offered showcases without explanation.",
+  "tendances": [
+    {
+      "titre": "A design system that blocks nothing is just a suggestion",
+      "texte": "If nothing breaks when you ignore it, the system is a suggestion: build, linter and review must enforce the rule, humans check the remaining 5-10%."
+    },
+    {
+      "titre": "The design system becomes the antidote to generic output",
+      "texte": "With or without a design system, the same prompt yields an on-brand page or a generic one: the system hands your decisions to AI."
+    },
+    {
+      "titre": "Claude becomes the whole design team's tool, not just the prototype's",
+      "texte": "Claude is used to document, plan and sync the design system, but tool tutorials age within weeks."
+    }
+  ]
+}
